@@ -368,6 +368,9 @@ textarea {
 * {
   box-sizing: border-box; }
 
+h1 {
+  margin: 0; }
+
 /*Body*/
 body {
   background-color: #f2f2f2; }
