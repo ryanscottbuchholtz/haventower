@@ -1,0 +1,58 @@
+@import '_normalize.scss';
+
+$background-color: #e32020;
+
+
+// * {
+//   border: 1px solid orange;
+// }
+
+/*Body*/
+
+body {
+  background-color: #f2f2f2;
+}
+
+/*Header*/
+
+.main-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background-color: black;
+  box-shadow: 0 15px 20px -12px rgba(0,0,0, 0.8);
+}
+
+nav {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  font-size: 20px;
+  color: white;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 80%;
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  li {
+    list-style: none;
+  }
+    li:nth-child(even) {
+      padding: 0 25px;
+    }
+}
+
+#logo {
+  margin-right: auto;
+  font-size: 24px;
+}
+
+
