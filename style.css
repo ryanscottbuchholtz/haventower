@@ -14,7 +14,8 @@ html {
 /**
  * Remove the margin in all browsers (opinionated).
  */
-body {
+body,
+h1 {
   margin: 0; }
 
 /* HTML5 display definitions
@@ -378,7 +379,6 @@ body {
   align-items: center;
   height: 100px;
   background-color: black;
-  position: fixed;
   margin-top: 0; }
 
 nav {
