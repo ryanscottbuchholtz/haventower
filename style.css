@@ -384,7 +384,8 @@ body {
   height: 100px;
   background-color: black;
   margin-top: 0;
-  font-family: "Oswald", sans-serif; }
+  font-family: "Oswald", sans-serif;
+  position: fixed; }
 
 nav {
   width: 100%;
@@ -418,8 +419,9 @@ nav {
   background-size: cover;
   padding-top: -100px;
   width: 100%;
-  height: 900px;
-  box-shadow: 0 15px 20px -12px rgba(0, 0, 0, 0.8); }
+  height: 70vh;
+  box-shadow: 0 15px 20px -12px rgba(0, 0, 0, 0.8);
+  padding-top: 100px; }
 
 /*Learn More*/
 .learn-more {
