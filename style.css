@@ -378,7 +378,8 @@ body {
   align-items: center;
   height: 100px;
   background-color: black;
-  position: fixed; }
+  position: fixed;
+  margin-top: 0; }
 
 nav {
   width: 100%;
