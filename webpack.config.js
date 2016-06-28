@@ -21,10 +21,7 @@ var plugins = [
         "removeStyleLinkTypeAttributes": true
       }
     }),
-    new ExtractTextPlugin('style.css'),
-    new CopyWebpackPlugin([
-          {from: 'assets', to: 'assets'}
-      ])
+    new ExtractTextPlugin('style.css')
   ];
 
 module.exports = {
@@ -43,8 +40,10 @@ module.exports = {
     module: {
       loaders: [
         { 
-            test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")
-          }
+          test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader", "file-loader")
+        },
+        { test: /\.jpe?g/, loader: "file-loader"
+        }
       ]
     }
 

@@ -14,7 +14,8 @@ html {
 /**
  * Remove the margin in all browsers (opinionated).
  */
-body {
+body,
+h1 {
   margin: 0; }
 
 /* HTML5 display definitions
@@ -367,9 +368,13 @@ textarea {
 * {
   box-sizing: border-box; }
 
+h1 {
+  margin: 0; }
+
 /*Body*/
 body {
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  font-family: "roboto", sans-serif; }
 
 /*Header*/
 .main-header {
@@ -378,6 +383,9 @@ body {
   align-items: center;
   height: 100px;
   background-color: black;
+  margin-top: 0;
+  font-family: "Oswald", sans-serif;
+  position: fixed;
   box-shadow: 0 15px 20px -12px rgba(0, 0, 0, 0.8); }
 
 nav {
@@ -387,15 +395,19 @@ nav {
   align-items: center; }
 
 .navigation {
-  font-size: 20px;
+  font-size: 18px;
   color: white;
   display: flex;
-  width: 100%;
+  width: 90%;
+  margin: auto;
   align-items: center;
   height: 80%; }
   .navigation a {
     text-decoration: none;
     color: inherit; }
+  .navigation :hover {
+    color: yellow;
+    font-size: 1.1em; }
   .navigation li {
     list-style: none; }
   .navigation li:nth-child(even) {
@@ -404,5 +416,78 @@ nav {
 #logo {
   margin-right: auto;
   font-size: 24px; }
+
+/*Main Image*/
+.main-image {
+  background: url("../assets/fish.jpeg") center no-repeat;
+  background-size: cover;
+  padding-top: -100px;
+  width: 100%;
+  height: 70vh;
+  padding-top: 100px; }
+
+/*Learn More*/
+.learn-more {
+  width: 100%;
+  height: 600px;
+  border: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.learn-more-blocks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  height: 90%; }
+
+.lm-block {
+  width: 30%;
+  height: 90%;
+  border: 1px solid black; }
+
+/*Testamonials*/
+.testamonials {
+  width: 100%;
+  height: 600px;
+  background-color: #f2f2f2;
+  border: 1px solid grey; }
+
+/*Portfolio*/
+.portfolio {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid grey; }
+
+.portfolio-logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  height: 80%;
+  border: 1px solid darkgrey; }
+
+.partner {
+  width: 15%;
+  height: 40%;
+  border: 1px solid darkgrey;
+  box-shadow: 0 15px 20px -12px rgba(0, 0, 0, 0.8); }
+
+/*work*/
+.work {
+  width: 100%;
+  height: 600px;
+  border: 1px solid grey; }
+
+/*Footer*/
+.footer {
+  width: 100%;
+  height: 100px;
+  border: 1px solid grey; }
 
 /*# sourceMappingURL=style.css.map */
