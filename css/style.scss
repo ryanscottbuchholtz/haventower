@@ -7,7 +7,7 @@ $header-height: 100px;
 $body-font: 'roboto', sans-serif;
 $header-font: 'Oswald', sans-serif;
 
-$main-image-height: 70vh;
+$main-image-height: 800px;
 $float-box-shadow: 0 15px 20px -12px rgba(0,0,0, 0.8);
 
 
@@ -20,6 +20,7 @@ $float-box-shadow: 0 15px 20px -12px rgba(0,0,0, 0.8);
 body {
   background-color: #f2f2f2;
   font-family: $body-font;
+  position: relative;
 }
 
 /*Header*/
@@ -29,65 +30,79 @@ body {
   display: flex;
   align-items: center;
   height: $header-height;
-  background-color: black;
+  background-color: #111111;
   margin-top: 0;
   font-family: $header-font;
   position: fixed;
+  top: 0;
+  left: 0;
   box-shadow: $float-box-shadow;
   opacity: 0.8;
-}
-
-#primary-nav-wrap {
-  position: relative;
-  float: left;
-  width: 100%;
-  height: 80%;
-  display: flex;
-  align-items: center;
-  .navigation {
+  #primary-nav-wrap {
     position: relative;
     float: left;
-    font-size: 18px;
-    color: white;
-    display: flex;
-    width: 90%;
-    margin: auto;
-    align-items: center;
+    width: 100%;
     height: 80%;
-    :hover > ul {
-          display: block;
-        }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
+    display: flex;
+    align-items: center;
+    .navigation {
+      position: relative;
+      float: left;
+      font-size: 18px;
+      color: white;
+      display: flex;
+      width: 90%;
+      margin: auto;
+      align-items: center;
+      height: 80%;
+      li:hover {
+        color: yellow;
+      }
+      :hover > ul {
+        display: block;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
       :hover {
         cursor: pointer;
       }
       .active {
         color: pink;
       }
-    li {
-      list-style: none;
-      padding: 0px 25px;
-    }
-    .dropdown {
-      position: relative;
-      float: left;
-    }
-    ul {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      padding: 0px;
       li {
-        float: none;
-        width: 200px;
+        list-style: none;
+        padding: 0px 25px;
       }
-    }
-    .pipe {
-      padding: 0;
+      .dropdown {
+        position: relative;
+        float: left;
+      }
+      ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 0px;
+        color: #111111;
+        background-color: #f2f2f2;
+        opacity: 0.8;
+        text-align: center;
+        :hover {
+          color: #f2f2f2;
+          background-color: #111111;
+        }
+        li {
+          float: none;
+          width: 130px;
+          padding: 10px 0px;
+          font-size: .8em;
+        }
+      }
+      .pipe {
+        padding: 0;
+      }
     }
   }
 }
@@ -107,6 +122,10 @@ body {
   width: 100%;
   height: $main-image-height;
   padding-top: $header-height;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 /*Learn More*/
@@ -114,10 +133,11 @@ body {
 .learn-more {
   width: 100%;
   height: 600px;
-  border: 1px solid grey;
+  margin-top: $main-image-height;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f2f2f2;
 }
 
 .learn-more-blocks {
@@ -127,12 +147,13 @@ body {
   width: 90%;
   margin: auto;
   height: 90%;
+  border: 1px solid grey;
 }
 
 .lm-block {
   width: 30%;
   height: 90%;
-  border: 1px solid black;
+  border: 1px solid grey;
 }
 
 /*Testamonials*/
@@ -141,7 +162,6 @@ body {
   width: 100%;
   height: 600px;
   background-color: #f2f2f2;
-  border: 1px solid grey;
 }
 
 /*Portfolio*/
@@ -152,7 +172,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid grey;
+  background-color: #f2f2f2;
 }
 
 .portfolio-logos {
@@ -161,13 +181,11 @@ body {
   align-items: center;
   width: 90%;
   height: 80%;
-  border: 1px solid darkgrey;
 }
 
 .partner {
   width: 15%;
   height: 40%;
-  border: 1px solid darkgrey;
   box-shadow: $float-box-shadow;
 }
 
@@ -177,7 +195,7 @@ body {
 .work {
   width: 100%;
   height: 600px;
-  border: 1px solid grey;
+  background-color: #f2f2f2;
 }
 
 /*Footer*/
@@ -185,5 +203,5 @@ body {
 .footer {
   width: 100%;
   height: 100px;
-  border: 1px solid grey;
+  background: #f2f2f2;
 }
