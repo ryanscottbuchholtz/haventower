@@ -1,13 +1,8 @@
 @import '_normalize.scss';
-
-$background-color: #e32020;
-
-$header-height: 100px;
+@import '_navigation.scss';
 
 $body-font: 'roboto', sans-serif;
-$header-font: 'Oswald', sans-serif;
 
-$main-image-height: 800px;
 $float-box-shadow: 0 15px 20px -12px rgba(0,0,0, 0.8);
 
 
@@ -25,92 +20,7 @@ body {
 
 /*Header*/
 
-.main-header {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  height: $header-height;
-  background-color: #111111;
-  margin-top: 0;
-  font-family: $header-font;
-  position: fixed;
-  top: 0;
-  left: 0;
-  box-shadow: $float-box-shadow;
-  opacity: 0.8;
-  #primary-nav-wrap {
-    position: relative;
-    float: left;
-    width: 100%;
-    height: 80%;
-    display: flex;
-    align-items: center;
-    .navigation {
-      position: relative;
-      float: left;
-      font-size: 18px;
-      color: white;
-      display: flex;
-      width: 90%;
-      margin: auto;
-      align-items: center;
-      height: 80%;
-      li:hover {
-        color: yellow;
-      }
-      :hover > ul {
-        display: block;
-      }
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
-      :hover {
-        cursor: pointer;
-      }
-      .active {
-        color: pink;
-      }
-      li {
-        list-style: none;
-        padding: 0px 25px;
-      }
-      .dropdown {
-        position: relative;
-        float: left;
-      }
-      ul {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        padding: 0px;
-        color: #111111;
-        background-color: #f2f2f2;
-        opacity: 0.8;
-        text-align: center;
-        :hover {
-          color: #f2f2f2;
-          background-color: #111111;
-        }
-        li {
-          float: none;
-          width: 130px;
-          padding: 10px 0px;
-          font-size: .8em;
-        }
-      }
-      .pipe {
-        padding: 0;
-      }
-    }
-  }
-}
 
-#logo {
-  margin-right: auto;
-  font-size: 24px;
-}
 
 
 /*Main Image*/
@@ -203,5 +113,5 @@ body {
 .footer {
   width: 100%;
   height: 100px;
-  background: #f2f2f2;
+  background: #f2f2f2
 }
