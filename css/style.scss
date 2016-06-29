@@ -34,6 +34,7 @@ body {
   font-family: $header-font;
   position: fixed;
   box-shadow: $float-box-shadow;
+  opacity: 0.8;
 }
 
 nav {
@@ -55,10 +56,13 @@ nav {
     text-decoration: none;
     color: inherit;
   }
-  :hover {
-    color: yellow;
-    font-size: 1.1em;
-  }
+    :hover {
+      color: yellow;
+      font-size: 1.1em;
+    }
+    .active {
+      color: pink;
+    }
   li {
     list-style: none;
   }
