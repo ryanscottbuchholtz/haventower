@@ -442,7 +442,11 @@ h1 {
     color: #f1f1f1; }
 
 #logo {
-  margin-right: auto; }
+  margin-right: auto;
+  background: url("../assets/htlogo/logo_transparent_background.png") no-repeat;
+  background-size: contain;
+  height: 100px;
+  width: 200px; }
 
 /*Main Image*/
 .main-image {
