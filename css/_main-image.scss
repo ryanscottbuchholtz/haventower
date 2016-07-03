@@ -1,0 +1,41 @@
+/*Main Image*/
+
+.main-image {
+  position: relative;
+  background: url('../assets/fish.jpeg') center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: $main-image-height;
+  margin-top: $header-height;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#main-image-logo-opacity-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $main-image-height;
+  margin-top: $header-height;
+  background-color: white;
+  opacity: 1.0;
+}
+
+#main-image-logo-wrapper {
+  @include center_center_flex;
+  position: fixed;
+  width: 100%;
+  height: $main-image-height;
+  margin-top: $header-height;
+  top: 0;
+  left: 0;
+}
+
+#main-image-logo {
+  width: 80%;
+  height: 80%;
+  background: url('../assets/htlogo/logo_transparent_background.png') no-repeat;
+  background-size: 100%;
+}
