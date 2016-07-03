@@ -442,7 +442,11 @@ h1 {
     color: #f1f1f1; }
 
 #logo {
-  margin-right: auto; }
+  margin-right: auto;
+  background: url(30135f9ef77df27c113d0640ee655f45.png) no-repeat;
+  background-size: contain;
+  height: 100px;
+  width: 200px; }
 
 /*Main Image*/
 .main-image {
