@@ -42,7 +42,7 @@ module.exports = {
         { 
           test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader", "file-loader")
         },
-        { test: /\.jpe?g/, loader: "file-loader"
+        { test: /\.(jpe?g|png|git|svg)$/, loader: "file-loader"
         }
       ]
     }

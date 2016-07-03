@@ -1,10 +1,12 @@
 $header-height: 100px;
 
+$haventower-red: #E51B23;
+
 $header-font: 'Oswald', sans-serif;
-$header-background-color: #FFDD17;
+$header-background-color: #f1f1f1;
 $header-nav-font-color: #252932;
-$nav-hover-color: #252932;
-$nav-active-color: red;
+$nav-hover-color: $haventower-red;
+$nav-active-color: $haventower-red;
 
 $main-image-height: 800px;
 
@@ -24,11 +26,11 @@ $float-box-shadow: 0 15px 20px -12px rgba(0,0,0, 0.8);
   top: 0;
   left: 0;
   box-shadow: $float-box-shadow;
-  opacity: 0.8;
+  // opacity: 0.8;
   z-index: 1;
 }
 
-#primary-nav-wrap {
+.primary-nav-wrap {
   position: relative;
   float: left;
   width: 100%;
@@ -36,6 +38,7 @@ $float-box-shadow: 0 15px 20px -12px rgba(0,0,0, 0.8);
   display: flex;
   align-items: center;
 }
+
 .navigation {
   position: relative;
   float: left;
@@ -46,57 +49,56 @@ $float-box-shadow: 0 15px 20px -12px rgba(0,0,0, 0.8);
   margin: auto;
   align-items: center;
   height: 80%;
-  li:hover {
-    color: $nav-hover-color;
-  }
-  :hover > ul {
+  
+  :hover > .nav-list-item-sublist {
     display: block;
   }
-  a {
-    text-decoration: none;
-    color: inherit;
+}
+
+.navigation-list-item,
+.pipe {
+  list-style: none;
+  padding: 0;
+}
+
+.navigation-list-item {
+  padding: 0px 25px;
+
+  &:hover {
+    color: $nav-hover-color;
   }
-  :hover {
-    cursor: pointer;
-  }
-  .active {
-    color: $nav-active-color;
-  }
-  li {
-    list-style: none;
-    padding: 0px 25px;
-  }
-  .dropdown {
-    position: relative;
-    float: left;
-  }
-  ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    padding: 0px;
-    color: $header-nav-font-color;
-    background-color: $header-background-color;
-    text-align: center;
-    :hover {
-      text-decoration: underline;
-      // color: $header-background-color;
-      // background-color: $header-nav-font-color;
-    }
-    li {
-      float: none;
-      width: 130px;
-      padding: 10px 0px;
-      font-size: .8em;
-    }
-  }
-  .pipe {
-    padding: 0;
+}
+
+.dropdown {
+  position: relative;
+  float: left;
+}
+
+.nav-list-item-sublist {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0px;
+  color: $header-nav-font-color;
+  background-color: $header-background-color;
+  text-align: center;
+  list-style: none;
+}
+
+.nav-list-item-sublist-item {
+  float: none;
+  width: 130px;
+  padding: 10px 0px;
+  font-size: 0.8em;
+
+  &:hover {
+    background-color: $header-nav-font-color;
+    color: $header-background-color;
   }
 }
 
 #logo {
   margin-right: auto;
-  font-size: 24px;
+  width: 5px;
 }

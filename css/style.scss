@@ -18,10 +18,14 @@ body {
   position: relative;
 }
 
-/*Header*/
+a {
+  text-decoration: none;
+  color: inherit;
 
-
-
+  &:hover {
+    cursor: pointer;
+  }
+}
 
 /*Main Image*/
 
