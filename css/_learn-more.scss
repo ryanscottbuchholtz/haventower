@@ -1,0 +1,28 @@
+/*Learn More*/
+
+.learn-more {
+  width: 100%;
+  height: 600px;
+  margin-top: $main-image-height + $header-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  background-color: #f1f1f1;
+}
+
+.learn-more-blocks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  height: 90%;
+  border: 1px solid grey;
+}
+
+.lm-block {
+  width: 30%;
+  height: 90%;
+  border: 1px solid grey;
+}

@@ -3,6 +3,7 @@
 @import '_normalize.scss';
 @import '_navigation.scss';
 @import '_main-image.scss';
+@import '_learn-more.scss';
 
 $body-font: 'roboto', sans-serif;
 
@@ -30,33 +31,7 @@ a {
 }
 
 
-/*Learn More*/
 
-.learn-more {
-  width: 100%;
-  height: 600px;
-  margin-top: $main-image-height;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f2f2f2;
-}
-
-.learn-more-blocks {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 90%;
-  margin: auto;
-  height: 90%;
-  border: 1px solid grey;
-}
-
-.lm-block {
-  width: 30%;
-  height: 90%;
-  border: 1px solid grey;
-}
 
 /*Testamonials*/
 
