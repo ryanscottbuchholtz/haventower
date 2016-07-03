@@ -2,27 +2,56 @@
 
 .learn-more {
   width: 100%;
-  height: 600px;
+  height: 700px;
   margin-top: $main-image-height + $header-height;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   display: none;
   background-color: #f1f1f1;
 }
 
 .learn-more-blocks {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 90%;
   margin: auto;
-  height: 90%;
-  border: 1px solid grey;
+  height: 100%;
+}
+
+.learn-block {
+  display: flex;
+  justify-content: center;
+}
+
+#learn-more-header {
+  padding-bottom: 45px;
+  // margin-top: -75px;
 }
 
 .lm-block {
-  width: 30%;
+  width: 33%;
   height: 90%;
-  border: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .fa {
+    color: $haventower-red;
+    padding-bottom: 25px;
+  }
+  h1 {
+    // padding-top: 25px;
+  }
+  p {
+    padding-top: 25px;
+    width: 90%;
+    text-align: center;
+    font-size: 1.0em;
+    color: darkgrey;
+    line-height: 1.5em;
+  }
+}
+
+.format-line {
+  width: 30%;
+  border-bottom: 1px solid $haventower-red;
 }
