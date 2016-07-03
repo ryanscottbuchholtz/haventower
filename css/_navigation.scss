@@ -93,12 +93,11 @@ $float-box-shadow: 0 15px 20px -12px rgba(0,0,0, 0.8);
   font-size: 0.8em;
 
   &:hover {
-    background-color: $header-nav-font-color;
+    background-color: $nav-hover-color;
     color: $header-background-color;
   }
 }
 
 #logo {
   margin-right: auto;
-  width: 5px;
 }
