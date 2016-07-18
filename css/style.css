@@ -15,7 +15,8 @@ html {
  * Remove the margin in all browsers (opinionated).
  */
 body,
-h1 {
+h1,
+h2 {
   margin: 0; }
 
 /* HTML5 display definitions
@@ -451,7 +452,7 @@ h1 {
 /*Main Image*/
 .main-image {
   position: relative;
-  background: url("../assets/fish.jpeg") center no-repeat;
+  background: url("../assets/AdobeStock_107961355.jpeg") center no-repeat;
   background-size: cover;
   width: 100%;
   height: 800px;
@@ -491,7 +492,7 @@ h1 {
 /*Learn More*/
 .learn-more {
   width: 100%;
-  height: 700px;
+  height: 815px;
   margin-top: 900px;
   display: none;
   background-color: #f1f1f1; }
@@ -519,8 +520,9 @@ h1 {
   flex-direction: column;
   align-items: center; }
   .lm-block .fa {
-    color: #E51B23;
-    padding-bottom: 25px; }
+    color: #E51B23; }
+  .lm-block h2 {
+    margin: 15px; }
   .lm-block p {
     padding-top: 25px;
     width: 90%;
@@ -533,6 +535,11 @@ h1 {
   width: 30%;
   border-bottom: 1px solid #E51B23; }
 
+.testamonials {
+  width: 100%;
+  height: 100vh;
+  opacity: .6; }
+
 /*Body*/
 body {
   font-family: "roboto", sans-serif;
@@ -543,12 +550,6 @@ a {
   color: inherit; }
   a:hover {
     cursor: pointer; }
-
-/*Testamonials*/
-.testamonials {
-  width: 100%;
-  height: 600px;
-  background-color: #f2f2f2; }
 
 /*Portfolio*/
 .portfolio {

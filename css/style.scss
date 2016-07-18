@@ -4,6 +4,7 @@
 @import '_navigation.scss';
 @import '_main-image.scss';
 @import '_learn-more.scss';
+@import '_testamonials.scss';
 
 $body-font: 'roboto', sans-serif;
 
@@ -28,14 +29,6 @@ a {
   &:hover {
     cursor: pointer;
   }
-}
-
-/*Testamonials*/
-
-.testamonials {
-  width: 100%;
-  height: 600px;
-  background-color: #f2f2f2;
 }
 
 /*Portfolio*/
