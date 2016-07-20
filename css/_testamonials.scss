@@ -1,13 +1,14 @@
 .testamonials {
   width: 100%;
-  // height: $main-image-height;
-  height: 100vh;
-  opacity: .6;
+  height: $main-image-height / 1.5;
+  opacity: 1.0;
 }
 
 #testamonials-background-image {
-  // background: url('../assets/AdobeStock_105033891.jpeg') center;
-  // background-size: cover;
+  background: url('../assets/AdobeStock_105033891.jpeg') center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
   
 
 }

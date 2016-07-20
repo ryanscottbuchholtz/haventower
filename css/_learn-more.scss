@@ -2,10 +2,11 @@
 
 .learn-more {
   width: 100%;
-  height: $main-image-height + 15px;
-  margin-top: $main-image-height + $header-height;
+  height: $main-image-height / 1.2;
+  position: absolute;
+  top: $main-image-height + $header-height;
   display: none;
-  background-color: #f1f1f1;
+  background-color: #fff;
 }
 
 .learn-more-blocks {
@@ -16,6 +17,14 @@
   width: 90%;
   margin: auto;
   height: 100%;
+  p {
+    color: grey;
+    padding-bottom: 8px;
+    width: 150px;
+    text-align: center;
+    // border-bottom: 1px solid grey;
+    text-transform: uppercase;
+  }
 }
 
 .learn-block {
@@ -24,13 +33,15 @@
 }
 
 #learn-more-header {
-  padding-bottom: 45px;
+  margin: 50px 0;
   // margin-top: -75px;
+  text-transform: uppercase;
+
 }
 
 .lm-block {
   width: 33%;
-  height: 90%;
+  height: 650px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,6 +58,7 @@
     font-size: 1.0em;
     color: darkgrey;
     line-height: 1.5em;
+    text-transform: none;
   }
 }
 
