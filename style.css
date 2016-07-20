@@ -15,7 +15,8 @@ html {
  * Remove the margin in all browsers (opinionated).
  */
 body,
-h1 {
+h1,
+h2 {
   margin: 0; }
 
 /* HTML5 display definitions
@@ -371,25 +372,32 @@ textarea {
 h1 {
   margin: 0; }
 
+ul {
+  padding: 0; }
+
 /*Navigation*/
 .main-header {
   width: 100%;
   display: flex;
   align-items: center;
   height: 100px;
-  background-color: #f1f1f1;
+  background-color: #fff;
   margin-top: 0;
   font-family: "Oswald", sans-serif;
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: 800px;
   left: 0;
-  box-shadow: 0 15px 20px -12px rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid #f2f2f2;
   z-index: 1;
   display: none; }
 
+.main-header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0; }
+
 .primary-nav-wrap {
   position: relative;
-  float: left;
   width: 100%;
   height: 80%;
   display: flex; }
@@ -401,9 +409,10 @@ h1 {
   color: #252932;
   display: flex;
   align-items: center;
-  width: 90%;
+  width: 100%;
   margin: auto;
-  height: 80%; }
+  height: 80%;
+  padding-left: 25px; }
   .navigation :hover > .nav-list-item-sublist {
     display: block; }
 
@@ -428,7 +437,7 @@ h1 {
   left: 0;
   padding: 5px 0px 0px 0px;
   color: #252932;
-  background-color: #f1f1f1;
+  background-color: #fff;
   text-align: center;
   list-style: none; }
 
@@ -439,10 +448,25 @@ h1 {
   font-size: 0.8em; }
   .nav-list-item-sublist-item:hover {
     background-color: #E51B23;
-    color: #f1f1f1; }
+    color: #fff; }
+
+.last-list-item {
+  margin-right: auto; }
+
+.first-list-item {
+  margin-left: 25px; }
+
+.social-media-first {
+  border-left: 1px solid #f2f2f2; }
+
+.social-media-last {
+  margin-right: 25px; }
+
+.social-media {
+  padding: 0px 10px; }
 
 #logo {
-  margin-right: auto;
+  padding: 0 100px;
   background: url(30135f9ef77df27c113d0640ee655f45.png) no-repeat;
   background-size: contain;
   height: 100px;
@@ -451,15 +475,13 @@ h1 {
 /*Main Image*/
 .main-image {
   position: relative;
-  background: url(cebad1c98e1c7dce918338b75d538f31.jpeg) center no-repeat;
+  background: url(cbd72fa486ba7f5d6ed996df8a603bfa.jpeg) center no-repeat;
   background-size: cover;
   width: 100%;
   height: 800px;
-  margin-top: 100px;
   position: fixed;
   top: 0;
-  left: 0;
-  z-index: -1; }
+  left: 0; }
 
 #main-image-logo-opacity-wrapper {
   position: fixed;
@@ -467,7 +489,6 @@ h1 {
   left: 0;
   width: 100%;
   height: 800px;
-  margin-top: 100px;
   background-color: white;
   opacity: 1.0; }
 
@@ -491,10 +512,11 @@ h1 {
 /*Learn More*/
 .learn-more {
   width: 100%;
-  height: 700px;
-  margin-top: 900px;
+  height: 666.66667px;
+  position: absolute;
+  top: 900px;
   display: none;
-  background-color: #f1f1f1; }
+  background-color: #fff; }
 
 .learn-more-blocks {
   display: flex;
@@ -504,34 +526,54 @@ h1 {
   width: 90%;
   margin: auto;
   height: 100%; }
+  .learn-more-blocks p {
+    color: grey;
+    padding-bottom: 8px;
+    width: 150px;
+    text-align: center;
+    text-transform: uppercase; }
 
 .learn-block {
   display: flex;
   justify-content: center; }
 
 #learn-more-header {
-  padding-bottom: 45px; }
+  margin: 50px 0;
+  text-transform: uppercase; }
 
 .lm-block {
   width: 33%;
-  height: 90%;
+  height: 650px;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .lm-block .fa {
-    color: #E51B23;
-    padding-bottom: 25px; }
+    color: #E51B23; }
+  .lm-block h2 {
+    margin: 15px; }
   .lm-block p {
     padding-top: 25px;
     width: 90%;
     text-align: center;
     font-size: 1.0em;
     color: darkgrey;
-    line-height: 1.5em; }
+    line-height: 1.5em;
+    text-transform: none; }
 
 .format-line {
   width: 30%;
   border-bottom: 1px solid #E51B23; }
+
+.testamonials {
+  width: 100%;
+  height: 533.33333px;
+  opacity: 1.0; }
+
+#testamonials-background-image {
+  background: url(968408fe2ccbb38325c43fba30adfd75.jpeg) center;
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
 
 /*Body*/
 body {
@@ -543,12 +585,6 @@ a {
   color: inherit; }
   a:hover {
     cursor: pointer; }
-
-/*Testamonials*/
-.testamonials {
-  width: 100%;
-  height: 600px;
-  background-color: #f2f2f2; }
 
 /*Portfolio*/
 .portfolio {
