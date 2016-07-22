@@ -512,22 +512,21 @@ ul {
 
 .main-image-headline {
   display: none;
-  padding-top: 75px;
   justify-content: flex-end;
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 20%;
-  margin-right: 120px;
   height: 800px;
   z-index: 2; }
   .main-image-headline h1 {
     color: #f9f9f9;
     font-size: 7em;
-    text-align: center;
     line-height: 1.5em;
     letter-spacing: 8px;
-    font-family: 'Permanent Marker', cursive; }
+    font-family: "Oswald", sans-serif;
+    border: 3px solid #E51B23;
+    height: 50%;
+    text-align: center;
+    margin-right: 75px;
+    margin-top: 45px;
+    padding: 25px; }
 
 /*Learn More*/
 .learn-more {
@@ -537,7 +536,7 @@ ul {
   top: 900px;
   display: none;
   background-color: #fff;
-  z-index: 99; }
+  z-index: 98; }
 
 .learn-more-blocks {
   display: flex;
@@ -588,12 +587,6 @@ ul {
   width: 100%;
   height: 533.33333px;
   opacity: 1.0; }
-
-#testamonials-background-image {
-  background: url(968408fe2ccbb38325c43fba30adfd75.jpeg) center;
-  background-size: cover;
-  width: 100%;
-  height: 100%; }
 
 /*Body*/
 body {
