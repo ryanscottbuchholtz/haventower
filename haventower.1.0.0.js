@@ -73,7 +73,7 @@
 	$(document).ready(function() {
 	  $('#main-image-logo-opacity-wrapper').delay(2000).fadeOut(4000);
 	  $('#main-image-logo-wrapper').delay(2000).fadeOut(4000);
-	  $('.main-header, .learn-more').fadeIn(6000).css('display', 'flex');
+	  $('.main-header, .learn-more, .main-image-headline').fadeIn(6000).css('display', 'flex');
 	
 	
 	
@@ -98,11 +98,11 @@
 	    // var headerTop = $('.primary-nav-wrap').offset().top;
 	
 	    if (headerTop <= windowTop) {
-	      $('.main-header').addClass('main-header-fixed');
+	      $('.main-header').addClass('sticky-header');
 	    } 
 	
 	    if (headerTop < 800) {
-	      $('.main-header').removeClass('main-header-fixed');
+	      $('.main-header').removeClass('sticky-header');
 	    }
 	
 	
