@@ -465,6 +465,17 @@ ul {
 
 .social-media {
   padding: 0px 10px; }
+  .social-media:hover {
+    font-size: 2em; }
+
+.fa-facebook:hover {
+  color: #3B5998; }
+
+.fa-twitter:hover {
+  color: #00aced; }
+
+.fa-linkedin:hover {
+  color: #007BB6; }
 
 #logo {
   padding: 0 100px;
