@@ -7,7 +7,11 @@ var $ = require('jquery');
 $(document).ready(function() {
   $('#main-image-logo-opacity-wrapper').delay(2000).fadeOut(4000);
   $('#main-image-logo-wrapper').delay(2000).fadeOut(4000);
-  $('.main-header, .learn-more, .main-image-headline').fadeIn(6000).css('display', 'flex');
+  $('.main-header').fadeIn(6000).css('display', 'flex');
+  $('.learn-more').fadeIn(6000).css('display', 'flex');
+  $('.main-image-headline').delay(2000).fadeIn(6000).delay(2000).css('display', 'flex');
+
+  // $('.main-header, .learn-more, .main-image-headline').delay(2000).fadeIn(6000).css('display', 'flex');
 
 
 
