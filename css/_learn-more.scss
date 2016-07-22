@@ -7,6 +7,7 @@
   top: $main-image-height + $header-height;
   display: none;
   background-color: #fff;
+  z-index: 99;
 }
 
 .learn-more-blocks {
@@ -19,12 +20,13 @@
   height: 100%;
   p {
     color: grey;
-    padding-bottom: 8px;
-    width: 150px;
-    text-align: center;
-    // border-bottom: 1px solid grey;
-    text-transform: uppercase;
   }
+  
+}
+
+#learn-more-lead {
+  padding: 17px;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .learn-block {
@@ -58,7 +60,6 @@
     font-size: 1.0em;
     color: darkgrey;
     line-height: 1.5em;
-    text-transform: none;
   }
 }
 
