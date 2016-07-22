@@ -10,6 +10,7 @@ $(document).ready(function() {
   $('.main-header').fadeIn(6000).css('display', 'flex');
   $('.learn-more').fadeIn(6000).css('display', 'flex');
   $('.main-image-headline').delay(2000).fadeIn(6000).delay(2000).css('display', 'flex');
+  $('.second-image').fadeIn(4000);
 
   // $('.main-header, .learn-more, .main-image-headline').delay(2000).fadeIn(6000).css('display', 'flex');
 
