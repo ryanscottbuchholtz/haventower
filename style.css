@@ -574,7 +574,7 @@ ul {
 
 .lm-block {
   width: 33%;
-  height: 650px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -594,10 +594,14 @@ ul {
   width: 30%;
   border-bottom: 1px solid #E51B23; }
 
-.testamonials {
+.second-image {
+  height: 800px;
   width: 100%;
-  height: 533.33333px;
-  opacity: 1.0; }
+  position: absolute;
+  top: 1566.66667px;
+  background: url(52b24c1cbb3800914d8cd1800847e73c.jpeg) center no-repeat;
+  background-size: cover;
+  display: none; }
 
 /*Body*/
 body {
