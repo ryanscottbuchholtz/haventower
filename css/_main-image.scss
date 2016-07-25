@@ -44,18 +44,20 @@
   display: none;
   justify-content: flex-end;
   height: $main-image-height;
-  z-index: 2;  
+  z-index: 2;
   h1 {
   color: #f9f9f9;
-  font-size: 7em;
-  line-height: 1.5em;
-  letter-spacing: 8px;
+  font-size: 4em;
+  line-height: 1.1em;
+  letter-spacing: 4px;
   font-family: $header-font;
   border: 3px solid $haventower-red;
-  height: 50%;
+  height: 25%;
   text-align: center;
   margin-right: 75px;
   margin-top: 45px;
   padding: 25px;
+  text-transform: uppercase;
+  box-shadow: $stand-out-shadow;
   }
 }

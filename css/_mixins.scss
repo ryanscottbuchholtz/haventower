@@ -3,3 +3,10 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin absolute_position_center {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}

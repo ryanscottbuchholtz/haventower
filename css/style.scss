@@ -5,12 +5,15 @@
 @import '_main-image.scss';
 @import '_learn-more.scss';
 @import '_second-image.scss';
+@import 'slick/slick.scss';
+// @import 'slick/slick-theme.css';
 @import '_testamonials.scss';
 @import '_portfolio.scss';
 
 
 // * {
-//   border: 1px solid orange;
+//   min-height: 0;
+//   min-width: 0;
 // }
 
 /*Body*/
@@ -29,44 +32,8 @@ a {
   }
 }
 
-/*Portfolio*/
-
-.portfolio {
+.body-wrap {
+  position: absolute;
+  top: $main-image-height + $header-height;
   width: 100%;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #f2f2f2;
-}
-
-.portfolio-logos {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 90%;
-  height: 80%;
-}
-
-.partner {
-  width: 15%;
-  height: 40%;
-  box-shadow: $float-box-shadow;
-}
-
-
-/*work*/
-
-.work {
-  width: 100%;
-  height: 600px;
-  background-color: #f2f2f2;
-}
-
-/*Footer*/
-
-.footer {
-  width: 100%;
-  height: 100px;
-  background: #f2f2f2
 }

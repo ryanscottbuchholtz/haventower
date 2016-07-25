@@ -1,7 +1,13 @@
+var $ = require('jquery');
+
 require("../css/style.css");
 require("font-awesome-webpack");
+require("slick-carousel");
 
-var $ = require('jquery');
+// import 'slick-carousel/slick/slick.css';
+// import 'slick-carousel/slick/slick-theme.css';
+
+
 
 
 $(document).ready(function() {
@@ -14,6 +20,12 @@ $(document).ready(function() {
 
   // $('.main-header, .learn-more, .main-image-headline').delay(2000).fadeIn(6000).css('display', 'flex');
 
+  $('.testimonials').slick({
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 6000
+  });
 
 
   $(window).scroll( function() {
@@ -21,8 +33,8 @@ $(document).ready(function() {
     var windowTop = $(window).scrollTop();
     var headerTop = $('.main-header').offset().top;
 
-    console.log(windowTop + ' = windowTop');
-    console.log(headerTop + ' = headerTop');
+    // console.log(windowTop + ' = windowTop');
+    // console.log(headerTop + ' = headerTop');
 
 
   //   if(windowTop < 800) {
