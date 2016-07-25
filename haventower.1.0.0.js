@@ -64,10 +64,16 @@
 /* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(15);
-	__webpack_require__(22);
+	var $ = __webpack_require__(15);
 	
-	var $ = __webpack_require__(33);
+	__webpack_require__(16);
+	__webpack_require__(30);
+	__webpack_require__(41);
+	
+	// import 'slick-carousel/slick/slick.css';
+	// import 'slick-carousel/slick/slick-theme.css';
+	
+	
 	
 	
 	$(document).ready(function() {
@@ -80,6 +86,12 @@
 	
 	  // $('.main-header, .learn-more, .main-image-headline').delay(2000).fadeIn(6000).css('display', 'flex');
 	
+	  $('.testimonials').slick({
+	    dots: true,
+	    infinite: true,
+	    autoplay: true,
+	    autoplaySpeed: 6000
+	  });
 	
 	
 	  $(window).scroll( function() {
@@ -87,8 +99,8 @@
 	    var windowTop = $(window).scrollTop();
 	    var headerTop = $('.main-header').offset().top;
 	
-	    console.log(windowTop + ' = windowTop');
-	    console.log(headerTop + ' = headerTop');
+	    // console.log(windowTop + ' = windowTop');
+	    // console.log(headerTop + ' = headerTop');
 	
 	
 	  //   if(windowTop < 800) {
@@ -121,382 +133,6 @@
 
 /***/ },
 /* 15 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 16 */,
-/* 17 */,
-/* 18 */,
-/* 19 */,
-/* 20 */,
-/* 21 */,
-/* 22 */
-/***/ function(module, exports, __webpack_require__) {
-
-	__webpack_require__(23);
-
-
-/***/ },
-/* 23 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(24);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(32)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./node_modules/css-loader/index.js!./../less-loader/index.js!./font-awesome-styles.loader.js!./font-awesome.config.js", function() {
-				var newContent = require("!!./node_modules/css-loader/index.js!./../less-loader/index.js!./font-awesome-styles.loader.js!./font-awesome.config.js");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 24 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(25)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, ".fa-border {\n  padding: .2em .25em .15em;\n  border: solid 0.08em #eee;\n  border-radius: .1em;\n}\n.fa-pull-left {\n  float: left;\n}\n.fa-pull-right {\n  float: right;\n}\n.fa.fa-pull-left {\n  margin-right: .3em;\n}\n.fa.fa-pull-right {\n  margin-left: .3em;\n}\n/* Deprecated as of 4.4.0 */\n.pull-right {\n  float: right;\n}\n.pull-left {\n  float: left;\n}\n.fa.pull-left {\n  margin-right: .3em;\n}\n.fa.pull-right {\n  margin-left: .3em;\n}\n.fa {\n  display: inline-block;\n  font: normal normal normal 14px/1 FontAwesome;\n  font-size: inherit;\n  text-rendering: auto;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.fa-fw {\n  width: 1.28571429em;\n  text-align: center;\n}\n/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen\n   readers do not read off random characters that represent icons */\n.fa-glass:before {\n  content: \"\\F000\";\n}\n.fa-music:before {\n  content: \"\\F001\";\n}\n.fa-search:before {\n  content: \"\\F002\";\n}\n.fa-envelope-o:before {\n  content: \"\\F003\";\n}\n.fa-heart:before {\n  content: \"\\F004\";\n}\n.fa-star:before {\n  content: \"\\F005\";\n}\n.fa-star-o:before {\n  content: \"\\F006\";\n}\n.fa-user:before {\n  content: \"\\F007\";\n}\n.fa-film:before {\n  content: \"\\F008\";\n}\n.fa-th-large:before {\n  content: \"\\F009\";\n}\n.fa-th:before {\n  content: \"\\F00A\";\n}\n.fa-th-list:before {\n  content: \"\\F00B\";\n}\n.fa-check:before {\n  content: \"\\F00C\";\n}\n.fa-remove:before,\n.fa-close:before,\n.fa-times:before {\n  content: \"\\F00D\";\n}\n.fa-search-plus:before {\n  content: \"\\F00E\";\n}\n.fa-search-minus:before {\n  content: \"\\F010\";\n}\n.fa-power-off:before {\n  content: \"\\F011\";\n}\n.fa-signal:before {\n  content: \"\\F012\";\n}\n.fa-gear:before,\n.fa-cog:before {\n  content: \"\\F013\";\n}\n.fa-trash-o:before {\n  content: \"\\F014\";\n}\n.fa-home:before {\n  content: \"\\F015\";\n}\n.fa-file-o:before {\n  content: \"\\F016\";\n}\n.fa-clock-o:before {\n  content: \"\\F017\";\n}\n.fa-road:before {\n  content: \"\\F018\";\n}\n.fa-download:before {\n  content: \"\\F019\";\n}\n.fa-arrow-circle-o-down:before {\n  content: \"\\F01A\";\n}\n.fa-arrow-circle-o-up:before {\n  content: \"\\F01B\";\n}\n.fa-inbox:before {\n  content: \"\\F01C\";\n}\n.fa-play-circle-o:before {\n  content: \"\\F01D\";\n}\n.fa-rotate-right:before,\n.fa-repeat:before {\n  content: \"\\F01E\";\n}\n.fa-refresh:before {\n  content: \"\\F021\";\n}\n.fa-list-alt:before {\n  content: \"\\F022\";\n}\n.fa-lock:before {\n  content: \"\\F023\";\n}\n.fa-flag:before {\n  content: \"\\F024\";\n}\n.fa-headphones:before {\n  content: \"\\F025\";\n}\n.fa-volume-off:before {\n  content: \"\\F026\";\n}\n.fa-volume-down:before {\n  content: \"\\F027\";\n}\n.fa-volume-up:before {\n  content: \"\\F028\";\n}\n.fa-qrcode:before {\n  content: \"\\F029\";\n}\n.fa-barcode:before {\n  content: \"\\F02A\";\n}\n.fa-tag:before {\n  content: \"\\F02B\";\n}\n.fa-tags:before {\n  content: \"\\F02C\";\n}\n.fa-book:before {\n  content: \"\\F02D\";\n}\n.fa-bookmark:before {\n  content: \"\\F02E\";\n}\n.fa-print:before {\n  content: \"\\F02F\";\n}\n.fa-camera:before {\n  content: \"\\F030\";\n}\n.fa-font:before {\n  content: \"\\F031\";\n}\n.fa-bold:before {\n  content: \"\\F032\";\n}\n.fa-italic:before {\n  content: \"\\F033\";\n}\n.fa-text-height:before {\n  content: \"\\F034\";\n}\n.fa-text-width:before {\n  content: \"\\F035\";\n}\n.fa-align-left:before {\n  content: \"\\F036\";\n}\n.fa-align-center:before {\n  content: \"\\F037\";\n}\n.fa-align-right:before {\n  content: \"\\F038\";\n}\n.fa-align-justify:before {\n  content: \"\\F039\";\n}\n.fa-list:before {\n  content: \"\\F03A\";\n}\n.fa-dedent:before,\n.fa-outdent:before {\n  content: \"\\F03B\";\n}\n.fa-indent:before {\n  content: \"\\F03C\";\n}\n.fa-video-camera:before {\n  content: \"\\F03D\";\n}\n.fa-photo:before,\n.fa-image:before,\n.fa-picture-o:before {\n  content: \"\\F03E\";\n}\n.fa-pencil:before {\n  content: \"\\F040\";\n}\n.fa-map-marker:before {\n  content: \"\\F041\";\n}\n.fa-adjust:before {\n  content: \"\\F042\";\n}\n.fa-tint:before {\n  content: \"\\F043\";\n}\n.fa-edit:before,\n.fa-pencil-square-o:before {\n  content: \"\\F044\";\n}\n.fa-share-square-o:before {\n  content: \"\\F045\";\n}\n.fa-check-square-o:before {\n  content: \"\\F046\";\n}\n.fa-arrows:before {\n  content: \"\\F047\";\n}\n.fa-step-backward:before {\n  content: \"\\F048\";\n}\n.fa-fast-backward:before {\n  content: \"\\F049\";\n}\n.fa-backward:before {\n  content: \"\\F04A\";\n}\n.fa-play:before {\n  content: \"\\F04B\";\n}\n.fa-pause:before {\n  content: \"\\F04C\";\n}\n.fa-stop:before {\n  content: \"\\F04D\";\n}\n.fa-forward:before {\n  content: \"\\F04E\";\n}\n.fa-fast-forward:before {\n  content: \"\\F050\";\n}\n.fa-step-forward:before {\n  content: \"\\F051\";\n}\n.fa-eject:before {\n  content: \"\\F052\";\n}\n.fa-chevron-left:before {\n  content: \"\\F053\";\n}\n.fa-chevron-right:before {\n  content: \"\\F054\";\n}\n.fa-plus-circle:before {\n  content: \"\\F055\";\n}\n.fa-minus-circle:before {\n  content: \"\\F056\";\n}\n.fa-times-circle:before {\n  content: \"\\F057\";\n}\n.fa-check-circle:before {\n  content: \"\\F058\";\n}\n.fa-question-circle:before {\n  content: \"\\F059\";\n}\n.fa-info-circle:before {\n  content: \"\\F05A\";\n}\n.fa-crosshairs:before {\n  content: \"\\F05B\";\n}\n.fa-times-circle-o:before {\n  content: \"\\F05C\";\n}\n.fa-check-circle-o:before {\n  content: \"\\F05D\";\n}\n.fa-ban:before {\n  content: \"\\F05E\";\n}\n.fa-arrow-left:before {\n  content: \"\\F060\";\n}\n.fa-arrow-right:before {\n  content: \"\\F061\";\n}\n.fa-arrow-up:before {\n  content: \"\\F062\";\n}\n.fa-arrow-down:before {\n  content: \"\\F063\";\n}\n.fa-mail-forward:before,\n.fa-share:before {\n  content: \"\\F064\";\n}\n.fa-expand:before {\n  content: \"\\F065\";\n}\n.fa-compress:before {\n  content: \"\\F066\";\n}\n.fa-plus:before {\n  content: \"\\F067\";\n}\n.fa-minus:before {\n  content: \"\\F068\";\n}\n.fa-asterisk:before {\n  content: \"\\F069\";\n}\n.fa-exclamation-circle:before {\n  content: \"\\F06A\";\n}\n.fa-gift:before {\n  content: \"\\F06B\";\n}\n.fa-leaf:before {\n  content: \"\\F06C\";\n}\n.fa-fire:before {\n  content: \"\\F06D\";\n}\n.fa-eye:before {\n  content: \"\\F06E\";\n}\n.fa-eye-slash:before {\n  content: \"\\F070\";\n}\n.fa-warning:before,\n.fa-exclamation-triangle:before {\n  content: \"\\F071\";\n}\n.fa-plane:before {\n  content: \"\\F072\";\n}\n.fa-calendar:before {\n  content: \"\\F073\";\n}\n.fa-random:before {\n  content: \"\\F074\";\n}\n.fa-comment:before {\n  content: \"\\F075\";\n}\n.fa-magnet:before {\n  content: \"\\F076\";\n}\n.fa-chevron-up:before {\n  content: \"\\F077\";\n}\n.fa-chevron-down:before {\n  content: \"\\F078\";\n}\n.fa-retweet:before {\n  content: \"\\F079\";\n}\n.fa-shopping-cart:before {\n  content: \"\\F07A\";\n}\n.fa-folder:before {\n  content: \"\\F07B\";\n}\n.fa-folder-open:before {\n  content: \"\\F07C\";\n}\n.fa-arrows-v:before {\n  content: \"\\F07D\";\n}\n.fa-arrows-h:before {\n  content: \"\\F07E\";\n}\n.fa-bar-chart-o:before,\n.fa-bar-chart:before {\n  content: \"\\F080\";\n}\n.fa-twitter-square:before {\n  content: \"\\F081\";\n}\n.fa-facebook-square:before {\n  content: \"\\F082\";\n}\n.fa-camera-retro:before {\n  content: \"\\F083\";\n}\n.fa-key:before {\n  content: \"\\F084\";\n}\n.fa-gears:before,\n.fa-cogs:before {\n  content: \"\\F085\";\n}\n.fa-comments:before {\n  content: \"\\F086\";\n}\n.fa-thumbs-o-up:before {\n  content: \"\\F087\";\n}\n.fa-thumbs-o-down:before {\n  content: \"\\F088\";\n}\n.fa-star-half:before {\n  content: \"\\F089\";\n}\n.fa-heart-o:before {\n  content: \"\\F08A\";\n}\n.fa-sign-out:before {\n  content: \"\\F08B\";\n}\n.fa-linkedin-square:before {\n  content: \"\\F08C\";\n}\n.fa-thumb-tack:before {\n  content: \"\\F08D\";\n}\n.fa-external-link:before {\n  content: \"\\F08E\";\n}\n.fa-sign-in:before {\n  content: \"\\F090\";\n}\n.fa-trophy:before {\n  content: \"\\F091\";\n}\n.fa-github-square:before {\n  content: \"\\F092\";\n}\n.fa-upload:before {\n  content: \"\\F093\";\n}\n.fa-lemon-o:before {\n  content: \"\\F094\";\n}\n.fa-phone:before {\n  content: \"\\F095\";\n}\n.fa-square-o:before {\n  content: \"\\F096\";\n}\n.fa-bookmark-o:before {\n  content: \"\\F097\";\n}\n.fa-phone-square:before {\n  content: \"\\F098\";\n}\n.fa-twitter:before {\n  content: \"\\F099\";\n}\n.fa-facebook-f:before,\n.fa-facebook:before {\n  content: \"\\F09A\";\n}\n.fa-github:before {\n  content: \"\\F09B\";\n}\n.fa-unlock:before {\n  content: \"\\F09C\";\n}\n.fa-credit-card:before {\n  content: \"\\F09D\";\n}\n.fa-feed:before,\n.fa-rss:before {\n  content: \"\\F09E\";\n}\n.fa-hdd-o:before {\n  content: \"\\F0A0\";\n}\n.fa-bullhorn:before {\n  content: \"\\F0A1\";\n}\n.fa-bell:before {\n  content: \"\\F0F3\";\n}\n.fa-certificate:before {\n  content: \"\\F0A3\";\n}\n.fa-hand-o-right:before {\n  content: \"\\F0A4\";\n}\n.fa-hand-o-left:before {\n  content: \"\\F0A5\";\n}\n.fa-hand-o-up:before {\n  content: \"\\F0A6\";\n}\n.fa-hand-o-down:before {\n  content: \"\\F0A7\";\n}\n.fa-arrow-circle-left:before {\n  content: \"\\F0A8\";\n}\n.fa-arrow-circle-right:before {\n  content: \"\\F0A9\";\n}\n.fa-arrow-circle-up:before {\n  content: \"\\F0AA\";\n}\n.fa-arrow-circle-down:before {\n  content: \"\\F0AB\";\n}\n.fa-globe:before {\n  content: \"\\F0AC\";\n}\n.fa-wrench:before {\n  content: \"\\F0AD\";\n}\n.fa-tasks:before {\n  content: \"\\F0AE\";\n}\n.fa-filter:before {\n  content: \"\\F0B0\";\n}\n.fa-briefcase:before {\n  content: \"\\F0B1\";\n}\n.fa-arrows-alt:before {\n  content: \"\\F0B2\";\n}\n.fa-group:before,\n.fa-users:before {\n  content: \"\\F0C0\";\n}\n.fa-chain:before,\n.fa-link:before {\n  content: \"\\F0C1\";\n}\n.fa-cloud:before {\n  content: \"\\F0C2\";\n}\n.fa-flask:before {\n  content: \"\\F0C3\";\n}\n.fa-cut:before,\n.fa-scissors:before {\n  content: \"\\F0C4\";\n}\n.fa-copy:before,\n.fa-files-o:before {\n  content: \"\\F0C5\";\n}\n.fa-paperclip:before {\n  content: \"\\F0C6\";\n}\n.fa-save:before,\n.fa-floppy-o:before {\n  content: \"\\F0C7\";\n}\n.fa-square:before {\n  content: \"\\F0C8\";\n}\n.fa-navicon:before,\n.fa-reorder:before,\n.fa-bars:before {\n  content: \"\\F0C9\";\n}\n.fa-list-ul:before {\n  content: \"\\F0CA\";\n}\n.fa-list-ol:before {\n  content: \"\\F0CB\";\n}\n.fa-strikethrough:before {\n  content: \"\\F0CC\";\n}\n.fa-underline:before {\n  content: \"\\F0CD\";\n}\n.fa-table:before {\n  content: \"\\F0CE\";\n}\n.fa-magic:before {\n  content: \"\\F0D0\";\n}\n.fa-truck:before {\n  content: \"\\F0D1\";\n}\n.fa-pinterest:before {\n  content: \"\\F0D2\";\n}\n.fa-pinterest-square:before {\n  content: \"\\F0D3\";\n}\n.fa-google-plus-square:before {\n  content: \"\\F0D4\";\n}\n.fa-google-plus:before {\n  content: \"\\F0D5\";\n}\n.fa-money:before {\n  content: \"\\F0D6\";\n}\n.fa-caret-down:before {\n  content: \"\\F0D7\";\n}\n.fa-caret-up:before {\n  content: \"\\F0D8\";\n}\n.fa-caret-left:before {\n  content: \"\\F0D9\";\n}\n.fa-caret-right:before {\n  content: \"\\F0DA\";\n}\n.fa-columns:before {\n  content: \"\\F0DB\";\n}\n.fa-unsorted:before,\n.fa-sort:before {\n  content: \"\\F0DC\";\n}\n.fa-sort-down:before,\n.fa-sort-desc:before {\n  content: \"\\F0DD\";\n}\n.fa-sort-up:before,\n.fa-sort-asc:before {\n  content: \"\\F0DE\";\n}\n.fa-envelope:before {\n  content: \"\\F0E0\";\n}\n.fa-linkedin:before {\n  content: \"\\F0E1\";\n}\n.fa-rotate-left:before,\n.fa-undo:before {\n  content: \"\\F0E2\";\n}\n.fa-legal:before,\n.fa-gavel:before {\n  content: \"\\F0E3\";\n}\n.fa-dashboard:before,\n.fa-tachometer:before {\n  content: \"\\F0E4\";\n}\n.fa-comment-o:before {\n  content: \"\\F0E5\";\n}\n.fa-comments-o:before {\n  content: \"\\F0E6\";\n}\n.fa-flash:before,\n.fa-bolt:before {\n  content: \"\\F0E7\";\n}\n.fa-sitemap:before {\n  content: \"\\F0E8\";\n}\n.fa-umbrella:before {\n  content: \"\\F0E9\";\n}\n.fa-paste:before,\n.fa-clipboard:before {\n  content: \"\\F0EA\";\n}\n.fa-lightbulb-o:before {\n  content: \"\\F0EB\";\n}\n.fa-exchange:before {\n  content: \"\\F0EC\";\n}\n.fa-cloud-download:before {\n  content: \"\\F0ED\";\n}\n.fa-cloud-upload:before {\n  content: \"\\F0EE\";\n}\n.fa-user-md:before {\n  content: \"\\F0F0\";\n}\n.fa-stethoscope:before {\n  content: \"\\F0F1\";\n}\n.fa-suitcase:before {\n  content: \"\\F0F2\";\n}\n.fa-bell-o:before {\n  content: \"\\F0A2\";\n}\n.fa-coffee:before {\n  content: \"\\F0F4\";\n}\n.fa-cutlery:before {\n  content: \"\\F0F5\";\n}\n.fa-file-text-o:before {\n  content: \"\\F0F6\";\n}\n.fa-building-o:before {\n  content: \"\\F0F7\";\n}\n.fa-hospital-o:before {\n  content: \"\\F0F8\";\n}\n.fa-ambulance:before {\n  content: \"\\F0F9\";\n}\n.fa-medkit:before {\n  content: \"\\F0FA\";\n}\n.fa-fighter-jet:before {\n  content: \"\\F0FB\";\n}\n.fa-beer:before {\n  content: \"\\F0FC\";\n}\n.fa-h-square:before {\n  content: \"\\F0FD\";\n}\n.fa-plus-square:before {\n  content: \"\\F0FE\";\n}\n.fa-angle-double-left:before {\n  content: \"\\F100\";\n}\n.fa-angle-double-right:before {\n  content: \"\\F101\";\n}\n.fa-angle-double-up:before {\n  content: \"\\F102\";\n}\n.fa-angle-double-down:before {\n  content: \"\\F103\";\n}\n.fa-angle-left:before {\n  content: \"\\F104\";\n}\n.fa-angle-right:before {\n  content: \"\\F105\";\n}\n.fa-angle-up:before {\n  content: \"\\F106\";\n}\n.fa-angle-down:before {\n  content: \"\\F107\";\n}\n.fa-desktop:before {\n  content: \"\\F108\";\n}\n.fa-laptop:before {\n  content: \"\\F109\";\n}\n.fa-tablet:before {\n  content: \"\\F10A\";\n}\n.fa-mobile-phone:before,\n.fa-mobile:before {\n  content: \"\\F10B\";\n}\n.fa-circle-o:before {\n  content: \"\\F10C\";\n}\n.fa-quote-left:before {\n  content: \"\\F10D\";\n}\n.fa-quote-right:before {\n  content: \"\\F10E\";\n}\n.fa-spinner:before {\n  content: \"\\F110\";\n}\n.fa-circle:before {\n  content: \"\\F111\";\n}\n.fa-mail-reply:before,\n.fa-reply:before {\n  content: \"\\F112\";\n}\n.fa-github-alt:before {\n  content: \"\\F113\";\n}\n.fa-folder-o:before {\n  content: \"\\F114\";\n}\n.fa-folder-open-o:before {\n  content: \"\\F115\";\n}\n.fa-smile-o:before {\n  content: \"\\F118\";\n}\n.fa-frown-o:before {\n  content: \"\\F119\";\n}\n.fa-meh-o:before {\n  content: \"\\F11A\";\n}\n.fa-gamepad:before {\n  content: \"\\F11B\";\n}\n.fa-keyboard-o:before {\n  content: \"\\F11C\";\n}\n.fa-flag-o:before {\n  content: \"\\F11D\";\n}\n.fa-flag-checkered:before {\n  content: \"\\F11E\";\n}\n.fa-terminal:before {\n  content: \"\\F120\";\n}\n.fa-code:before {\n  content: \"\\F121\";\n}\n.fa-mail-reply-all:before,\n.fa-reply-all:before {\n  content: \"\\F122\";\n}\n.fa-star-half-empty:before,\n.fa-star-half-full:before,\n.fa-star-half-o:before {\n  content: \"\\F123\";\n}\n.fa-location-arrow:before {\n  content: \"\\F124\";\n}\n.fa-crop:before {\n  content: \"\\F125\";\n}\n.fa-code-fork:before {\n  content: \"\\F126\";\n}\n.fa-unlink:before,\n.fa-chain-broken:before {\n  content: \"\\F127\";\n}\n.fa-question:before {\n  content: \"\\F128\";\n}\n.fa-info:before {\n  content: \"\\F129\";\n}\n.fa-exclamation:before {\n  content: \"\\F12A\";\n}\n.fa-superscript:before {\n  content: \"\\F12B\";\n}\n.fa-subscript:before {\n  content: \"\\F12C\";\n}\n.fa-eraser:before {\n  content: \"\\F12D\";\n}\n.fa-puzzle-piece:before {\n  content: \"\\F12E\";\n}\n.fa-microphone:before {\n  content: \"\\F130\";\n}\n.fa-microphone-slash:before {\n  content: \"\\F131\";\n}\n.fa-shield:before {\n  content: \"\\F132\";\n}\n.fa-calendar-o:before {\n  content: \"\\F133\";\n}\n.fa-fire-extinguisher:before {\n  content: \"\\F134\";\n}\n.fa-rocket:before {\n  content: \"\\F135\";\n}\n.fa-maxcdn:before {\n  content: \"\\F136\";\n}\n.fa-chevron-circle-left:before {\n  content: \"\\F137\";\n}\n.fa-chevron-circle-right:before {\n  content: \"\\F138\";\n}\n.fa-chevron-circle-up:before {\n  content: \"\\F139\";\n}\n.fa-chevron-circle-down:before {\n  content: \"\\F13A\";\n}\n.fa-html5:before {\n  content: \"\\F13B\";\n}\n.fa-css3:before {\n  content: \"\\F13C\";\n}\n.fa-anchor:before {\n  content: \"\\F13D\";\n}\n.fa-unlock-alt:before {\n  content: \"\\F13E\";\n}\n.fa-bullseye:before {\n  content: \"\\F140\";\n}\n.fa-ellipsis-h:before {\n  content: \"\\F141\";\n}\n.fa-ellipsis-v:before {\n  content: \"\\F142\";\n}\n.fa-rss-square:before {\n  content: \"\\F143\";\n}\n.fa-play-circle:before {\n  content: \"\\F144\";\n}\n.fa-ticket:before {\n  content: \"\\F145\";\n}\n.fa-minus-square:before {\n  content: \"\\F146\";\n}\n.fa-minus-square-o:before {\n  content: \"\\F147\";\n}\n.fa-level-up:before {\n  content: \"\\F148\";\n}\n.fa-level-down:before {\n  content: \"\\F149\";\n}\n.fa-check-square:before {\n  content: \"\\F14A\";\n}\n.fa-pencil-square:before {\n  content: \"\\F14B\";\n}\n.fa-external-link-square:before {\n  content: \"\\F14C\";\n}\n.fa-share-square:before {\n  content: \"\\F14D\";\n}\n.fa-compass:before {\n  content: \"\\F14E\";\n}\n.fa-toggle-down:before,\n.fa-caret-square-o-down:before {\n  content: \"\\F150\";\n}\n.fa-toggle-up:before,\n.fa-caret-square-o-up:before {\n  content: \"\\F151\";\n}\n.fa-toggle-right:before,\n.fa-caret-square-o-right:before {\n  content: \"\\F152\";\n}\n.fa-euro:before,\n.fa-eur:before {\n  content: \"\\F153\";\n}\n.fa-gbp:before {\n  content: \"\\F154\";\n}\n.fa-dollar:before,\n.fa-usd:before {\n  content: \"\\F155\";\n}\n.fa-rupee:before,\n.fa-inr:before {\n  content: \"\\F156\";\n}\n.fa-cny:before,\n.fa-rmb:before,\n.fa-yen:before,\n.fa-jpy:before {\n  content: \"\\F157\";\n}\n.fa-ruble:before,\n.fa-rouble:before,\n.fa-rub:before {\n  content: \"\\F158\";\n}\n.fa-won:before,\n.fa-krw:before {\n  content: \"\\F159\";\n}\n.fa-bitcoin:before,\n.fa-btc:before {\n  content: \"\\F15A\";\n}\n.fa-file:before {\n  content: \"\\F15B\";\n}\n.fa-file-text:before {\n  content: \"\\F15C\";\n}\n.fa-sort-alpha-asc:before {\n  content: \"\\F15D\";\n}\n.fa-sort-alpha-desc:before {\n  content: \"\\F15E\";\n}\n.fa-sort-amount-asc:before {\n  content: \"\\F160\";\n}\n.fa-sort-amount-desc:before {\n  content: \"\\F161\";\n}\n.fa-sort-numeric-asc:before {\n  content: \"\\F162\";\n}\n.fa-sort-numeric-desc:before {\n  content: \"\\F163\";\n}\n.fa-thumbs-up:before {\n  content: \"\\F164\";\n}\n.fa-thumbs-down:before {\n  content: \"\\F165\";\n}\n.fa-youtube-square:before {\n  content: \"\\F166\";\n}\n.fa-youtube:before {\n  content: \"\\F167\";\n}\n.fa-xing:before {\n  content: \"\\F168\";\n}\n.fa-xing-square:before {\n  content: \"\\F169\";\n}\n.fa-youtube-play:before {\n  content: \"\\F16A\";\n}\n.fa-dropbox:before {\n  content: \"\\F16B\";\n}\n.fa-stack-overflow:before {\n  content: \"\\F16C\";\n}\n.fa-instagram:before {\n  content: \"\\F16D\";\n}\n.fa-flickr:before {\n  content: \"\\F16E\";\n}\n.fa-adn:before {\n  content: \"\\F170\";\n}\n.fa-bitbucket:before {\n  content: \"\\F171\";\n}\n.fa-bitbucket-square:before {\n  content: \"\\F172\";\n}\n.fa-tumblr:before {\n  content: \"\\F173\";\n}\n.fa-tumblr-square:before {\n  content: \"\\F174\";\n}\n.fa-long-arrow-down:before {\n  content: \"\\F175\";\n}\n.fa-long-arrow-up:before {\n  content: \"\\F176\";\n}\n.fa-long-arrow-left:before {\n  content: \"\\F177\";\n}\n.fa-long-arrow-right:before {\n  content: \"\\F178\";\n}\n.fa-apple:before {\n  content: \"\\F179\";\n}\n.fa-windows:before {\n  content: \"\\F17A\";\n}\n.fa-android:before {\n  content: \"\\F17B\";\n}\n.fa-linux:before {\n  content: \"\\F17C\";\n}\n.fa-dribbble:before {\n  content: \"\\F17D\";\n}\n.fa-skype:before {\n  content: \"\\F17E\";\n}\n.fa-foursquare:before {\n  content: \"\\F180\";\n}\n.fa-trello:before {\n  content: \"\\F181\";\n}\n.fa-female:before {\n  content: \"\\F182\";\n}\n.fa-male:before {\n  content: \"\\F183\";\n}\n.fa-gittip:before,\n.fa-gratipay:before {\n  content: \"\\F184\";\n}\n.fa-sun-o:before {\n  content: \"\\F185\";\n}\n.fa-moon-o:before {\n  content: \"\\F186\";\n}\n.fa-archive:before {\n  content: \"\\F187\";\n}\n.fa-bug:before {\n  content: \"\\F188\";\n}\n.fa-vk:before {\n  content: \"\\F189\";\n}\n.fa-weibo:before {\n  content: \"\\F18A\";\n}\n.fa-renren:before {\n  content: \"\\F18B\";\n}\n.fa-pagelines:before {\n  content: \"\\F18C\";\n}\n.fa-stack-exchange:before {\n  content: \"\\F18D\";\n}\n.fa-arrow-circle-o-right:before {\n  content: \"\\F18E\";\n}\n.fa-arrow-circle-o-left:before {\n  content: \"\\F190\";\n}\n.fa-toggle-left:before,\n.fa-caret-square-o-left:before {\n  content: \"\\F191\";\n}\n.fa-dot-circle-o:before {\n  content: \"\\F192\";\n}\n.fa-wheelchair:before {\n  content: \"\\F193\";\n}\n.fa-vimeo-square:before {\n  content: \"\\F194\";\n}\n.fa-turkish-lira:before,\n.fa-try:before {\n  content: \"\\F195\";\n}\n.fa-plus-square-o:before {\n  content: \"\\F196\";\n}\n.fa-space-shuttle:before {\n  content: \"\\F197\";\n}\n.fa-slack:before {\n  content: \"\\F198\";\n}\n.fa-envelope-square:before {\n  content: \"\\F199\";\n}\n.fa-wordpress:before {\n  content: \"\\F19A\";\n}\n.fa-openid:before {\n  content: \"\\F19B\";\n}\n.fa-institution:before,\n.fa-bank:before,\n.fa-university:before {\n  content: \"\\F19C\";\n}\n.fa-mortar-board:before,\n.fa-graduation-cap:before {\n  content: \"\\F19D\";\n}\n.fa-yahoo:before {\n  content: \"\\F19E\";\n}\n.fa-google:before {\n  content: \"\\F1A0\";\n}\n.fa-reddit:before {\n  content: \"\\F1A1\";\n}\n.fa-reddit-square:before {\n  content: \"\\F1A2\";\n}\n.fa-stumbleupon-circle:before {\n  content: \"\\F1A3\";\n}\n.fa-stumbleupon:before {\n  content: \"\\F1A4\";\n}\n.fa-delicious:before {\n  content: \"\\F1A5\";\n}\n.fa-digg:before {\n  content: \"\\F1A6\";\n}\n.fa-pied-piper-pp:before {\n  content: \"\\F1A7\";\n}\n.fa-pied-piper-alt:before {\n  content: \"\\F1A8\";\n}\n.fa-drupal:before {\n  content: \"\\F1A9\";\n}\n.fa-joomla:before {\n  content: \"\\F1AA\";\n}\n.fa-language:before {\n  content: \"\\F1AB\";\n}\n.fa-fax:before {\n  content: \"\\F1AC\";\n}\n.fa-building:before {\n  content: \"\\F1AD\";\n}\n.fa-child:before {\n  content: \"\\F1AE\";\n}\n.fa-paw:before {\n  content: \"\\F1B0\";\n}\n.fa-spoon:before {\n  content: \"\\F1B1\";\n}\n.fa-cube:before {\n  content: \"\\F1B2\";\n}\n.fa-cubes:before {\n  content: \"\\F1B3\";\n}\n.fa-behance:before {\n  content: \"\\F1B4\";\n}\n.fa-behance-square:before {\n  content: \"\\F1B5\";\n}\n.fa-steam:before {\n  content: \"\\F1B6\";\n}\n.fa-steam-square:before {\n  content: \"\\F1B7\";\n}\n.fa-recycle:before {\n  content: \"\\F1B8\";\n}\n.fa-automobile:before,\n.fa-car:before {\n  content: \"\\F1B9\";\n}\n.fa-cab:before,\n.fa-taxi:before {\n  content: \"\\F1BA\";\n}\n.fa-tree:before {\n  content: \"\\F1BB\";\n}\n.fa-spotify:before {\n  content: \"\\F1BC\";\n}\n.fa-deviantart:before {\n  content: \"\\F1BD\";\n}\n.fa-soundcloud:before {\n  content: \"\\F1BE\";\n}\n.fa-database:before {\n  content: \"\\F1C0\";\n}\n.fa-file-pdf-o:before {\n  content: \"\\F1C1\";\n}\n.fa-file-word-o:before {\n  content: \"\\F1C2\";\n}\n.fa-file-excel-o:before {\n  content: \"\\F1C3\";\n}\n.fa-file-powerpoint-o:before {\n  content: \"\\F1C4\";\n}\n.fa-file-photo-o:before,\n.fa-file-picture-o:before,\n.fa-file-image-o:before {\n  content: \"\\F1C5\";\n}\n.fa-file-zip-o:before,\n.fa-file-archive-o:before {\n  content: \"\\F1C6\";\n}\n.fa-file-sound-o:before,\n.fa-file-audio-o:before {\n  content: \"\\F1C7\";\n}\n.fa-file-movie-o:before,\n.fa-file-video-o:before {\n  content: \"\\F1C8\";\n}\n.fa-file-code-o:before {\n  content: \"\\F1C9\";\n}\n.fa-vine:before {\n  content: \"\\F1CA\";\n}\n.fa-codepen:before {\n  content: \"\\F1CB\";\n}\n.fa-jsfiddle:before {\n  content: \"\\F1CC\";\n}\n.fa-life-bouy:before,\n.fa-life-buoy:before,\n.fa-life-saver:before,\n.fa-support:before,\n.fa-life-ring:before {\n  content: \"\\F1CD\";\n}\n.fa-circle-o-notch:before {\n  content: \"\\F1CE\";\n}\n.fa-ra:before,\n.fa-resistance:before,\n.fa-rebel:before {\n  content: \"\\F1D0\";\n}\n.fa-ge:before,\n.fa-empire:before {\n  content: \"\\F1D1\";\n}\n.fa-git-square:before {\n  content: \"\\F1D2\";\n}\n.fa-git:before {\n  content: \"\\F1D3\";\n}\n.fa-y-combinator-square:before,\n.fa-yc-square:before,\n.fa-hacker-news:before {\n  content: \"\\F1D4\";\n}\n.fa-tencent-weibo:before {\n  content: \"\\F1D5\";\n}\n.fa-qq:before {\n  content: \"\\F1D6\";\n}\n.fa-wechat:before,\n.fa-weixin:before {\n  content: \"\\F1D7\";\n}\n.fa-send:before,\n.fa-paper-plane:before {\n  content: \"\\F1D8\";\n}\n.fa-send-o:before,\n.fa-paper-plane-o:before {\n  content: \"\\F1D9\";\n}\n.fa-history:before {\n  content: \"\\F1DA\";\n}\n.fa-circle-thin:before {\n  content: \"\\F1DB\";\n}\n.fa-header:before {\n  content: \"\\F1DC\";\n}\n.fa-paragraph:before {\n  content: \"\\F1DD\";\n}\n.fa-sliders:before {\n  content: \"\\F1DE\";\n}\n.fa-share-alt:before {\n  content: \"\\F1E0\";\n}\n.fa-share-alt-square:before {\n  content: \"\\F1E1\";\n}\n.fa-bomb:before {\n  content: \"\\F1E2\";\n}\n.fa-soccer-ball-o:before,\n.fa-futbol-o:before {\n  content: \"\\F1E3\";\n}\n.fa-tty:before {\n  content: \"\\F1E4\";\n}\n.fa-binoculars:before {\n  content: \"\\F1E5\";\n}\n.fa-plug:before {\n  content: \"\\F1E6\";\n}\n.fa-slideshare:before {\n  content: \"\\F1E7\";\n}\n.fa-twitch:before {\n  content: \"\\F1E8\";\n}\n.fa-yelp:before {\n  content: \"\\F1E9\";\n}\n.fa-newspaper-o:before {\n  content: \"\\F1EA\";\n}\n.fa-wifi:before {\n  content: \"\\F1EB\";\n}\n.fa-calculator:before {\n  content: \"\\F1EC\";\n}\n.fa-paypal:before {\n  content: \"\\F1ED\";\n}\n.fa-google-wallet:before {\n  content: \"\\F1EE\";\n}\n.fa-cc-visa:before {\n  content: \"\\F1F0\";\n}\n.fa-cc-mastercard:before {\n  content: \"\\F1F1\";\n}\n.fa-cc-discover:before {\n  content: \"\\F1F2\";\n}\n.fa-cc-amex:before {\n  content: \"\\F1F3\";\n}\n.fa-cc-paypal:before {\n  content: \"\\F1F4\";\n}\n.fa-cc-stripe:before {\n  content: \"\\F1F5\";\n}\n.fa-bell-slash:before {\n  content: \"\\F1F6\";\n}\n.fa-bell-slash-o:before {\n  content: \"\\F1F7\";\n}\n.fa-trash:before {\n  content: \"\\F1F8\";\n}\n.fa-copyright:before {\n  content: \"\\F1F9\";\n}\n.fa-at:before {\n  content: \"\\F1FA\";\n}\n.fa-eyedropper:before {\n  content: \"\\F1FB\";\n}\n.fa-paint-brush:before {\n  content: \"\\F1FC\";\n}\n.fa-birthday-cake:before {\n  content: \"\\F1FD\";\n}\n.fa-area-chart:before {\n  content: \"\\F1FE\";\n}\n.fa-pie-chart:before {\n  content: \"\\F200\";\n}\n.fa-line-chart:before {\n  content: \"\\F201\";\n}\n.fa-lastfm:before {\n  content: \"\\F202\";\n}\n.fa-lastfm-square:before {\n  content: \"\\F203\";\n}\n.fa-toggle-off:before {\n  content: \"\\F204\";\n}\n.fa-toggle-on:before {\n  content: \"\\F205\";\n}\n.fa-bicycle:before {\n  content: \"\\F206\";\n}\n.fa-bus:before {\n  content: \"\\F207\";\n}\n.fa-ioxhost:before {\n  content: \"\\F208\";\n}\n.fa-angellist:before {\n  content: \"\\F209\";\n}\n.fa-cc:before {\n  content: \"\\F20A\";\n}\n.fa-shekel:before,\n.fa-sheqel:before,\n.fa-ils:before {\n  content: \"\\F20B\";\n}\n.fa-meanpath:before {\n  content: \"\\F20C\";\n}\n.fa-buysellads:before {\n  content: \"\\F20D\";\n}\n.fa-connectdevelop:before {\n  content: \"\\F20E\";\n}\n.fa-dashcube:before {\n  content: \"\\F210\";\n}\n.fa-forumbee:before {\n  content: \"\\F211\";\n}\n.fa-leanpub:before {\n  content: \"\\F212\";\n}\n.fa-sellsy:before {\n  content: \"\\F213\";\n}\n.fa-shirtsinbulk:before {\n  content: \"\\F214\";\n}\n.fa-simplybuilt:before {\n  content: \"\\F215\";\n}\n.fa-skyatlas:before {\n  content: \"\\F216\";\n}\n.fa-cart-plus:before {\n  content: \"\\F217\";\n}\n.fa-cart-arrow-down:before {\n  content: \"\\F218\";\n}\n.fa-diamond:before {\n  content: \"\\F219\";\n}\n.fa-ship:before {\n  content: \"\\F21A\";\n}\n.fa-user-secret:before {\n  content: \"\\F21B\";\n}\n.fa-motorcycle:before {\n  content: \"\\F21C\";\n}\n.fa-street-view:before {\n  content: \"\\F21D\";\n}\n.fa-heartbeat:before {\n  content: \"\\F21E\";\n}\n.fa-venus:before {\n  content: \"\\F221\";\n}\n.fa-mars:before {\n  content: \"\\F222\";\n}\n.fa-mercury:before {\n  content: \"\\F223\";\n}\n.fa-intersex:before,\n.fa-transgender:before {\n  content: \"\\F224\";\n}\n.fa-transgender-alt:before {\n  content: \"\\F225\";\n}\n.fa-venus-double:before {\n  content: \"\\F226\";\n}\n.fa-mars-double:before {\n  content: \"\\F227\";\n}\n.fa-venus-mars:before {\n  content: \"\\F228\";\n}\n.fa-mars-stroke:before {\n  content: \"\\F229\";\n}\n.fa-mars-stroke-v:before {\n  content: \"\\F22A\";\n}\n.fa-mars-stroke-h:before {\n  content: \"\\F22B\";\n}\n.fa-neuter:before {\n  content: \"\\F22C\";\n}\n.fa-genderless:before {\n  content: \"\\F22D\";\n}\n.fa-facebook-official:before {\n  content: \"\\F230\";\n}\n.fa-pinterest-p:before {\n  content: \"\\F231\";\n}\n.fa-whatsapp:before {\n  content: \"\\F232\";\n}\n.fa-server:before {\n  content: \"\\F233\";\n}\n.fa-user-plus:before {\n  content: \"\\F234\";\n}\n.fa-user-times:before {\n  content: \"\\F235\";\n}\n.fa-hotel:before,\n.fa-bed:before {\n  content: \"\\F236\";\n}\n.fa-viacoin:before {\n  content: \"\\F237\";\n}\n.fa-train:before {\n  content: \"\\F238\";\n}\n.fa-subway:before {\n  content: \"\\F239\";\n}\n.fa-medium:before {\n  content: \"\\F23A\";\n}\n.fa-yc:before,\n.fa-y-combinator:before {\n  content: \"\\F23B\";\n}\n.fa-optin-monster:before {\n  content: \"\\F23C\";\n}\n.fa-opencart:before {\n  content: \"\\F23D\";\n}\n.fa-expeditedssl:before {\n  content: \"\\F23E\";\n}\n.fa-battery-4:before,\n.fa-battery-full:before {\n  content: \"\\F240\";\n}\n.fa-battery-3:before,\n.fa-battery-three-quarters:before {\n  content: \"\\F241\";\n}\n.fa-battery-2:before,\n.fa-battery-half:before {\n  content: \"\\F242\";\n}\n.fa-battery-1:before,\n.fa-battery-quarter:before {\n  content: \"\\F243\";\n}\n.fa-battery-0:before,\n.fa-battery-empty:before {\n  content: \"\\F244\";\n}\n.fa-mouse-pointer:before {\n  content: \"\\F245\";\n}\n.fa-i-cursor:before {\n  content: \"\\F246\";\n}\n.fa-object-group:before {\n  content: \"\\F247\";\n}\n.fa-object-ungroup:before {\n  content: \"\\F248\";\n}\n.fa-sticky-note:before {\n  content: \"\\F249\";\n}\n.fa-sticky-note-o:before {\n  content: \"\\F24A\";\n}\n.fa-cc-jcb:before {\n  content: \"\\F24B\";\n}\n.fa-cc-diners-club:before {\n  content: \"\\F24C\";\n}\n.fa-clone:before {\n  content: \"\\F24D\";\n}\n.fa-balance-scale:before {\n  content: \"\\F24E\";\n}\n.fa-hourglass-o:before {\n  content: \"\\F250\";\n}\n.fa-hourglass-1:before,\n.fa-hourglass-start:before {\n  content: \"\\F251\";\n}\n.fa-hourglass-2:before,\n.fa-hourglass-half:before {\n  content: \"\\F252\";\n}\n.fa-hourglass-3:before,\n.fa-hourglass-end:before {\n  content: \"\\F253\";\n}\n.fa-hourglass:before {\n  content: \"\\F254\";\n}\n.fa-hand-grab-o:before,\n.fa-hand-rock-o:before {\n  content: \"\\F255\";\n}\n.fa-hand-stop-o:before,\n.fa-hand-paper-o:before {\n  content: \"\\F256\";\n}\n.fa-hand-scissors-o:before {\n  content: \"\\F257\";\n}\n.fa-hand-lizard-o:before {\n  content: \"\\F258\";\n}\n.fa-hand-spock-o:before {\n  content: \"\\F259\";\n}\n.fa-hand-pointer-o:before {\n  content: \"\\F25A\";\n}\n.fa-hand-peace-o:before {\n  content: \"\\F25B\";\n}\n.fa-trademark:before {\n  content: \"\\F25C\";\n}\n.fa-registered:before {\n  content: \"\\F25D\";\n}\n.fa-creative-commons:before {\n  content: \"\\F25E\";\n}\n.fa-gg:before {\n  content: \"\\F260\";\n}\n.fa-gg-circle:before {\n  content: \"\\F261\";\n}\n.fa-tripadvisor:before {\n  content: \"\\F262\";\n}\n.fa-odnoklassniki:before {\n  content: \"\\F263\";\n}\n.fa-odnoklassniki-square:before {\n  content: \"\\F264\";\n}\n.fa-get-pocket:before {\n  content: \"\\F265\";\n}\n.fa-wikipedia-w:before {\n  content: \"\\F266\";\n}\n.fa-safari:before {\n  content: \"\\F267\";\n}\n.fa-chrome:before {\n  content: \"\\F268\";\n}\n.fa-firefox:before {\n  content: \"\\F269\";\n}\n.fa-opera:before {\n  content: \"\\F26A\";\n}\n.fa-internet-explorer:before {\n  content: \"\\F26B\";\n}\n.fa-tv:before,\n.fa-television:before {\n  content: \"\\F26C\";\n}\n.fa-contao:before {\n  content: \"\\F26D\";\n}\n.fa-500px:before {\n  content: \"\\F26E\";\n}\n.fa-amazon:before {\n  content: \"\\F270\";\n}\n.fa-calendar-plus-o:before {\n  content: \"\\F271\";\n}\n.fa-calendar-minus-o:before {\n  content: \"\\F272\";\n}\n.fa-calendar-times-o:before {\n  content: \"\\F273\";\n}\n.fa-calendar-check-o:before {\n  content: \"\\F274\";\n}\n.fa-industry:before {\n  content: \"\\F275\";\n}\n.fa-map-pin:before {\n  content: \"\\F276\";\n}\n.fa-map-signs:before {\n  content: \"\\F277\";\n}\n.fa-map-o:before {\n  content: \"\\F278\";\n}\n.fa-map:before {\n  content: \"\\F279\";\n}\n.fa-commenting:before {\n  content: \"\\F27A\";\n}\n.fa-commenting-o:before {\n  content: \"\\F27B\";\n}\n.fa-houzz:before {\n  content: \"\\F27C\";\n}\n.fa-vimeo:before {\n  content: \"\\F27D\";\n}\n.fa-black-tie:before {\n  content: \"\\F27E\";\n}\n.fa-fonticons:before {\n  content: \"\\F280\";\n}\n.fa-reddit-alien:before {\n  content: \"\\F281\";\n}\n.fa-edge:before {\n  content: \"\\F282\";\n}\n.fa-credit-card-alt:before {\n  content: \"\\F283\";\n}\n.fa-codiepie:before {\n  content: \"\\F284\";\n}\n.fa-modx:before {\n  content: \"\\F285\";\n}\n.fa-fort-awesome:before {\n  content: \"\\F286\";\n}\n.fa-usb:before {\n  content: \"\\F287\";\n}\n.fa-product-hunt:before {\n  content: \"\\F288\";\n}\n.fa-mixcloud:before {\n  content: \"\\F289\";\n}\n.fa-scribd:before {\n  content: \"\\F28A\";\n}\n.fa-pause-circle:before {\n  content: \"\\F28B\";\n}\n.fa-pause-circle-o:before {\n  content: \"\\F28C\";\n}\n.fa-stop-circle:before {\n  content: \"\\F28D\";\n}\n.fa-stop-circle-o:before {\n  content: \"\\F28E\";\n}\n.fa-shopping-bag:before {\n  content: \"\\F290\";\n}\n.fa-shopping-basket:before {\n  content: \"\\F291\";\n}\n.fa-hashtag:before {\n  content: \"\\F292\";\n}\n.fa-bluetooth:before {\n  content: \"\\F293\";\n}\n.fa-bluetooth-b:before {\n  content: \"\\F294\";\n}\n.fa-percent:before {\n  content: \"\\F295\";\n}\n.fa-gitlab:before {\n  content: \"\\F296\";\n}\n.fa-wpbeginner:before {\n  content: \"\\F297\";\n}\n.fa-wpforms:before {\n  content: \"\\F298\";\n}\n.fa-envira:before {\n  content: \"\\F299\";\n}\n.fa-universal-access:before {\n  content: \"\\F29A\";\n}\n.fa-wheelchair-alt:before {\n  content: \"\\F29B\";\n}\n.fa-question-circle-o:before {\n  content: \"\\F29C\";\n}\n.fa-blind:before {\n  content: \"\\F29D\";\n}\n.fa-audio-description:before {\n  content: \"\\F29E\";\n}\n.fa-volume-control-phone:before {\n  content: \"\\F2A0\";\n}\n.fa-braille:before {\n  content: \"\\F2A1\";\n}\n.fa-assistive-listening-systems:before {\n  content: \"\\F2A2\";\n}\n.fa-asl-interpreting:before,\n.fa-american-sign-language-interpreting:before {\n  content: \"\\F2A3\";\n}\n.fa-deafness:before,\n.fa-hard-of-hearing:before,\n.fa-deaf:before {\n  content: \"\\F2A4\";\n}\n.fa-glide:before {\n  content: \"\\F2A5\";\n}\n.fa-glide-g:before {\n  content: \"\\F2A6\";\n}\n.fa-signing:before,\n.fa-sign-language:before {\n  content: \"\\F2A7\";\n}\n.fa-low-vision:before {\n  content: \"\\F2A8\";\n}\n.fa-viadeo:before {\n  content: \"\\F2A9\";\n}\n.fa-viadeo-square:before {\n  content: \"\\F2AA\";\n}\n.fa-snapchat:before {\n  content: \"\\F2AB\";\n}\n.fa-snapchat-ghost:before {\n  content: \"\\F2AC\";\n}\n.fa-snapchat-square:before {\n  content: \"\\F2AD\";\n}\n.fa-pied-piper:before {\n  content: \"\\F2AE\";\n}\n.fa-first-order:before {\n  content: \"\\F2B0\";\n}\n.fa-yoast:before {\n  content: \"\\F2B1\";\n}\n.fa-themeisle:before {\n  content: \"\\F2B2\";\n}\n.fa-google-plus-circle:before,\n.fa-google-plus-official:before {\n  content: \"\\F2B3\";\n}\n.fa-fa:before,\n.fa-font-awesome:before {\n  content: \"\\F2B4\";\n}\n/* makes the font 33% larger relative to the icon container */\n.fa-lg {\n  font-size: 1.33333333em;\n  line-height: 0.75em;\n  vertical-align: -15%;\n}\n.fa-2x {\n  font-size: 2em;\n}\n.fa-3x {\n  font-size: 3em;\n}\n.fa-4x {\n  font-size: 4em;\n}\n.fa-5x {\n  font-size: 5em;\n}\n.fa-ul {\n  padding-left: 0;\n  margin-left: 2.14285714em;\n  list-style-type: none;\n}\n.fa-ul > li {\n  position: relative;\n}\n.fa-li {\n  position: absolute;\n  left: -2.14285714em;\n  width: 2.14285714em;\n  top: 0.14285714em;\n  text-align: center;\n}\n.fa-li.fa-lg {\n  left: -1.85714286em;\n}\n/* FONT PATH\n * -------------------------- */\n@font-face {\n  font-family: 'FontAwesome';\n  src: url(" + __webpack_require__(26) + ");\n  src: url(" + __webpack_require__(27) + "?#iefix&v=4.6.3) format('embedded-opentype'), url(" + __webpack_require__(28) + ") format('woff2'), url(" + __webpack_require__(29) + ") format('woff'), url(" + __webpack_require__(30) + ") format('truetype'), url(" + __webpack_require__(31) + "#fontawesomeregular) format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n.fa-rotate-90 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)\";\n  -webkit-transform: rotate(90deg);\n  -ms-transform: rotate(90deg);\n  transform: rotate(90deg);\n}\n.fa-rotate-180 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)\";\n  -webkit-transform: rotate(180deg);\n  -ms-transform: rotate(180deg);\n  transform: rotate(180deg);\n}\n.fa-rotate-270 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)\";\n  -webkit-transform: rotate(270deg);\n  -ms-transform: rotate(270deg);\n  transform: rotate(270deg);\n}\n.fa-flip-horizontal {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)\";\n  -webkit-transform: scale(-1, 1);\n  -ms-transform: scale(-1, 1);\n  transform: scale(-1, 1);\n}\n.fa-flip-vertical {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)\";\n  -webkit-transform: scale(1, -1);\n  -ms-transform: scale(1, -1);\n  transform: scale(1, -1);\n}\n:root .fa-rotate-90,\n:root .fa-rotate-180,\n:root .fa-rotate-270,\n:root .fa-flip-horizontal,\n:root .fa-flip-vertical {\n  filter: none;\n}\n.fa-spin {\n  -webkit-animation: fa-spin 2s infinite linear;\n  animation: fa-spin 2s infinite linear;\n}\n.fa-pulse {\n  -webkit-animation: fa-spin 1s infinite steps(8);\n  animation: fa-spin 1s infinite steps(8);\n}\n@-webkit-keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n  }\n}\n@keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n  }\n}\n.fa-stack {\n  position: relative;\n  display: inline-block;\n  width: 2em;\n  height: 2em;\n  line-height: 2em;\n  vertical-align: middle;\n}\n.fa-stack-1x,\n.fa-stack-2x {\n  position: absolute;\n  left: 0;\n  width: 100%;\n  text-align: center;\n}\n.fa-stack-1x {\n  line-height: inherit;\n}\n.fa-stack-2x {\n  font-size: 2em;\n}\n.fa-inverse {\n  color: #fff;\n}\n", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 25 */
-/***/ function(module, exports) {
-
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	// css base code, injected by the css-loader
-	module.exports = function() {
-		var list = [];
-	
-		// return the list of modules as css string
-		list.toString = function toString() {
-			var result = [];
-			for(var i = 0; i < this.length; i++) {
-				var item = this[i];
-				if(item[2]) {
-					result.push("@media " + item[2] + "{" + item[1] + "}");
-				} else {
-					result.push(item[1]);
-				}
-			}
-			return result.join("");
-		};
-	
-		// import a list of modules into the list
-		list.i = function(modules, mediaQuery) {
-			if(typeof modules === "string")
-				modules = [[null, modules, ""]];
-			var alreadyImportedModules = {};
-			for(var i = 0; i < this.length; i++) {
-				var id = this[i][0];
-				if(typeof id === "number")
-					alreadyImportedModules[id] = true;
-			}
-			for(i = 0; i < modules.length; i++) {
-				var item = modules[i];
-				// skip already imported module
-				// this implementation is not 100% perfect for weird media query combinations
-				//  when a module is imported multiple times with different media queries.
-				//  I hope this will never occur (Hey this way we have smaller bundles)
-				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-					if(mediaQuery && !item[2]) {
-						item[2] = mediaQuery;
-					} else if(mediaQuery) {
-						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-					}
-					list.push(item);
-				}
-			}
-		};
-		return list;
-	};
-
-
-/***/ },
-/* 26 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "25a32416abee198dd821b0b17a198a8f.eot";
-
-/***/ },
-/* 27 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "25a32416abee198dd821b0b17a198a8f.eot";
-
-/***/ },
-/* 28 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "e6cf7c6ec7c2d6f670ae9d762604cb0b.woff2";
-
-/***/ },
-/* 29 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "c8ddf1e5e5bf3682bc7bebf30f394148.woff";
-
-/***/ },
-/* 30 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "1dc35d25e61d819a9c357074014867ab.ttf";
-
-/***/ },
-/* 31 */
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "d7c639084f684d66a1bc66855d193ed8.svg";
-
-/***/ },
-/* 32 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/*
-		MIT License http://www.opensource.org/licenses/mit-license.php
-		Author Tobias Koppers @sokra
-	*/
-	var stylesInDom = {},
-		memoize = function(fn) {
-			var memo;
-			return function () {
-				if (typeof memo === "undefined") memo = fn.apply(this, arguments);
-				return memo;
-			};
-		},
-		isOldIE = memoize(function() {
-			return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
-		}),
-		getHeadElement = memoize(function () {
-			return document.head || document.getElementsByTagName("head")[0];
-		}),
-		singletonElement = null,
-		singletonCounter = 0;
-	
-	module.exports = function(list, options) {
-		if(false) {
-			if(typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
-		}
-	
-		options = options || {};
-		// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
-		// tags it will allow on a page
-		if (typeof options.singleton === "undefined") options.singleton = isOldIE();
-	
-		var styles = listToStyles(list);
-		addStylesToDom(styles, options);
-	
-		return function update(newList) {
-			var mayRemove = [];
-			for(var i = 0; i < styles.length; i++) {
-				var item = styles[i];
-				var domStyle = stylesInDom[item.id];
-				domStyle.refs--;
-				mayRemove.push(domStyle);
-			}
-			if(newList) {
-				var newStyles = listToStyles(newList);
-				addStylesToDom(newStyles, options);
-			}
-			for(var i = 0; i < mayRemove.length; i++) {
-				var domStyle = mayRemove[i];
-				if(domStyle.refs === 0) {
-					for(var j = 0; j < domStyle.parts.length; j++)
-						domStyle.parts[j]();
-					delete stylesInDom[domStyle.id];
-				}
-			}
-		};
-	}
-	
-	function addStylesToDom(styles, options) {
-		for(var i = 0; i < styles.length; i++) {
-			var item = styles[i];
-			var domStyle = stylesInDom[item.id];
-			if(domStyle) {
-				domStyle.refs++;
-				for(var j = 0; j < domStyle.parts.length; j++) {
-					domStyle.parts[j](item.parts[j]);
-				}
-				for(; j < item.parts.length; j++) {
-					domStyle.parts.push(addStyle(item.parts[j], options));
-				}
-			} else {
-				var parts = [];
-				for(var j = 0; j < item.parts.length; j++) {
-					parts.push(addStyle(item.parts[j], options));
-				}
-				stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
-			}
-		}
-	}
-	
-	function listToStyles(list) {
-		var styles = [];
-		var newStyles = {};
-		for(var i = 0; i < list.length; i++) {
-			var item = list[i];
-			var id = item[0];
-			var css = item[1];
-			var media = item[2];
-			var sourceMap = item[3];
-			var part = {css: css, media: media, sourceMap: sourceMap};
-			if(!newStyles[id])
-				styles.push(newStyles[id] = {id: id, parts: [part]});
-			else
-				newStyles[id].parts.push(part);
-		}
-		return styles;
-	}
-	
-	function createStyleElement() {
-		var styleElement = document.createElement("style");
-		var head = getHeadElement();
-		styleElement.type = "text/css";
-		head.appendChild(styleElement);
-		return styleElement;
-	}
-	
-	function createLinkElement() {
-		var linkElement = document.createElement("link");
-		var head = getHeadElement();
-		linkElement.rel = "stylesheet";
-		head.appendChild(linkElement);
-		return linkElement;
-	}
-	
-	function addStyle(obj, options) {
-		var styleElement, update, remove;
-	
-		if (options.singleton) {
-			var styleIndex = singletonCounter++;
-			styleElement = singletonElement || (singletonElement = createStyleElement());
-			update = applyToSingletonTag.bind(null, styleElement, styleIndex, false);
-			remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true);
-		} else if(obj.sourceMap &&
-			typeof URL === "function" &&
-			typeof URL.createObjectURL === "function" &&
-			typeof URL.revokeObjectURL === "function" &&
-			typeof Blob === "function" &&
-			typeof btoa === "function") {
-			styleElement = createLinkElement();
-			update = updateLink.bind(null, styleElement);
-			remove = function() {
-				styleElement.parentNode.removeChild(styleElement);
-				if(styleElement.href)
-					URL.revokeObjectURL(styleElement.href);
-			};
-		} else {
-			styleElement = createStyleElement();
-			update = applyToTag.bind(null, styleElement);
-			remove = function() {
-				styleElement.parentNode.removeChild(styleElement);
-			};
-		}
-	
-		update(obj);
-	
-		return function updateStyle(newObj) {
-			if(newObj) {
-				if(newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap)
-					return;
-				update(obj = newObj);
-			} else {
-				remove();
-			}
-		};
-	}
-	
-	var replaceText = (function () {
-		var textStore = [];
-	
-		return function (index, replacement) {
-			textStore[index] = replacement;
-			return textStore.filter(Boolean).join('\n');
-		};
-	})();
-	
-	function applyToSingletonTag(styleElement, index, remove, obj) {
-		var css = remove ? "" : obj.css;
-	
-		if (styleElement.styleSheet) {
-			styleElement.styleSheet.cssText = replaceText(index, css);
-		} else {
-			var cssNode = document.createTextNode(css);
-			var childNodes = styleElement.childNodes;
-			if (childNodes[index]) styleElement.removeChild(childNodes[index]);
-			if (childNodes.length) {
-				styleElement.insertBefore(cssNode, childNodes[index]);
-			} else {
-				styleElement.appendChild(cssNode);
-			}
-		}
-	}
-	
-	function applyToTag(styleElement, obj) {
-		var css = obj.css;
-		var media = obj.media;
-		var sourceMap = obj.sourceMap;
-	
-		if(media) {
-			styleElement.setAttribute("media", media)
-		}
-	
-		if(styleElement.styleSheet) {
-			styleElement.styleSheet.cssText = css;
-		} else {
-			while(styleElement.firstChild) {
-				styleElement.removeChild(styleElement.firstChild);
-			}
-			styleElement.appendChild(document.createTextNode(css));
-		}
-	}
-	
-	function updateLink(linkElement, obj) {
-		var css = obj.css;
-		var media = obj.media;
-		var sourceMap = obj.sourceMap;
-	
-		if(sourceMap) {
-			// http://stackoverflow.com/a/26603875
-			css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
-		}
-	
-		var blob = new Blob([css], { type: "text/css" });
-	
-		var oldSrc = linkElement.href;
-	
-		linkElement.href = URL.createObjectURL(blob);
-	
-		if(oldSrc)
-			URL.revokeObjectURL(oldSrc);
-	}
-
-
-/***/ },
-/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -10536,6 +10172,3287 @@
 	
 	return jQuery;
 	} ) );
+
+
+/***/ },
+/* 16 */
+/***/ function(module, exports) {
+
+	// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
+/* 28 */,
+/* 29 */,
+/* 30 */
+/***/ function(module, exports, __webpack_require__) {
+
+	__webpack_require__(31);
+
+
+/***/ },
+/* 31 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(32);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(40)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./node_modules/css-loader/index.js!./../less-loader/index.js!./font-awesome-styles.loader.js!./font-awesome.config.js", function() {
+				var newContent = require("!!./node_modules/css-loader/index.js!./../less-loader/index.js!./font-awesome-styles.loader.js!./font-awesome.config.js");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 32 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(33)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, ".fa-border {\n  padding: .2em .25em .15em;\n  border: solid 0.08em #eee;\n  border-radius: .1em;\n}\n.fa-pull-left {\n  float: left;\n}\n.fa-pull-right {\n  float: right;\n}\n.fa.fa-pull-left {\n  margin-right: .3em;\n}\n.fa.fa-pull-right {\n  margin-left: .3em;\n}\n/* Deprecated as of 4.4.0 */\n.pull-right {\n  float: right;\n}\n.pull-left {\n  float: left;\n}\n.fa.pull-left {\n  margin-right: .3em;\n}\n.fa.pull-right {\n  margin-left: .3em;\n}\n.fa {\n  display: inline-block;\n  font: normal normal normal 14px/1 FontAwesome;\n  font-size: inherit;\n  text-rendering: auto;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n.fa-fw {\n  width: 1.28571429em;\n  text-align: center;\n}\n/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen\n   readers do not read off random characters that represent icons */\n.fa-glass:before {\n  content: \"\\F000\";\n}\n.fa-music:before {\n  content: \"\\F001\";\n}\n.fa-search:before {\n  content: \"\\F002\";\n}\n.fa-envelope-o:before {\n  content: \"\\F003\";\n}\n.fa-heart:before {\n  content: \"\\F004\";\n}\n.fa-star:before {\n  content: \"\\F005\";\n}\n.fa-star-o:before {\n  content: \"\\F006\";\n}\n.fa-user:before {\n  content: \"\\F007\";\n}\n.fa-film:before {\n  content: \"\\F008\";\n}\n.fa-th-large:before {\n  content: \"\\F009\";\n}\n.fa-th:before {\n  content: \"\\F00A\";\n}\n.fa-th-list:before {\n  content: \"\\F00B\";\n}\n.fa-check:before {\n  content: \"\\F00C\";\n}\n.fa-remove:before,\n.fa-close:before,\n.fa-times:before {\n  content: \"\\F00D\";\n}\n.fa-search-plus:before {\n  content: \"\\F00E\";\n}\n.fa-search-minus:before {\n  content: \"\\F010\";\n}\n.fa-power-off:before {\n  content: \"\\F011\";\n}\n.fa-signal:before {\n  content: \"\\F012\";\n}\n.fa-gear:before,\n.fa-cog:before {\n  content: \"\\F013\";\n}\n.fa-trash-o:before {\n  content: \"\\F014\";\n}\n.fa-home:before {\n  content: \"\\F015\";\n}\n.fa-file-o:before {\n  content: \"\\F016\";\n}\n.fa-clock-o:before {\n  content: \"\\F017\";\n}\n.fa-road:before {\n  content: \"\\F018\";\n}\n.fa-download:before {\n  content: \"\\F019\";\n}\n.fa-arrow-circle-o-down:before {\n  content: \"\\F01A\";\n}\n.fa-arrow-circle-o-up:before {\n  content: \"\\F01B\";\n}\n.fa-inbox:before {\n  content: \"\\F01C\";\n}\n.fa-play-circle-o:before {\n  content: \"\\F01D\";\n}\n.fa-rotate-right:before,\n.fa-repeat:before {\n  content: \"\\F01E\";\n}\n.fa-refresh:before {\n  content: \"\\F021\";\n}\n.fa-list-alt:before {\n  content: \"\\F022\";\n}\n.fa-lock:before {\n  content: \"\\F023\";\n}\n.fa-flag:before {\n  content: \"\\F024\";\n}\n.fa-headphones:before {\n  content: \"\\F025\";\n}\n.fa-volume-off:before {\n  content: \"\\F026\";\n}\n.fa-volume-down:before {\n  content: \"\\F027\";\n}\n.fa-volume-up:before {\n  content: \"\\F028\";\n}\n.fa-qrcode:before {\n  content: \"\\F029\";\n}\n.fa-barcode:before {\n  content: \"\\F02A\";\n}\n.fa-tag:before {\n  content: \"\\F02B\";\n}\n.fa-tags:before {\n  content: \"\\F02C\";\n}\n.fa-book:before {\n  content: \"\\F02D\";\n}\n.fa-bookmark:before {\n  content: \"\\F02E\";\n}\n.fa-print:before {\n  content: \"\\F02F\";\n}\n.fa-camera:before {\n  content: \"\\F030\";\n}\n.fa-font:before {\n  content: \"\\F031\";\n}\n.fa-bold:before {\n  content: \"\\F032\";\n}\n.fa-italic:before {\n  content: \"\\F033\";\n}\n.fa-text-height:before {\n  content: \"\\F034\";\n}\n.fa-text-width:before {\n  content: \"\\F035\";\n}\n.fa-align-left:before {\n  content: \"\\F036\";\n}\n.fa-align-center:before {\n  content: \"\\F037\";\n}\n.fa-align-right:before {\n  content: \"\\F038\";\n}\n.fa-align-justify:before {\n  content: \"\\F039\";\n}\n.fa-list:before {\n  content: \"\\F03A\";\n}\n.fa-dedent:before,\n.fa-outdent:before {\n  content: \"\\F03B\";\n}\n.fa-indent:before {\n  content: \"\\F03C\";\n}\n.fa-video-camera:before {\n  content: \"\\F03D\";\n}\n.fa-photo:before,\n.fa-image:before,\n.fa-picture-o:before {\n  content: \"\\F03E\";\n}\n.fa-pencil:before {\n  content: \"\\F040\";\n}\n.fa-map-marker:before {\n  content: \"\\F041\";\n}\n.fa-adjust:before {\n  content: \"\\F042\";\n}\n.fa-tint:before {\n  content: \"\\F043\";\n}\n.fa-edit:before,\n.fa-pencil-square-o:before {\n  content: \"\\F044\";\n}\n.fa-share-square-o:before {\n  content: \"\\F045\";\n}\n.fa-check-square-o:before {\n  content: \"\\F046\";\n}\n.fa-arrows:before {\n  content: \"\\F047\";\n}\n.fa-step-backward:before {\n  content: \"\\F048\";\n}\n.fa-fast-backward:before {\n  content: \"\\F049\";\n}\n.fa-backward:before {\n  content: \"\\F04A\";\n}\n.fa-play:before {\n  content: \"\\F04B\";\n}\n.fa-pause:before {\n  content: \"\\F04C\";\n}\n.fa-stop:before {\n  content: \"\\F04D\";\n}\n.fa-forward:before {\n  content: \"\\F04E\";\n}\n.fa-fast-forward:before {\n  content: \"\\F050\";\n}\n.fa-step-forward:before {\n  content: \"\\F051\";\n}\n.fa-eject:before {\n  content: \"\\F052\";\n}\n.fa-chevron-left:before {\n  content: \"\\F053\";\n}\n.fa-chevron-right:before {\n  content: \"\\F054\";\n}\n.fa-plus-circle:before {\n  content: \"\\F055\";\n}\n.fa-minus-circle:before {\n  content: \"\\F056\";\n}\n.fa-times-circle:before {\n  content: \"\\F057\";\n}\n.fa-check-circle:before {\n  content: \"\\F058\";\n}\n.fa-question-circle:before {\n  content: \"\\F059\";\n}\n.fa-info-circle:before {\n  content: \"\\F05A\";\n}\n.fa-crosshairs:before {\n  content: \"\\F05B\";\n}\n.fa-times-circle-o:before {\n  content: \"\\F05C\";\n}\n.fa-check-circle-o:before {\n  content: \"\\F05D\";\n}\n.fa-ban:before {\n  content: \"\\F05E\";\n}\n.fa-arrow-left:before {\n  content: \"\\F060\";\n}\n.fa-arrow-right:before {\n  content: \"\\F061\";\n}\n.fa-arrow-up:before {\n  content: \"\\F062\";\n}\n.fa-arrow-down:before {\n  content: \"\\F063\";\n}\n.fa-mail-forward:before,\n.fa-share:before {\n  content: \"\\F064\";\n}\n.fa-expand:before {\n  content: \"\\F065\";\n}\n.fa-compress:before {\n  content: \"\\F066\";\n}\n.fa-plus:before {\n  content: \"\\F067\";\n}\n.fa-minus:before {\n  content: \"\\F068\";\n}\n.fa-asterisk:before {\n  content: \"\\F069\";\n}\n.fa-exclamation-circle:before {\n  content: \"\\F06A\";\n}\n.fa-gift:before {\n  content: \"\\F06B\";\n}\n.fa-leaf:before {\n  content: \"\\F06C\";\n}\n.fa-fire:before {\n  content: \"\\F06D\";\n}\n.fa-eye:before {\n  content: \"\\F06E\";\n}\n.fa-eye-slash:before {\n  content: \"\\F070\";\n}\n.fa-warning:before,\n.fa-exclamation-triangle:before {\n  content: \"\\F071\";\n}\n.fa-plane:before {\n  content: \"\\F072\";\n}\n.fa-calendar:before {\n  content: \"\\F073\";\n}\n.fa-random:before {\n  content: \"\\F074\";\n}\n.fa-comment:before {\n  content: \"\\F075\";\n}\n.fa-magnet:before {\n  content: \"\\F076\";\n}\n.fa-chevron-up:before {\n  content: \"\\F077\";\n}\n.fa-chevron-down:before {\n  content: \"\\F078\";\n}\n.fa-retweet:before {\n  content: \"\\F079\";\n}\n.fa-shopping-cart:before {\n  content: \"\\F07A\";\n}\n.fa-folder:before {\n  content: \"\\F07B\";\n}\n.fa-folder-open:before {\n  content: \"\\F07C\";\n}\n.fa-arrows-v:before {\n  content: \"\\F07D\";\n}\n.fa-arrows-h:before {\n  content: \"\\F07E\";\n}\n.fa-bar-chart-o:before,\n.fa-bar-chart:before {\n  content: \"\\F080\";\n}\n.fa-twitter-square:before {\n  content: \"\\F081\";\n}\n.fa-facebook-square:before {\n  content: \"\\F082\";\n}\n.fa-camera-retro:before {\n  content: \"\\F083\";\n}\n.fa-key:before {\n  content: \"\\F084\";\n}\n.fa-gears:before,\n.fa-cogs:before {\n  content: \"\\F085\";\n}\n.fa-comments:before {\n  content: \"\\F086\";\n}\n.fa-thumbs-o-up:before {\n  content: \"\\F087\";\n}\n.fa-thumbs-o-down:before {\n  content: \"\\F088\";\n}\n.fa-star-half:before {\n  content: \"\\F089\";\n}\n.fa-heart-o:before {\n  content: \"\\F08A\";\n}\n.fa-sign-out:before {\n  content: \"\\F08B\";\n}\n.fa-linkedin-square:before {\n  content: \"\\F08C\";\n}\n.fa-thumb-tack:before {\n  content: \"\\F08D\";\n}\n.fa-external-link:before {\n  content: \"\\F08E\";\n}\n.fa-sign-in:before {\n  content: \"\\F090\";\n}\n.fa-trophy:before {\n  content: \"\\F091\";\n}\n.fa-github-square:before {\n  content: \"\\F092\";\n}\n.fa-upload:before {\n  content: \"\\F093\";\n}\n.fa-lemon-o:before {\n  content: \"\\F094\";\n}\n.fa-phone:before {\n  content: \"\\F095\";\n}\n.fa-square-o:before {\n  content: \"\\F096\";\n}\n.fa-bookmark-o:before {\n  content: \"\\F097\";\n}\n.fa-phone-square:before {\n  content: \"\\F098\";\n}\n.fa-twitter:before {\n  content: \"\\F099\";\n}\n.fa-facebook-f:before,\n.fa-facebook:before {\n  content: \"\\F09A\";\n}\n.fa-github:before {\n  content: \"\\F09B\";\n}\n.fa-unlock:before {\n  content: \"\\F09C\";\n}\n.fa-credit-card:before {\n  content: \"\\F09D\";\n}\n.fa-feed:before,\n.fa-rss:before {\n  content: \"\\F09E\";\n}\n.fa-hdd-o:before {\n  content: \"\\F0A0\";\n}\n.fa-bullhorn:before {\n  content: \"\\F0A1\";\n}\n.fa-bell:before {\n  content: \"\\F0F3\";\n}\n.fa-certificate:before {\n  content: \"\\F0A3\";\n}\n.fa-hand-o-right:before {\n  content: \"\\F0A4\";\n}\n.fa-hand-o-left:before {\n  content: \"\\F0A5\";\n}\n.fa-hand-o-up:before {\n  content: \"\\F0A6\";\n}\n.fa-hand-o-down:before {\n  content: \"\\F0A7\";\n}\n.fa-arrow-circle-left:before {\n  content: \"\\F0A8\";\n}\n.fa-arrow-circle-right:before {\n  content: \"\\F0A9\";\n}\n.fa-arrow-circle-up:before {\n  content: \"\\F0AA\";\n}\n.fa-arrow-circle-down:before {\n  content: \"\\F0AB\";\n}\n.fa-globe:before {\n  content: \"\\F0AC\";\n}\n.fa-wrench:before {\n  content: \"\\F0AD\";\n}\n.fa-tasks:before {\n  content: \"\\F0AE\";\n}\n.fa-filter:before {\n  content: \"\\F0B0\";\n}\n.fa-briefcase:before {\n  content: \"\\F0B1\";\n}\n.fa-arrows-alt:before {\n  content: \"\\F0B2\";\n}\n.fa-group:before,\n.fa-users:before {\n  content: \"\\F0C0\";\n}\n.fa-chain:before,\n.fa-link:before {\n  content: \"\\F0C1\";\n}\n.fa-cloud:before {\n  content: \"\\F0C2\";\n}\n.fa-flask:before {\n  content: \"\\F0C3\";\n}\n.fa-cut:before,\n.fa-scissors:before {\n  content: \"\\F0C4\";\n}\n.fa-copy:before,\n.fa-files-o:before {\n  content: \"\\F0C5\";\n}\n.fa-paperclip:before {\n  content: \"\\F0C6\";\n}\n.fa-save:before,\n.fa-floppy-o:before {\n  content: \"\\F0C7\";\n}\n.fa-square:before {\n  content: \"\\F0C8\";\n}\n.fa-navicon:before,\n.fa-reorder:before,\n.fa-bars:before {\n  content: \"\\F0C9\";\n}\n.fa-list-ul:before {\n  content: \"\\F0CA\";\n}\n.fa-list-ol:before {\n  content: \"\\F0CB\";\n}\n.fa-strikethrough:before {\n  content: \"\\F0CC\";\n}\n.fa-underline:before {\n  content: \"\\F0CD\";\n}\n.fa-table:before {\n  content: \"\\F0CE\";\n}\n.fa-magic:before {\n  content: \"\\F0D0\";\n}\n.fa-truck:before {\n  content: \"\\F0D1\";\n}\n.fa-pinterest:before {\n  content: \"\\F0D2\";\n}\n.fa-pinterest-square:before {\n  content: \"\\F0D3\";\n}\n.fa-google-plus-square:before {\n  content: \"\\F0D4\";\n}\n.fa-google-plus:before {\n  content: \"\\F0D5\";\n}\n.fa-money:before {\n  content: \"\\F0D6\";\n}\n.fa-caret-down:before {\n  content: \"\\F0D7\";\n}\n.fa-caret-up:before {\n  content: \"\\F0D8\";\n}\n.fa-caret-left:before {\n  content: \"\\F0D9\";\n}\n.fa-caret-right:before {\n  content: \"\\F0DA\";\n}\n.fa-columns:before {\n  content: \"\\F0DB\";\n}\n.fa-unsorted:before,\n.fa-sort:before {\n  content: \"\\F0DC\";\n}\n.fa-sort-down:before,\n.fa-sort-desc:before {\n  content: \"\\F0DD\";\n}\n.fa-sort-up:before,\n.fa-sort-asc:before {\n  content: \"\\F0DE\";\n}\n.fa-envelope:before {\n  content: \"\\F0E0\";\n}\n.fa-linkedin:before {\n  content: \"\\F0E1\";\n}\n.fa-rotate-left:before,\n.fa-undo:before {\n  content: \"\\F0E2\";\n}\n.fa-legal:before,\n.fa-gavel:before {\n  content: \"\\F0E3\";\n}\n.fa-dashboard:before,\n.fa-tachometer:before {\n  content: \"\\F0E4\";\n}\n.fa-comment-o:before {\n  content: \"\\F0E5\";\n}\n.fa-comments-o:before {\n  content: \"\\F0E6\";\n}\n.fa-flash:before,\n.fa-bolt:before {\n  content: \"\\F0E7\";\n}\n.fa-sitemap:before {\n  content: \"\\F0E8\";\n}\n.fa-umbrella:before {\n  content: \"\\F0E9\";\n}\n.fa-paste:before,\n.fa-clipboard:before {\n  content: \"\\F0EA\";\n}\n.fa-lightbulb-o:before {\n  content: \"\\F0EB\";\n}\n.fa-exchange:before {\n  content: \"\\F0EC\";\n}\n.fa-cloud-download:before {\n  content: \"\\F0ED\";\n}\n.fa-cloud-upload:before {\n  content: \"\\F0EE\";\n}\n.fa-user-md:before {\n  content: \"\\F0F0\";\n}\n.fa-stethoscope:before {\n  content: \"\\F0F1\";\n}\n.fa-suitcase:before {\n  content: \"\\F0F2\";\n}\n.fa-bell-o:before {\n  content: \"\\F0A2\";\n}\n.fa-coffee:before {\n  content: \"\\F0F4\";\n}\n.fa-cutlery:before {\n  content: \"\\F0F5\";\n}\n.fa-file-text-o:before {\n  content: \"\\F0F6\";\n}\n.fa-building-o:before {\n  content: \"\\F0F7\";\n}\n.fa-hospital-o:before {\n  content: \"\\F0F8\";\n}\n.fa-ambulance:before {\n  content: \"\\F0F9\";\n}\n.fa-medkit:before {\n  content: \"\\F0FA\";\n}\n.fa-fighter-jet:before {\n  content: \"\\F0FB\";\n}\n.fa-beer:before {\n  content: \"\\F0FC\";\n}\n.fa-h-square:before {\n  content: \"\\F0FD\";\n}\n.fa-plus-square:before {\n  content: \"\\F0FE\";\n}\n.fa-angle-double-left:before {\n  content: \"\\F100\";\n}\n.fa-angle-double-right:before {\n  content: \"\\F101\";\n}\n.fa-angle-double-up:before {\n  content: \"\\F102\";\n}\n.fa-angle-double-down:before {\n  content: \"\\F103\";\n}\n.fa-angle-left:before {\n  content: \"\\F104\";\n}\n.fa-angle-right:before {\n  content: \"\\F105\";\n}\n.fa-angle-up:before {\n  content: \"\\F106\";\n}\n.fa-angle-down:before {\n  content: \"\\F107\";\n}\n.fa-desktop:before {\n  content: \"\\F108\";\n}\n.fa-laptop:before {\n  content: \"\\F109\";\n}\n.fa-tablet:before {\n  content: \"\\F10A\";\n}\n.fa-mobile-phone:before,\n.fa-mobile:before {\n  content: \"\\F10B\";\n}\n.fa-circle-o:before {\n  content: \"\\F10C\";\n}\n.fa-quote-left:before {\n  content: \"\\F10D\";\n}\n.fa-quote-right:before {\n  content: \"\\F10E\";\n}\n.fa-spinner:before {\n  content: \"\\F110\";\n}\n.fa-circle:before {\n  content: \"\\F111\";\n}\n.fa-mail-reply:before,\n.fa-reply:before {\n  content: \"\\F112\";\n}\n.fa-github-alt:before {\n  content: \"\\F113\";\n}\n.fa-folder-o:before {\n  content: \"\\F114\";\n}\n.fa-folder-open-o:before {\n  content: \"\\F115\";\n}\n.fa-smile-o:before {\n  content: \"\\F118\";\n}\n.fa-frown-o:before {\n  content: \"\\F119\";\n}\n.fa-meh-o:before {\n  content: \"\\F11A\";\n}\n.fa-gamepad:before {\n  content: \"\\F11B\";\n}\n.fa-keyboard-o:before {\n  content: \"\\F11C\";\n}\n.fa-flag-o:before {\n  content: \"\\F11D\";\n}\n.fa-flag-checkered:before {\n  content: \"\\F11E\";\n}\n.fa-terminal:before {\n  content: \"\\F120\";\n}\n.fa-code:before {\n  content: \"\\F121\";\n}\n.fa-mail-reply-all:before,\n.fa-reply-all:before {\n  content: \"\\F122\";\n}\n.fa-star-half-empty:before,\n.fa-star-half-full:before,\n.fa-star-half-o:before {\n  content: \"\\F123\";\n}\n.fa-location-arrow:before {\n  content: \"\\F124\";\n}\n.fa-crop:before {\n  content: \"\\F125\";\n}\n.fa-code-fork:before {\n  content: \"\\F126\";\n}\n.fa-unlink:before,\n.fa-chain-broken:before {\n  content: \"\\F127\";\n}\n.fa-question:before {\n  content: \"\\F128\";\n}\n.fa-info:before {\n  content: \"\\F129\";\n}\n.fa-exclamation:before {\n  content: \"\\F12A\";\n}\n.fa-superscript:before {\n  content: \"\\F12B\";\n}\n.fa-subscript:before {\n  content: \"\\F12C\";\n}\n.fa-eraser:before {\n  content: \"\\F12D\";\n}\n.fa-puzzle-piece:before {\n  content: \"\\F12E\";\n}\n.fa-microphone:before {\n  content: \"\\F130\";\n}\n.fa-microphone-slash:before {\n  content: \"\\F131\";\n}\n.fa-shield:before {\n  content: \"\\F132\";\n}\n.fa-calendar-o:before {\n  content: \"\\F133\";\n}\n.fa-fire-extinguisher:before {\n  content: \"\\F134\";\n}\n.fa-rocket:before {\n  content: \"\\F135\";\n}\n.fa-maxcdn:before {\n  content: \"\\F136\";\n}\n.fa-chevron-circle-left:before {\n  content: \"\\F137\";\n}\n.fa-chevron-circle-right:before {\n  content: \"\\F138\";\n}\n.fa-chevron-circle-up:before {\n  content: \"\\F139\";\n}\n.fa-chevron-circle-down:before {\n  content: \"\\F13A\";\n}\n.fa-html5:before {\n  content: \"\\F13B\";\n}\n.fa-css3:before {\n  content: \"\\F13C\";\n}\n.fa-anchor:before {\n  content: \"\\F13D\";\n}\n.fa-unlock-alt:before {\n  content: \"\\F13E\";\n}\n.fa-bullseye:before {\n  content: \"\\F140\";\n}\n.fa-ellipsis-h:before {\n  content: \"\\F141\";\n}\n.fa-ellipsis-v:before {\n  content: \"\\F142\";\n}\n.fa-rss-square:before {\n  content: \"\\F143\";\n}\n.fa-play-circle:before {\n  content: \"\\F144\";\n}\n.fa-ticket:before {\n  content: \"\\F145\";\n}\n.fa-minus-square:before {\n  content: \"\\F146\";\n}\n.fa-minus-square-o:before {\n  content: \"\\F147\";\n}\n.fa-level-up:before {\n  content: \"\\F148\";\n}\n.fa-level-down:before {\n  content: \"\\F149\";\n}\n.fa-check-square:before {\n  content: \"\\F14A\";\n}\n.fa-pencil-square:before {\n  content: \"\\F14B\";\n}\n.fa-external-link-square:before {\n  content: \"\\F14C\";\n}\n.fa-share-square:before {\n  content: \"\\F14D\";\n}\n.fa-compass:before {\n  content: \"\\F14E\";\n}\n.fa-toggle-down:before,\n.fa-caret-square-o-down:before {\n  content: \"\\F150\";\n}\n.fa-toggle-up:before,\n.fa-caret-square-o-up:before {\n  content: \"\\F151\";\n}\n.fa-toggle-right:before,\n.fa-caret-square-o-right:before {\n  content: \"\\F152\";\n}\n.fa-euro:before,\n.fa-eur:before {\n  content: \"\\F153\";\n}\n.fa-gbp:before {\n  content: \"\\F154\";\n}\n.fa-dollar:before,\n.fa-usd:before {\n  content: \"\\F155\";\n}\n.fa-rupee:before,\n.fa-inr:before {\n  content: \"\\F156\";\n}\n.fa-cny:before,\n.fa-rmb:before,\n.fa-yen:before,\n.fa-jpy:before {\n  content: \"\\F157\";\n}\n.fa-ruble:before,\n.fa-rouble:before,\n.fa-rub:before {\n  content: \"\\F158\";\n}\n.fa-won:before,\n.fa-krw:before {\n  content: \"\\F159\";\n}\n.fa-bitcoin:before,\n.fa-btc:before {\n  content: \"\\F15A\";\n}\n.fa-file:before {\n  content: \"\\F15B\";\n}\n.fa-file-text:before {\n  content: \"\\F15C\";\n}\n.fa-sort-alpha-asc:before {\n  content: \"\\F15D\";\n}\n.fa-sort-alpha-desc:before {\n  content: \"\\F15E\";\n}\n.fa-sort-amount-asc:before {\n  content: \"\\F160\";\n}\n.fa-sort-amount-desc:before {\n  content: \"\\F161\";\n}\n.fa-sort-numeric-asc:before {\n  content: \"\\F162\";\n}\n.fa-sort-numeric-desc:before {\n  content: \"\\F163\";\n}\n.fa-thumbs-up:before {\n  content: \"\\F164\";\n}\n.fa-thumbs-down:before {\n  content: \"\\F165\";\n}\n.fa-youtube-square:before {\n  content: \"\\F166\";\n}\n.fa-youtube:before {\n  content: \"\\F167\";\n}\n.fa-xing:before {\n  content: \"\\F168\";\n}\n.fa-xing-square:before {\n  content: \"\\F169\";\n}\n.fa-youtube-play:before {\n  content: \"\\F16A\";\n}\n.fa-dropbox:before {\n  content: \"\\F16B\";\n}\n.fa-stack-overflow:before {\n  content: \"\\F16C\";\n}\n.fa-instagram:before {\n  content: \"\\F16D\";\n}\n.fa-flickr:before {\n  content: \"\\F16E\";\n}\n.fa-adn:before {\n  content: \"\\F170\";\n}\n.fa-bitbucket:before {\n  content: \"\\F171\";\n}\n.fa-bitbucket-square:before {\n  content: \"\\F172\";\n}\n.fa-tumblr:before {\n  content: \"\\F173\";\n}\n.fa-tumblr-square:before {\n  content: \"\\F174\";\n}\n.fa-long-arrow-down:before {\n  content: \"\\F175\";\n}\n.fa-long-arrow-up:before {\n  content: \"\\F176\";\n}\n.fa-long-arrow-left:before {\n  content: \"\\F177\";\n}\n.fa-long-arrow-right:before {\n  content: \"\\F178\";\n}\n.fa-apple:before {\n  content: \"\\F179\";\n}\n.fa-windows:before {\n  content: \"\\F17A\";\n}\n.fa-android:before {\n  content: \"\\F17B\";\n}\n.fa-linux:before {\n  content: \"\\F17C\";\n}\n.fa-dribbble:before {\n  content: \"\\F17D\";\n}\n.fa-skype:before {\n  content: \"\\F17E\";\n}\n.fa-foursquare:before {\n  content: \"\\F180\";\n}\n.fa-trello:before {\n  content: \"\\F181\";\n}\n.fa-female:before {\n  content: \"\\F182\";\n}\n.fa-male:before {\n  content: \"\\F183\";\n}\n.fa-gittip:before,\n.fa-gratipay:before {\n  content: \"\\F184\";\n}\n.fa-sun-o:before {\n  content: \"\\F185\";\n}\n.fa-moon-o:before {\n  content: \"\\F186\";\n}\n.fa-archive:before {\n  content: \"\\F187\";\n}\n.fa-bug:before {\n  content: \"\\F188\";\n}\n.fa-vk:before {\n  content: \"\\F189\";\n}\n.fa-weibo:before {\n  content: \"\\F18A\";\n}\n.fa-renren:before {\n  content: \"\\F18B\";\n}\n.fa-pagelines:before {\n  content: \"\\F18C\";\n}\n.fa-stack-exchange:before {\n  content: \"\\F18D\";\n}\n.fa-arrow-circle-o-right:before {\n  content: \"\\F18E\";\n}\n.fa-arrow-circle-o-left:before {\n  content: \"\\F190\";\n}\n.fa-toggle-left:before,\n.fa-caret-square-o-left:before {\n  content: \"\\F191\";\n}\n.fa-dot-circle-o:before {\n  content: \"\\F192\";\n}\n.fa-wheelchair:before {\n  content: \"\\F193\";\n}\n.fa-vimeo-square:before {\n  content: \"\\F194\";\n}\n.fa-turkish-lira:before,\n.fa-try:before {\n  content: \"\\F195\";\n}\n.fa-plus-square-o:before {\n  content: \"\\F196\";\n}\n.fa-space-shuttle:before {\n  content: \"\\F197\";\n}\n.fa-slack:before {\n  content: \"\\F198\";\n}\n.fa-envelope-square:before {\n  content: \"\\F199\";\n}\n.fa-wordpress:before {\n  content: \"\\F19A\";\n}\n.fa-openid:before {\n  content: \"\\F19B\";\n}\n.fa-institution:before,\n.fa-bank:before,\n.fa-university:before {\n  content: \"\\F19C\";\n}\n.fa-mortar-board:before,\n.fa-graduation-cap:before {\n  content: \"\\F19D\";\n}\n.fa-yahoo:before {\n  content: \"\\F19E\";\n}\n.fa-google:before {\n  content: \"\\F1A0\";\n}\n.fa-reddit:before {\n  content: \"\\F1A1\";\n}\n.fa-reddit-square:before {\n  content: \"\\F1A2\";\n}\n.fa-stumbleupon-circle:before {\n  content: \"\\F1A3\";\n}\n.fa-stumbleupon:before {\n  content: \"\\F1A4\";\n}\n.fa-delicious:before {\n  content: \"\\F1A5\";\n}\n.fa-digg:before {\n  content: \"\\F1A6\";\n}\n.fa-pied-piper-pp:before {\n  content: \"\\F1A7\";\n}\n.fa-pied-piper-alt:before {\n  content: \"\\F1A8\";\n}\n.fa-drupal:before {\n  content: \"\\F1A9\";\n}\n.fa-joomla:before {\n  content: \"\\F1AA\";\n}\n.fa-language:before {\n  content: \"\\F1AB\";\n}\n.fa-fax:before {\n  content: \"\\F1AC\";\n}\n.fa-building:before {\n  content: \"\\F1AD\";\n}\n.fa-child:before {\n  content: \"\\F1AE\";\n}\n.fa-paw:before {\n  content: \"\\F1B0\";\n}\n.fa-spoon:before {\n  content: \"\\F1B1\";\n}\n.fa-cube:before {\n  content: \"\\F1B2\";\n}\n.fa-cubes:before {\n  content: \"\\F1B3\";\n}\n.fa-behance:before {\n  content: \"\\F1B4\";\n}\n.fa-behance-square:before {\n  content: \"\\F1B5\";\n}\n.fa-steam:before {\n  content: \"\\F1B6\";\n}\n.fa-steam-square:before {\n  content: \"\\F1B7\";\n}\n.fa-recycle:before {\n  content: \"\\F1B8\";\n}\n.fa-automobile:before,\n.fa-car:before {\n  content: \"\\F1B9\";\n}\n.fa-cab:before,\n.fa-taxi:before {\n  content: \"\\F1BA\";\n}\n.fa-tree:before {\n  content: \"\\F1BB\";\n}\n.fa-spotify:before {\n  content: \"\\F1BC\";\n}\n.fa-deviantart:before {\n  content: \"\\F1BD\";\n}\n.fa-soundcloud:before {\n  content: \"\\F1BE\";\n}\n.fa-database:before {\n  content: \"\\F1C0\";\n}\n.fa-file-pdf-o:before {\n  content: \"\\F1C1\";\n}\n.fa-file-word-o:before {\n  content: \"\\F1C2\";\n}\n.fa-file-excel-o:before {\n  content: \"\\F1C3\";\n}\n.fa-file-powerpoint-o:before {\n  content: \"\\F1C4\";\n}\n.fa-file-photo-o:before,\n.fa-file-picture-o:before,\n.fa-file-image-o:before {\n  content: \"\\F1C5\";\n}\n.fa-file-zip-o:before,\n.fa-file-archive-o:before {\n  content: \"\\F1C6\";\n}\n.fa-file-sound-o:before,\n.fa-file-audio-o:before {\n  content: \"\\F1C7\";\n}\n.fa-file-movie-o:before,\n.fa-file-video-o:before {\n  content: \"\\F1C8\";\n}\n.fa-file-code-o:before {\n  content: \"\\F1C9\";\n}\n.fa-vine:before {\n  content: \"\\F1CA\";\n}\n.fa-codepen:before {\n  content: \"\\F1CB\";\n}\n.fa-jsfiddle:before {\n  content: \"\\F1CC\";\n}\n.fa-life-bouy:before,\n.fa-life-buoy:before,\n.fa-life-saver:before,\n.fa-support:before,\n.fa-life-ring:before {\n  content: \"\\F1CD\";\n}\n.fa-circle-o-notch:before {\n  content: \"\\F1CE\";\n}\n.fa-ra:before,\n.fa-resistance:before,\n.fa-rebel:before {\n  content: \"\\F1D0\";\n}\n.fa-ge:before,\n.fa-empire:before {\n  content: \"\\F1D1\";\n}\n.fa-git-square:before {\n  content: \"\\F1D2\";\n}\n.fa-git:before {\n  content: \"\\F1D3\";\n}\n.fa-y-combinator-square:before,\n.fa-yc-square:before,\n.fa-hacker-news:before {\n  content: \"\\F1D4\";\n}\n.fa-tencent-weibo:before {\n  content: \"\\F1D5\";\n}\n.fa-qq:before {\n  content: \"\\F1D6\";\n}\n.fa-wechat:before,\n.fa-weixin:before {\n  content: \"\\F1D7\";\n}\n.fa-send:before,\n.fa-paper-plane:before {\n  content: \"\\F1D8\";\n}\n.fa-send-o:before,\n.fa-paper-plane-o:before {\n  content: \"\\F1D9\";\n}\n.fa-history:before {\n  content: \"\\F1DA\";\n}\n.fa-circle-thin:before {\n  content: \"\\F1DB\";\n}\n.fa-header:before {\n  content: \"\\F1DC\";\n}\n.fa-paragraph:before {\n  content: \"\\F1DD\";\n}\n.fa-sliders:before {\n  content: \"\\F1DE\";\n}\n.fa-share-alt:before {\n  content: \"\\F1E0\";\n}\n.fa-share-alt-square:before {\n  content: \"\\F1E1\";\n}\n.fa-bomb:before {\n  content: \"\\F1E2\";\n}\n.fa-soccer-ball-o:before,\n.fa-futbol-o:before {\n  content: \"\\F1E3\";\n}\n.fa-tty:before {\n  content: \"\\F1E4\";\n}\n.fa-binoculars:before {\n  content: \"\\F1E5\";\n}\n.fa-plug:before {\n  content: \"\\F1E6\";\n}\n.fa-slideshare:before {\n  content: \"\\F1E7\";\n}\n.fa-twitch:before {\n  content: \"\\F1E8\";\n}\n.fa-yelp:before {\n  content: \"\\F1E9\";\n}\n.fa-newspaper-o:before {\n  content: \"\\F1EA\";\n}\n.fa-wifi:before {\n  content: \"\\F1EB\";\n}\n.fa-calculator:before {\n  content: \"\\F1EC\";\n}\n.fa-paypal:before {\n  content: \"\\F1ED\";\n}\n.fa-google-wallet:before {\n  content: \"\\F1EE\";\n}\n.fa-cc-visa:before {\n  content: \"\\F1F0\";\n}\n.fa-cc-mastercard:before {\n  content: \"\\F1F1\";\n}\n.fa-cc-discover:before {\n  content: \"\\F1F2\";\n}\n.fa-cc-amex:before {\n  content: \"\\F1F3\";\n}\n.fa-cc-paypal:before {\n  content: \"\\F1F4\";\n}\n.fa-cc-stripe:before {\n  content: \"\\F1F5\";\n}\n.fa-bell-slash:before {\n  content: \"\\F1F6\";\n}\n.fa-bell-slash-o:before {\n  content: \"\\F1F7\";\n}\n.fa-trash:before {\n  content: \"\\F1F8\";\n}\n.fa-copyright:before {\n  content: \"\\F1F9\";\n}\n.fa-at:before {\n  content: \"\\F1FA\";\n}\n.fa-eyedropper:before {\n  content: \"\\F1FB\";\n}\n.fa-paint-brush:before {\n  content: \"\\F1FC\";\n}\n.fa-birthday-cake:before {\n  content: \"\\F1FD\";\n}\n.fa-area-chart:before {\n  content: \"\\F1FE\";\n}\n.fa-pie-chart:before {\n  content: \"\\F200\";\n}\n.fa-line-chart:before {\n  content: \"\\F201\";\n}\n.fa-lastfm:before {\n  content: \"\\F202\";\n}\n.fa-lastfm-square:before {\n  content: \"\\F203\";\n}\n.fa-toggle-off:before {\n  content: \"\\F204\";\n}\n.fa-toggle-on:before {\n  content: \"\\F205\";\n}\n.fa-bicycle:before {\n  content: \"\\F206\";\n}\n.fa-bus:before {\n  content: \"\\F207\";\n}\n.fa-ioxhost:before {\n  content: \"\\F208\";\n}\n.fa-angellist:before {\n  content: \"\\F209\";\n}\n.fa-cc:before {\n  content: \"\\F20A\";\n}\n.fa-shekel:before,\n.fa-sheqel:before,\n.fa-ils:before {\n  content: \"\\F20B\";\n}\n.fa-meanpath:before {\n  content: \"\\F20C\";\n}\n.fa-buysellads:before {\n  content: \"\\F20D\";\n}\n.fa-connectdevelop:before {\n  content: \"\\F20E\";\n}\n.fa-dashcube:before {\n  content: \"\\F210\";\n}\n.fa-forumbee:before {\n  content: \"\\F211\";\n}\n.fa-leanpub:before {\n  content: \"\\F212\";\n}\n.fa-sellsy:before {\n  content: \"\\F213\";\n}\n.fa-shirtsinbulk:before {\n  content: \"\\F214\";\n}\n.fa-simplybuilt:before {\n  content: \"\\F215\";\n}\n.fa-skyatlas:before {\n  content: \"\\F216\";\n}\n.fa-cart-plus:before {\n  content: \"\\F217\";\n}\n.fa-cart-arrow-down:before {\n  content: \"\\F218\";\n}\n.fa-diamond:before {\n  content: \"\\F219\";\n}\n.fa-ship:before {\n  content: \"\\F21A\";\n}\n.fa-user-secret:before {\n  content: \"\\F21B\";\n}\n.fa-motorcycle:before {\n  content: \"\\F21C\";\n}\n.fa-street-view:before {\n  content: \"\\F21D\";\n}\n.fa-heartbeat:before {\n  content: \"\\F21E\";\n}\n.fa-venus:before {\n  content: \"\\F221\";\n}\n.fa-mars:before {\n  content: \"\\F222\";\n}\n.fa-mercury:before {\n  content: \"\\F223\";\n}\n.fa-intersex:before,\n.fa-transgender:before {\n  content: \"\\F224\";\n}\n.fa-transgender-alt:before {\n  content: \"\\F225\";\n}\n.fa-venus-double:before {\n  content: \"\\F226\";\n}\n.fa-mars-double:before {\n  content: \"\\F227\";\n}\n.fa-venus-mars:before {\n  content: \"\\F228\";\n}\n.fa-mars-stroke:before {\n  content: \"\\F229\";\n}\n.fa-mars-stroke-v:before {\n  content: \"\\F22A\";\n}\n.fa-mars-stroke-h:before {\n  content: \"\\F22B\";\n}\n.fa-neuter:before {\n  content: \"\\F22C\";\n}\n.fa-genderless:before {\n  content: \"\\F22D\";\n}\n.fa-facebook-official:before {\n  content: \"\\F230\";\n}\n.fa-pinterest-p:before {\n  content: \"\\F231\";\n}\n.fa-whatsapp:before {\n  content: \"\\F232\";\n}\n.fa-server:before {\n  content: \"\\F233\";\n}\n.fa-user-plus:before {\n  content: \"\\F234\";\n}\n.fa-user-times:before {\n  content: \"\\F235\";\n}\n.fa-hotel:before,\n.fa-bed:before {\n  content: \"\\F236\";\n}\n.fa-viacoin:before {\n  content: \"\\F237\";\n}\n.fa-train:before {\n  content: \"\\F238\";\n}\n.fa-subway:before {\n  content: \"\\F239\";\n}\n.fa-medium:before {\n  content: \"\\F23A\";\n}\n.fa-yc:before,\n.fa-y-combinator:before {\n  content: \"\\F23B\";\n}\n.fa-optin-monster:before {\n  content: \"\\F23C\";\n}\n.fa-opencart:before {\n  content: \"\\F23D\";\n}\n.fa-expeditedssl:before {\n  content: \"\\F23E\";\n}\n.fa-battery-4:before,\n.fa-battery-full:before {\n  content: \"\\F240\";\n}\n.fa-battery-3:before,\n.fa-battery-three-quarters:before {\n  content: \"\\F241\";\n}\n.fa-battery-2:before,\n.fa-battery-half:before {\n  content: \"\\F242\";\n}\n.fa-battery-1:before,\n.fa-battery-quarter:before {\n  content: \"\\F243\";\n}\n.fa-battery-0:before,\n.fa-battery-empty:before {\n  content: \"\\F244\";\n}\n.fa-mouse-pointer:before {\n  content: \"\\F245\";\n}\n.fa-i-cursor:before {\n  content: \"\\F246\";\n}\n.fa-object-group:before {\n  content: \"\\F247\";\n}\n.fa-object-ungroup:before {\n  content: \"\\F248\";\n}\n.fa-sticky-note:before {\n  content: \"\\F249\";\n}\n.fa-sticky-note-o:before {\n  content: \"\\F24A\";\n}\n.fa-cc-jcb:before {\n  content: \"\\F24B\";\n}\n.fa-cc-diners-club:before {\n  content: \"\\F24C\";\n}\n.fa-clone:before {\n  content: \"\\F24D\";\n}\n.fa-balance-scale:before {\n  content: \"\\F24E\";\n}\n.fa-hourglass-o:before {\n  content: \"\\F250\";\n}\n.fa-hourglass-1:before,\n.fa-hourglass-start:before {\n  content: \"\\F251\";\n}\n.fa-hourglass-2:before,\n.fa-hourglass-half:before {\n  content: \"\\F252\";\n}\n.fa-hourglass-3:before,\n.fa-hourglass-end:before {\n  content: \"\\F253\";\n}\n.fa-hourglass:before {\n  content: \"\\F254\";\n}\n.fa-hand-grab-o:before,\n.fa-hand-rock-o:before {\n  content: \"\\F255\";\n}\n.fa-hand-stop-o:before,\n.fa-hand-paper-o:before {\n  content: \"\\F256\";\n}\n.fa-hand-scissors-o:before {\n  content: \"\\F257\";\n}\n.fa-hand-lizard-o:before {\n  content: \"\\F258\";\n}\n.fa-hand-spock-o:before {\n  content: \"\\F259\";\n}\n.fa-hand-pointer-o:before {\n  content: \"\\F25A\";\n}\n.fa-hand-peace-o:before {\n  content: \"\\F25B\";\n}\n.fa-trademark:before {\n  content: \"\\F25C\";\n}\n.fa-registered:before {\n  content: \"\\F25D\";\n}\n.fa-creative-commons:before {\n  content: \"\\F25E\";\n}\n.fa-gg:before {\n  content: \"\\F260\";\n}\n.fa-gg-circle:before {\n  content: \"\\F261\";\n}\n.fa-tripadvisor:before {\n  content: \"\\F262\";\n}\n.fa-odnoklassniki:before {\n  content: \"\\F263\";\n}\n.fa-odnoklassniki-square:before {\n  content: \"\\F264\";\n}\n.fa-get-pocket:before {\n  content: \"\\F265\";\n}\n.fa-wikipedia-w:before {\n  content: \"\\F266\";\n}\n.fa-safari:before {\n  content: \"\\F267\";\n}\n.fa-chrome:before {\n  content: \"\\F268\";\n}\n.fa-firefox:before {\n  content: \"\\F269\";\n}\n.fa-opera:before {\n  content: \"\\F26A\";\n}\n.fa-internet-explorer:before {\n  content: \"\\F26B\";\n}\n.fa-tv:before,\n.fa-television:before {\n  content: \"\\F26C\";\n}\n.fa-contao:before {\n  content: \"\\F26D\";\n}\n.fa-500px:before {\n  content: \"\\F26E\";\n}\n.fa-amazon:before {\n  content: \"\\F270\";\n}\n.fa-calendar-plus-o:before {\n  content: \"\\F271\";\n}\n.fa-calendar-minus-o:before {\n  content: \"\\F272\";\n}\n.fa-calendar-times-o:before {\n  content: \"\\F273\";\n}\n.fa-calendar-check-o:before {\n  content: \"\\F274\";\n}\n.fa-industry:before {\n  content: \"\\F275\";\n}\n.fa-map-pin:before {\n  content: \"\\F276\";\n}\n.fa-map-signs:before {\n  content: \"\\F277\";\n}\n.fa-map-o:before {\n  content: \"\\F278\";\n}\n.fa-map:before {\n  content: \"\\F279\";\n}\n.fa-commenting:before {\n  content: \"\\F27A\";\n}\n.fa-commenting-o:before {\n  content: \"\\F27B\";\n}\n.fa-houzz:before {\n  content: \"\\F27C\";\n}\n.fa-vimeo:before {\n  content: \"\\F27D\";\n}\n.fa-black-tie:before {\n  content: \"\\F27E\";\n}\n.fa-fonticons:before {\n  content: \"\\F280\";\n}\n.fa-reddit-alien:before {\n  content: \"\\F281\";\n}\n.fa-edge:before {\n  content: \"\\F282\";\n}\n.fa-credit-card-alt:before {\n  content: \"\\F283\";\n}\n.fa-codiepie:before {\n  content: \"\\F284\";\n}\n.fa-modx:before {\n  content: \"\\F285\";\n}\n.fa-fort-awesome:before {\n  content: \"\\F286\";\n}\n.fa-usb:before {\n  content: \"\\F287\";\n}\n.fa-product-hunt:before {\n  content: \"\\F288\";\n}\n.fa-mixcloud:before {\n  content: \"\\F289\";\n}\n.fa-scribd:before {\n  content: \"\\F28A\";\n}\n.fa-pause-circle:before {\n  content: \"\\F28B\";\n}\n.fa-pause-circle-o:before {\n  content: \"\\F28C\";\n}\n.fa-stop-circle:before {\n  content: \"\\F28D\";\n}\n.fa-stop-circle-o:before {\n  content: \"\\F28E\";\n}\n.fa-shopping-bag:before {\n  content: \"\\F290\";\n}\n.fa-shopping-basket:before {\n  content: \"\\F291\";\n}\n.fa-hashtag:before {\n  content: \"\\F292\";\n}\n.fa-bluetooth:before {\n  content: \"\\F293\";\n}\n.fa-bluetooth-b:before {\n  content: \"\\F294\";\n}\n.fa-percent:before {\n  content: \"\\F295\";\n}\n.fa-gitlab:before {\n  content: \"\\F296\";\n}\n.fa-wpbeginner:before {\n  content: \"\\F297\";\n}\n.fa-wpforms:before {\n  content: \"\\F298\";\n}\n.fa-envira:before {\n  content: \"\\F299\";\n}\n.fa-universal-access:before {\n  content: \"\\F29A\";\n}\n.fa-wheelchair-alt:before {\n  content: \"\\F29B\";\n}\n.fa-question-circle-o:before {\n  content: \"\\F29C\";\n}\n.fa-blind:before {\n  content: \"\\F29D\";\n}\n.fa-audio-description:before {\n  content: \"\\F29E\";\n}\n.fa-volume-control-phone:before {\n  content: \"\\F2A0\";\n}\n.fa-braille:before {\n  content: \"\\F2A1\";\n}\n.fa-assistive-listening-systems:before {\n  content: \"\\F2A2\";\n}\n.fa-asl-interpreting:before,\n.fa-american-sign-language-interpreting:before {\n  content: \"\\F2A3\";\n}\n.fa-deafness:before,\n.fa-hard-of-hearing:before,\n.fa-deaf:before {\n  content: \"\\F2A4\";\n}\n.fa-glide:before {\n  content: \"\\F2A5\";\n}\n.fa-glide-g:before {\n  content: \"\\F2A6\";\n}\n.fa-signing:before,\n.fa-sign-language:before {\n  content: \"\\F2A7\";\n}\n.fa-low-vision:before {\n  content: \"\\F2A8\";\n}\n.fa-viadeo:before {\n  content: \"\\F2A9\";\n}\n.fa-viadeo-square:before {\n  content: \"\\F2AA\";\n}\n.fa-snapchat:before {\n  content: \"\\F2AB\";\n}\n.fa-snapchat-ghost:before {\n  content: \"\\F2AC\";\n}\n.fa-snapchat-square:before {\n  content: \"\\F2AD\";\n}\n.fa-pied-piper:before {\n  content: \"\\F2AE\";\n}\n.fa-first-order:before {\n  content: \"\\F2B0\";\n}\n.fa-yoast:before {\n  content: \"\\F2B1\";\n}\n.fa-themeisle:before {\n  content: \"\\F2B2\";\n}\n.fa-google-plus-circle:before,\n.fa-google-plus-official:before {\n  content: \"\\F2B3\";\n}\n.fa-fa:before,\n.fa-font-awesome:before {\n  content: \"\\F2B4\";\n}\n/* makes the font 33% larger relative to the icon container */\n.fa-lg {\n  font-size: 1.33333333em;\n  line-height: 0.75em;\n  vertical-align: -15%;\n}\n.fa-2x {\n  font-size: 2em;\n}\n.fa-3x {\n  font-size: 3em;\n}\n.fa-4x {\n  font-size: 4em;\n}\n.fa-5x {\n  font-size: 5em;\n}\n.fa-ul {\n  padding-left: 0;\n  margin-left: 2.14285714em;\n  list-style-type: none;\n}\n.fa-ul > li {\n  position: relative;\n}\n.fa-li {\n  position: absolute;\n  left: -2.14285714em;\n  width: 2.14285714em;\n  top: 0.14285714em;\n  text-align: center;\n}\n.fa-li.fa-lg {\n  left: -1.85714286em;\n}\n/* FONT PATH\n * -------------------------- */\n@font-face {\n  font-family: 'FontAwesome';\n  src: url(" + __webpack_require__(34) + ");\n  src: url(" + __webpack_require__(35) + "?#iefix&v=4.6.3) format('embedded-opentype'), url(" + __webpack_require__(36) + ") format('woff2'), url(" + __webpack_require__(37) + ") format('woff'), url(" + __webpack_require__(38) + ") format('truetype'), url(" + __webpack_require__(39) + "#fontawesomeregular) format('svg');\n  font-weight: normal;\n  font-style: normal;\n}\n.fa-rotate-90 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=1)\";\n  -webkit-transform: rotate(90deg);\n  -ms-transform: rotate(90deg);\n  transform: rotate(90deg);\n}\n.fa-rotate-180 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)\";\n  -webkit-transform: rotate(180deg);\n  -ms-transform: rotate(180deg);\n  transform: rotate(180deg);\n}\n.fa-rotate-270 {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=3)\";\n  -webkit-transform: rotate(270deg);\n  -ms-transform: rotate(270deg);\n  transform: rotate(270deg);\n}\n.fa-flip-horizontal {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)\";\n  -webkit-transform: scale(-1, 1);\n  -ms-transform: scale(-1, 1);\n  transform: scale(-1, 1);\n}\n.fa-flip-vertical {\n  -ms-filter: \"progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)\";\n  -webkit-transform: scale(1, -1);\n  -ms-transform: scale(1, -1);\n  transform: scale(1, -1);\n}\n:root .fa-rotate-90,\n:root .fa-rotate-180,\n:root .fa-rotate-270,\n:root .fa-flip-horizontal,\n:root .fa-flip-vertical {\n  filter: none;\n}\n.fa-spin {\n  -webkit-animation: fa-spin 2s infinite linear;\n  animation: fa-spin 2s infinite linear;\n}\n.fa-pulse {\n  -webkit-animation: fa-spin 1s infinite steps(8);\n  animation: fa-spin 1s infinite steps(8);\n}\n@-webkit-keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n  }\n}\n@keyframes fa-spin {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n  }\n  100% {\n    -webkit-transform: rotate(359deg);\n    transform: rotate(359deg);\n  }\n}\n.fa-stack {\n  position: relative;\n  display: inline-block;\n  width: 2em;\n  height: 2em;\n  line-height: 2em;\n  vertical-align: middle;\n}\n.fa-stack-1x,\n.fa-stack-2x {\n  position: absolute;\n  left: 0;\n  width: 100%;\n  text-align: center;\n}\n.fa-stack-1x {\n  line-height: inherit;\n}\n.fa-stack-2x {\n  font-size: 2em;\n}\n.fa-inverse {\n  color: #fff;\n}\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 33 */
+/***/ function(module, exports) {
+
+	/*
+		MIT License http://www.opensource.org/licenses/mit-license.php
+		Author Tobias Koppers @sokra
+	*/
+	// css base code, injected by the css-loader
+	module.exports = function() {
+		var list = [];
+	
+		// return the list of modules as css string
+		list.toString = function toString() {
+			var result = [];
+			for(var i = 0; i < this.length; i++) {
+				var item = this[i];
+				if(item[2]) {
+					result.push("@media " + item[2] + "{" + item[1] + "}");
+				} else {
+					result.push(item[1]);
+				}
+			}
+			return result.join("");
+		};
+	
+		// import a list of modules into the list
+		list.i = function(modules, mediaQuery) {
+			if(typeof modules === "string")
+				modules = [[null, modules, ""]];
+			var alreadyImportedModules = {};
+			for(var i = 0; i < this.length; i++) {
+				var id = this[i][0];
+				if(typeof id === "number")
+					alreadyImportedModules[id] = true;
+			}
+			for(i = 0; i < modules.length; i++) {
+				var item = modules[i];
+				// skip already imported module
+				// this implementation is not 100% perfect for weird media query combinations
+				//  when a module is imported multiple times with different media queries.
+				//  I hope this will never occur (Hey this way we have smaller bundles)
+				if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+					if(mediaQuery && !item[2]) {
+						item[2] = mediaQuery;
+					} else if(mediaQuery) {
+						item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+					}
+					list.push(item);
+				}
+			}
+		};
+		return list;
+	};
+
+
+/***/ },
+/* 34 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "25a32416abee198dd821b0b17a198a8f.eot";
+
+/***/ },
+/* 35 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "25a32416abee198dd821b0b17a198a8f.eot";
+
+/***/ },
+/* 36 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "e6cf7c6ec7c2d6f670ae9d762604cb0b.woff2";
+
+/***/ },
+/* 37 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "c8ddf1e5e5bf3682bc7bebf30f394148.woff";
+
+/***/ },
+/* 38 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "1dc35d25e61d819a9c357074014867ab.ttf";
+
+/***/ },
+/* 39 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "d7c639084f684d66a1bc66855d193ed8.svg";
+
+/***/ },
+/* 40 */
+/***/ function(module, exports, __webpack_require__) {
+
+	/*
+		MIT License http://www.opensource.org/licenses/mit-license.php
+		Author Tobias Koppers @sokra
+	*/
+	var stylesInDom = {},
+		memoize = function(fn) {
+			var memo;
+			return function () {
+				if (typeof memo === "undefined") memo = fn.apply(this, arguments);
+				return memo;
+			};
+		},
+		isOldIE = memoize(function() {
+			return /msie [6-9]\b/.test(window.navigator.userAgent.toLowerCase());
+		}),
+		getHeadElement = memoize(function () {
+			return document.head || document.getElementsByTagName("head")[0];
+		}),
+		singletonElement = null,
+		singletonCounter = 0;
+	
+	module.exports = function(list, options) {
+		if(false) {
+			if(typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
+		}
+	
+		options = options || {};
+		// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+		// tags it will allow on a page
+		if (typeof options.singleton === "undefined") options.singleton = isOldIE();
+	
+		var styles = listToStyles(list);
+		addStylesToDom(styles, options);
+	
+		return function update(newList) {
+			var mayRemove = [];
+			for(var i = 0; i < styles.length; i++) {
+				var item = styles[i];
+				var domStyle = stylesInDom[item.id];
+				domStyle.refs--;
+				mayRemove.push(domStyle);
+			}
+			if(newList) {
+				var newStyles = listToStyles(newList);
+				addStylesToDom(newStyles, options);
+			}
+			for(var i = 0; i < mayRemove.length; i++) {
+				var domStyle = mayRemove[i];
+				if(domStyle.refs === 0) {
+					for(var j = 0; j < domStyle.parts.length; j++)
+						domStyle.parts[j]();
+					delete stylesInDom[domStyle.id];
+				}
+			}
+		};
+	}
+	
+	function addStylesToDom(styles, options) {
+		for(var i = 0; i < styles.length; i++) {
+			var item = styles[i];
+			var domStyle = stylesInDom[item.id];
+			if(domStyle) {
+				domStyle.refs++;
+				for(var j = 0; j < domStyle.parts.length; j++) {
+					domStyle.parts[j](item.parts[j]);
+				}
+				for(; j < item.parts.length; j++) {
+					domStyle.parts.push(addStyle(item.parts[j], options));
+				}
+			} else {
+				var parts = [];
+				for(var j = 0; j < item.parts.length; j++) {
+					parts.push(addStyle(item.parts[j], options));
+				}
+				stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
+			}
+		}
+	}
+	
+	function listToStyles(list) {
+		var styles = [];
+		var newStyles = {};
+		for(var i = 0; i < list.length; i++) {
+			var item = list[i];
+			var id = item[0];
+			var css = item[1];
+			var media = item[2];
+			var sourceMap = item[3];
+			var part = {css: css, media: media, sourceMap: sourceMap};
+			if(!newStyles[id])
+				styles.push(newStyles[id] = {id: id, parts: [part]});
+			else
+				newStyles[id].parts.push(part);
+		}
+		return styles;
+	}
+	
+	function createStyleElement() {
+		var styleElement = document.createElement("style");
+		var head = getHeadElement();
+		styleElement.type = "text/css";
+		head.appendChild(styleElement);
+		return styleElement;
+	}
+	
+	function createLinkElement() {
+		var linkElement = document.createElement("link");
+		var head = getHeadElement();
+		linkElement.rel = "stylesheet";
+		head.appendChild(linkElement);
+		return linkElement;
+	}
+	
+	function addStyle(obj, options) {
+		var styleElement, update, remove;
+	
+		if (options.singleton) {
+			var styleIndex = singletonCounter++;
+			styleElement = singletonElement || (singletonElement = createStyleElement());
+			update = applyToSingletonTag.bind(null, styleElement, styleIndex, false);
+			remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true);
+		} else if(obj.sourceMap &&
+			typeof URL === "function" &&
+			typeof URL.createObjectURL === "function" &&
+			typeof URL.revokeObjectURL === "function" &&
+			typeof Blob === "function" &&
+			typeof btoa === "function") {
+			styleElement = createLinkElement();
+			update = updateLink.bind(null, styleElement);
+			remove = function() {
+				styleElement.parentNode.removeChild(styleElement);
+				if(styleElement.href)
+					URL.revokeObjectURL(styleElement.href);
+			};
+		} else {
+			styleElement = createStyleElement();
+			update = applyToTag.bind(null, styleElement);
+			remove = function() {
+				styleElement.parentNode.removeChild(styleElement);
+			};
+		}
+	
+		update(obj);
+	
+		return function updateStyle(newObj) {
+			if(newObj) {
+				if(newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap)
+					return;
+				update(obj = newObj);
+			} else {
+				remove();
+			}
+		};
+	}
+	
+	var replaceText = (function () {
+		var textStore = [];
+	
+		return function (index, replacement) {
+			textStore[index] = replacement;
+			return textStore.filter(Boolean).join('\n');
+		};
+	})();
+	
+	function applyToSingletonTag(styleElement, index, remove, obj) {
+		var css = remove ? "" : obj.css;
+	
+		if (styleElement.styleSheet) {
+			styleElement.styleSheet.cssText = replaceText(index, css);
+		} else {
+			var cssNode = document.createTextNode(css);
+			var childNodes = styleElement.childNodes;
+			if (childNodes[index]) styleElement.removeChild(childNodes[index]);
+			if (childNodes.length) {
+				styleElement.insertBefore(cssNode, childNodes[index]);
+			} else {
+				styleElement.appendChild(cssNode);
+			}
+		}
+	}
+	
+	function applyToTag(styleElement, obj) {
+		var css = obj.css;
+		var media = obj.media;
+		var sourceMap = obj.sourceMap;
+	
+		if(media) {
+			styleElement.setAttribute("media", media)
+		}
+	
+		if(styleElement.styleSheet) {
+			styleElement.styleSheet.cssText = css;
+		} else {
+			while(styleElement.firstChild) {
+				styleElement.removeChild(styleElement.firstChild);
+			}
+			styleElement.appendChild(document.createTextNode(css));
+		}
+	}
+	
+	function updateLink(linkElement, obj) {
+		var css = obj.css;
+		var media = obj.media;
+		var sourceMap = obj.sourceMap;
+	
+		if(sourceMap) {
+			// http://stackoverflow.com/a/26603875
+			css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
+		}
+	
+		var blob = new Blob([css], { type: "text/css" });
+	
+		var oldSrc = linkElement.href;
+	
+		linkElement.href = URL.createObjectURL(blob);
+	
+		if(oldSrc)
+			URL.revokeObjectURL(oldSrc);
+	}
+
+
+/***/ },
+/* 41 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*
+	     _ _      _       _
+	 ___| (_) ___| | __  (_)___
+	/ __| | |/ __| |/ /  | / __|
+	\__ \ | | (__|   < _ | \__ \
+	|___/_|_|\___|_|\_(_)/ |___/
+	                   |__/
+	
+	 Version: 1.6.0
+	  Author: Ken Wheeler
+	 Website: http://kenwheeler.github.io
+	    Docs: http://kenwheeler.github.io/slick
+	    Repo: http://github.com/kenwheeler/slick
+	  Issues: http://github.com/kenwheeler/slick/issues
+	
+	 */
+	/* global window, document, define, jQuery, setInterval, clearInterval */
+	(function(factory) {
+	    'use strict';
+	    if (true) {
+	        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(15)], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory), __WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ? (__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	    } else if (typeof exports !== 'undefined') {
+	        module.exports = factory(require('jquery'));
+	    } else {
+	        factory(jQuery);
+	    }
+	
+	}(function($) {
+	    'use strict';
+	    var Slick = window.Slick || {};
+	
+	    Slick = (function() {
+	
+	        var instanceUid = 0;
+	
+	        function Slick(element, settings) {
+	
+	            var _ = this, dataSettings;
+	
+	            _.defaults = {
+	                accessibility: true,
+	                adaptiveHeight: false,
+	                appendArrows: $(element),
+	                appendDots: $(element),
+	                arrows: true,
+	                asNavFor: null,
+	                prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button">Previous</button>',
+	                nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button">Next</button>',
+	                autoplay: false,
+	                autoplaySpeed: 3000,
+	                centerMode: false,
+	                centerPadding: '50px',
+	                cssEase: 'ease',
+	                customPaging: function(slider, i) {
+	                    return $('<button type="button" data-role="none" role="button" tabindex="0" />').text(i + 1);
+	                },
+	                dots: false,
+	                dotsClass: 'slick-dots',
+	                draggable: true,
+	                easing: 'linear',
+	                edgeFriction: 0.35,
+	                fade: false,
+	                focusOnSelect: false,
+	                infinite: true,
+	                initialSlide: 0,
+	                lazyLoad: 'ondemand',
+	                mobileFirst: false,
+	                pauseOnHover: true,
+	                pauseOnFocus: true,
+	                pauseOnDotsHover: false,
+	                respondTo: 'window',
+	                responsive: null,
+	                rows: 1,
+	                rtl: false,
+	                slide: '',
+	                slidesPerRow: 1,
+	                slidesToShow: 1,
+	                slidesToScroll: 1,
+	                speed: 500,
+	                swipe: true,
+	                swipeToSlide: false,
+	                touchMove: true,
+	                touchThreshold: 5,
+	                useCSS: true,
+	                useTransform: true,
+	                variableWidth: false,
+	                vertical: false,
+	                verticalSwiping: false,
+	                waitForAnimate: true,
+	                zIndex: 1000
+	            };
+	
+	            _.initials = {
+	                animating: false,
+	                dragging: false,
+	                autoPlayTimer: null,
+	                currentDirection: 0,
+	                currentLeft: null,
+	                currentSlide: 0,
+	                direction: 1,
+	                $dots: null,
+	                listWidth: null,
+	                listHeight: null,
+	                loadIndex: 0,
+	                $nextArrow: null,
+	                $prevArrow: null,
+	                slideCount: null,
+	                slideWidth: null,
+	                $slideTrack: null,
+	                $slides: null,
+	                sliding: false,
+	                slideOffset: 0,
+	                swipeLeft: null,
+	                $list: null,
+	                touchObject: {},
+	                transformsEnabled: false,
+	                unslicked: false
+	            };
+	
+	            $.extend(_, _.initials);
+	
+	            _.activeBreakpoint = null;
+	            _.animType = null;
+	            _.animProp = null;
+	            _.breakpoints = [];
+	            _.breakpointSettings = [];
+	            _.cssTransitions = false;
+	            _.focussed = false;
+	            _.interrupted = false;
+	            _.hidden = 'hidden';
+	            _.paused = true;
+	            _.positionProp = null;
+	            _.respondTo = null;
+	            _.rowCount = 1;
+	            _.shouldClick = true;
+	            _.$slider = $(element);
+	            _.$slidesCache = null;
+	            _.transformType = null;
+	            _.transitionType = null;
+	            _.visibilityChange = 'visibilitychange';
+	            _.windowWidth = 0;
+	            _.windowTimer = null;
+	
+	            dataSettings = $(element).data('slick') || {};
+	
+	            _.options = $.extend({}, _.defaults, settings, dataSettings);
+	
+	            _.currentSlide = _.options.initialSlide;
+	
+	            _.originalSettings = _.options;
+	
+	            if (typeof document.mozHidden !== 'undefined') {
+	                _.hidden = 'mozHidden';
+	                _.visibilityChange = 'mozvisibilitychange';
+	            } else if (typeof document.webkitHidden !== 'undefined') {
+	                _.hidden = 'webkitHidden';
+	                _.visibilityChange = 'webkitvisibilitychange';
+	            }
+	
+	            _.autoPlay = $.proxy(_.autoPlay, _);
+	            _.autoPlayClear = $.proxy(_.autoPlayClear, _);
+	            _.autoPlayIterator = $.proxy(_.autoPlayIterator, _);
+	            _.changeSlide = $.proxy(_.changeSlide, _);
+	            _.clickHandler = $.proxy(_.clickHandler, _);
+	            _.selectHandler = $.proxy(_.selectHandler, _);
+	            _.setPosition = $.proxy(_.setPosition, _);
+	            _.swipeHandler = $.proxy(_.swipeHandler, _);
+	            _.dragHandler = $.proxy(_.dragHandler, _);
+	            _.keyHandler = $.proxy(_.keyHandler, _);
+	
+	            _.instanceUid = instanceUid++;
+	
+	            // A simple way to check for HTML strings
+	            // Strict HTML recognition (must start with <)
+	            // Extracted from jQuery v1.11 source
+	            _.htmlExpr = /^(?:\s*(<[\w\W]+>)[^>]*)$/;
+	
+	
+	            _.registerBreakpoints();
+	            _.init(true);
+	
+	        }
+	
+	        return Slick;
+	
+	    }());
+	
+	    Slick.prototype.activateADA = function() {
+	        var _ = this;
+	
+	        _.$slideTrack.find('.slick-active').attr({
+	            'aria-hidden': 'false'
+	        }).find('a, input, button, select').attr({
+	            'tabindex': '0'
+	        });
+	
+	    };
+	
+	    Slick.prototype.addSlide = Slick.prototype.slickAdd = function(markup, index, addBefore) {
+	
+	        var _ = this;
+	
+	        if (typeof(index) === 'boolean') {
+	            addBefore = index;
+	            index = null;
+	        } else if (index < 0 || (index >= _.slideCount)) {
+	            return false;
+	        }
+	
+	        _.unload();
+	
+	        if (typeof(index) === 'number') {
+	            if (index === 0 && _.$slides.length === 0) {
+	                $(markup).appendTo(_.$slideTrack);
+	            } else if (addBefore) {
+	                $(markup).insertBefore(_.$slides.eq(index));
+	            } else {
+	                $(markup).insertAfter(_.$slides.eq(index));
+	            }
+	        } else {
+	            if (addBefore === true) {
+	                $(markup).prependTo(_.$slideTrack);
+	            } else {
+	                $(markup).appendTo(_.$slideTrack);
+	            }
+	        }
+	
+	        _.$slides = _.$slideTrack.children(this.options.slide);
+	
+	        _.$slideTrack.children(this.options.slide).detach();
+	
+	        _.$slideTrack.append(_.$slides);
+	
+	        _.$slides.each(function(index, element) {
+	            $(element).attr('data-slick-index', index);
+	        });
+	
+	        _.$slidesCache = _.$slides;
+	
+	        _.reinit();
+	
+	    };
+	
+	    Slick.prototype.animateHeight = function() {
+	        var _ = this;
+	        if (_.options.slidesToShow === 1 && _.options.adaptiveHeight === true && _.options.vertical === false) {
+	            var targetHeight = _.$slides.eq(_.currentSlide).outerHeight(true);
+	            _.$list.animate({
+	                height: targetHeight
+	            }, _.options.speed);
+	        }
+	    };
+	
+	    Slick.prototype.animateSlide = function(targetLeft, callback) {
+	
+	        var animProps = {},
+	            _ = this;
+	
+	        _.animateHeight();
+	
+	        if (_.options.rtl === true && _.options.vertical === false) {
+	            targetLeft = -targetLeft;
+	        }
+	        if (_.transformsEnabled === false) {
+	            if (_.options.vertical === false) {
+	                _.$slideTrack.animate({
+	                    left: targetLeft
+	                }, _.options.speed, _.options.easing, callback);
+	            } else {
+	                _.$slideTrack.animate({
+	                    top: targetLeft
+	                }, _.options.speed, _.options.easing, callback);
+	            }
+	
+	        } else {
+	
+	            if (_.cssTransitions === false) {
+	                if (_.options.rtl === true) {
+	                    _.currentLeft = -(_.currentLeft);
+	                }
+	                $({
+	                    animStart: _.currentLeft
+	                }).animate({
+	                    animStart: targetLeft
+	                }, {
+	                    duration: _.options.speed,
+	                    easing: _.options.easing,
+	                    step: function(now) {
+	                        now = Math.ceil(now);
+	                        if (_.options.vertical === false) {
+	                            animProps[_.animType] = 'translate(' +
+	                                now + 'px, 0px)';
+	                            _.$slideTrack.css(animProps);
+	                        } else {
+	                            animProps[_.animType] = 'translate(0px,' +
+	                                now + 'px)';
+	                            _.$slideTrack.css(animProps);
+	                        }
+	                    },
+	                    complete: function() {
+	                        if (callback) {
+	                            callback.call();
+	                        }
+	                    }
+	                });
+	
+	            } else {
+	
+	                _.applyTransition();
+	                targetLeft = Math.ceil(targetLeft);
+	
+	                if (_.options.vertical === false) {
+	                    animProps[_.animType] = 'translate3d(' + targetLeft + 'px, 0px, 0px)';
+	                } else {
+	                    animProps[_.animType] = 'translate3d(0px,' + targetLeft + 'px, 0px)';
+	                }
+	                _.$slideTrack.css(animProps);
+	
+	                if (callback) {
+	                    setTimeout(function() {
+	
+	                        _.disableTransition();
+	
+	                        callback.call();
+	                    }, _.options.speed);
+	                }
+	
+	            }
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.getNavTarget = function() {
+	
+	        var _ = this,
+	            asNavFor = _.options.asNavFor;
+	
+	        if ( asNavFor && asNavFor !== null ) {
+	            asNavFor = $(asNavFor).not(_.$slider);
+	        }
+	
+	        return asNavFor;
+	
+	    };
+	
+	    Slick.prototype.asNavFor = function(index) {
+	
+	        var _ = this,
+	            asNavFor = _.getNavTarget();
+	
+	        if ( asNavFor !== null && typeof asNavFor === 'object' ) {
+	            asNavFor.each(function() {
+	                var target = $(this).slick('getSlick');
+	                if(!target.unslicked) {
+	                    target.slideHandler(index, true);
+	                }
+	            });
+	        }
+	
+	    };
+	
+	    Slick.prototype.applyTransition = function(slide) {
+	
+	        var _ = this,
+	            transition = {};
+	
+	        if (_.options.fade === false) {
+	            transition[_.transitionType] = _.transformType + ' ' + _.options.speed + 'ms ' + _.options.cssEase;
+	        } else {
+	            transition[_.transitionType] = 'opacity ' + _.options.speed + 'ms ' + _.options.cssEase;
+	        }
+	
+	        if (_.options.fade === false) {
+	            _.$slideTrack.css(transition);
+	        } else {
+	            _.$slides.eq(slide).css(transition);
+	        }
+	
+	    };
+	
+	    Slick.prototype.autoPlay = function() {
+	
+	        var _ = this;
+	
+	        _.autoPlayClear();
+	
+	        if ( _.slideCount > _.options.slidesToShow ) {
+	            _.autoPlayTimer = setInterval( _.autoPlayIterator, _.options.autoplaySpeed );
+	        }
+	
+	    };
+	
+	    Slick.prototype.autoPlayClear = function() {
+	
+	        var _ = this;
+	
+	        if (_.autoPlayTimer) {
+	            clearInterval(_.autoPlayTimer);
+	        }
+	
+	    };
+	
+	    Slick.prototype.autoPlayIterator = function() {
+	
+	        var _ = this,
+	            slideTo = _.currentSlide + _.options.slidesToScroll;
+	
+	        if ( !_.paused && !_.interrupted && !_.focussed ) {
+	
+	            if ( _.options.infinite === false ) {
+	
+	                if ( _.direction === 1 && ( _.currentSlide + 1 ) === ( _.slideCount - 1 )) {
+	                    _.direction = 0;
+	                }
+	
+	                else if ( _.direction === 0 ) {
+	
+	                    slideTo = _.currentSlide - _.options.slidesToScroll;
+	
+	                    if ( _.currentSlide - 1 === 0 ) {
+	                        _.direction = 1;
+	                    }
+	
+	                }
+	
+	            }
+	
+	            _.slideHandler( slideTo );
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.buildArrows = function() {
+	
+	        var _ = this;
+	
+	        if (_.options.arrows === true ) {
+	
+	            _.$prevArrow = $(_.options.prevArrow).addClass('slick-arrow');
+	            _.$nextArrow = $(_.options.nextArrow).addClass('slick-arrow');
+	
+	            if( _.slideCount > _.options.slidesToShow ) {
+	
+	                _.$prevArrow.removeClass('slick-hidden').removeAttr('aria-hidden tabindex');
+	                _.$nextArrow.removeClass('slick-hidden').removeAttr('aria-hidden tabindex');
+	
+	                if (_.htmlExpr.test(_.options.prevArrow)) {
+	                    _.$prevArrow.prependTo(_.options.appendArrows);
+	                }
+	
+	                if (_.htmlExpr.test(_.options.nextArrow)) {
+	                    _.$nextArrow.appendTo(_.options.appendArrows);
+	                }
+	
+	                if (_.options.infinite !== true) {
+	                    _.$prevArrow
+	                        .addClass('slick-disabled')
+	                        .attr('aria-disabled', 'true');
+	                }
+	
+	            } else {
+	
+	                _.$prevArrow.add( _.$nextArrow )
+	
+	                    .addClass('slick-hidden')
+	                    .attr({
+	                        'aria-disabled': 'true',
+	                        'tabindex': '-1'
+	                    });
+	
+	            }
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.buildDots = function() {
+	
+	        var _ = this,
+	            i, dot;
+	
+	        if (_.options.dots === true && _.slideCount > _.options.slidesToShow) {
+	
+	            _.$slider.addClass('slick-dotted');
+	
+	            dot = $('<ul />').addClass(_.options.dotsClass);
+	
+	            for (i = 0; i <= _.getDotCount(); i += 1) {
+	                dot.append($('<li />').append(_.options.customPaging.call(this, _, i)));
+	            }
+	
+	            _.$dots = dot.appendTo(_.options.appendDots);
+	
+	            _.$dots.find('li').first().addClass('slick-active').attr('aria-hidden', 'false');
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.buildOut = function() {
+	
+	        var _ = this;
+	
+	        _.$slides =
+	            _.$slider
+	                .children( _.options.slide + ':not(.slick-cloned)')
+	                .addClass('slick-slide');
+	
+	        _.slideCount = _.$slides.length;
+	
+	        _.$slides.each(function(index, element) {
+	            $(element)
+	                .attr('data-slick-index', index)
+	                .data('originalStyling', $(element).attr('style') || '');
+	        });
+	
+	        _.$slider.addClass('slick-slider');
+	
+	        _.$slideTrack = (_.slideCount === 0) ?
+	            $('<div class="slick-track"/>').appendTo(_.$slider) :
+	            _.$slides.wrapAll('<div class="slick-track"/>').parent();
+	
+	        _.$list = _.$slideTrack.wrap(
+	            '<div aria-live="polite" class="slick-list"/>').parent();
+	        _.$slideTrack.css('opacity', 0);
+	
+	        if (_.options.centerMode === true || _.options.swipeToSlide === true) {
+	            _.options.slidesToScroll = 1;
+	        }
+	
+	        $('img[data-lazy]', _.$slider).not('[src]').addClass('slick-loading');
+	
+	        _.setupInfinite();
+	
+	        _.buildArrows();
+	
+	        _.buildDots();
+	
+	        _.updateDots();
+	
+	
+	        _.setSlideClasses(typeof _.currentSlide === 'number' ? _.currentSlide : 0);
+	
+	        if (_.options.draggable === true) {
+	            _.$list.addClass('draggable');
+	        }
+	
+	    };
+	
+	    Slick.prototype.buildRows = function() {
+	
+	        var _ = this, a, b, c, newSlides, numOfSlides, originalSlides,slidesPerSection;
+	
+	        newSlides = document.createDocumentFragment();
+	        originalSlides = _.$slider.children();
+	
+	        if(_.options.rows > 1) {
+	
+	            slidesPerSection = _.options.slidesPerRow * _.options.rows;
+	            numOfSlides = Math.ceil(
+	                originalSlides.length / slidesPerSection
+	            );
+	
+	            for(a = 0; a < numOfSlides; a++){
+	                var slide = document.createElement('div');
+	                for(b = 0; b < _.options.rows; b++) {
+	                    var row = document.createElement('div');
+	                    for(c = 0; c < _.options.slidesPerRow; c++) {
+	                        var target = (a * slidesPerSection + ((b * _.options.slidesPerRow) + c));
+	                        if (originalSlides.get(target)) {
+	                            row.appendChild(originalSlides.get(target));
+	                        }
+	                    }
+	                    slide.appendChild(row);
+	                }
+	                newSlides.appendChild(slide);
+	            }
+	
+	            _.$slider.empty().append(newSlides);
+	            _.$slider.children().children().children()
+	                .css({
+	                    'width':(100 / _.options.slidesPerRow) + '%',
+	                    'display': 'inline-block'
+	                });
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.checkResponsive = function(initial, forceUpdate) {
+	
+	        var _ = this,
+	            breakpoint, targetBreakpoint, respondToWidth, triggerBreakpoint = false;
+	        var sliderWidth = _.$slider.width();
+	        var windowWidth = window.innerWidth || $(window).width();
+	
+	        if (_.respondTo === 'window') {
+	            respondToWidth = windowWidth;
+	        } else if (_.respondTo === 'slider') {
+	            respondToWidth = sliderWidth;
+	        } else if (_.respondTo === 'min') {
+	            respondToWidth = Math.min(windowWidth, sliderWidth);
+	        }
+	
+	        if ( _.options.responsive &&
+	            _.options.responsive.length &&
+	            _.options.responsive !== null) {
+	
+	            targetBreakpoint = null;
+	
+	            for (breakpoint in _.breakpoints) {
+	                if (_.breakpoints.hasOwnProperty(breakpoint)) {
+	                    if (_.originalSettings.mobileFirst === false) {
+	                        if (respondToWidth < _.breakpoints[breakpoint]) {
+	                            targetBreakpoint = _.breakpoints[breakpoint];
+	                        }
+	                    } else {
+	                        if (respondToWidth > _.breakpoints[breakpoint]) {
+	                            targetBreakpoint = _.breakpoints[breakpoint];
+	                        }
+	                    }
+	                }
+	            }
+	
+	            if (targetBreakpoint !== null) {
+	                if (_.activeBreakpoint !== null) {
+	                    if (targetBreakpoint !== _.activeBreakpoint || forceUpdate) {
+	                        _.activeBreakpoint =
+	                            targetBreakpoint;
+	                        if (_.breakpointSettings[targetBreakpoint] === 'unslick') {
+	                            _.unslick(targetBreakpoint);
+	                        } else {
+	                            _.options = $.extend({}, _.originalSettings,
+	                                _.breakpointSettings[
+	                                    targetBreakpoint]);
+	                            if (initial === true) {
+	                                _.currentSlide = _.options.initialSlide;
+	                            }
+	                            _.refresh(initial);
+	                        }
+	                        triggerBreakpoint = targetBreakpoint;
+	                    }
+	                } else {
+	                    _.activeBreakpoint = targetBreakpoint;
+	                    if (_.breakpointSettings[targetBreakpoint] === 'unslick') {
+	                        _.unslick(targetBreakpoint);
+	                    } else {
+	                        _.options = $.extend({}, _.originalSettings,
+	                            _.breakpointSettings[
+	                                targetBreakpoint]);
+	                        if (initial === true) {
+	                            _.currentSlide = _.options.initialSlide;
+	                        }
+	                        _.refresh(initial);
+	                    }
+	                    triggerBreakpoint = targetBreakpoint;
+	                }
+	            } else {
+	                if (_.activeBreakpoint !== null) {
+	                    _.activeBreakpoint = null;
+	                    _.options = _.originalSettings;
+	                    if (initial === true) {
+	                        _.currentSlide = _.options.initialSlide;
+	                    }
+	                    _.refresh(initial);
+	                    triggerBreakpoint = targetBreakpoint;
+	                }
+	            }
+	
+	            // only trigger breakpoints during an actual break. not on initialize.
+	            if( !initial && triggerBreakpoint !== false ) {
+	                _.$slider.trigger('breakpoint', [_, triggerBreakpoint]);
+	            }
+	        }
+	
+	    };
+	
+	    Slick.prototype.changeSlide = function(event, dontAnimate) {
+	
+	        var _ = this,
+	            $target = $(event.currentTarget),
+	            indexOffset, slideOffset, unevenOffset;
+	
+	        // If target is a link, prevent default action.
+	        if($target.is('a')) {
+	            event.preventDefault();
+	        }
+	
+	        // If target is not the <li> element (ie: a child), find the <li>.
+	        if(!$target.is('li')) {
+	            $target = $target.closest('li');
+	        }
+	
+	        unevenOffset = (_.slideCount % _.options.slidesToScroll !== 0);
+	        indexOffset = unevenOffset ? 0 : (_.slideCount - _.currentSlide) % _.options.slidesToScroll;
+	
+	        switch (event.data.message) {
+	
+	            case 'previous':
+	                slideOffset = indexOffset === 0 ? _.options.slidesToScroll : _.options.slidesToShow - indexOffset;
+	                if (_.slideCount > _.options.slidesToShow) {
+	                    _.slideHandler(_.currentSlide - slideOffset, false, dontAnimate);
+	                }
+	                break;
+	
+	            case 'next':
+	                slideOffset = indexOffset === 0 ? _.options.slidesToScroll : indexOffset;
+	                if (_.slideCount > _.options.slidesToShow) {
+	                    _.slideHandler(_.currentSlide + slideOffset, false, dontAnimate);
+	                }
+	                break;
+	
+	            case 'index':
+	                var index = event.data.index === 0 ? 0 :
+	                    event.data.index || $target.index() * _.options.slidesToScroll;
+	
+	                _.slideHandler(_.checkNavigable(index), false, dontAnimate);
+	                $target.children().trigger('focus');
+	                break;
+	
+	            default:
+	                return;
+	        }
+	
+	    };
+	
+	    Slick.prototype.checkNavigable = function(index) {
+	
+	        var _ = this,
+	            navigables, prevNavigable;
+	
+	        navigables = _.getNavigableIndexes();
+	        prevNavigable = 0;
+	        if (index > navigables[navigables.length - 1]) {
+	            index = navigables[navigables.length - 1];
+	        } else {
+	            for (var n in navigables) {
+	                if (index < navigables[n]) {
+	                    index = prevNavigable;
+	                    break;
+	                }
+	                prevNavigable = navigables[n];
+	            }
+	        }
+	
+	        return index;
+	    };
+	
+	    Slick.prototype.cleanUpEvents = function() {
+	
+	        var _ = this;
+	
+	        if (_.options.dots && _.$dots !== null) {
+	
+	            $('li', _.$dots)
+	                .off('click.slick', _.changeSlide)
+	                .off('mouseenter.slick', $.proxy(_.interrupt, _, true))
+	                .off('mouseleave.slick', $.proxy(_.interrupt, _, false));
+	
+	        }
+	
+	        _.$slider.off('focus.slick blur.slick');
+	
+	        if (_.options.arrows === true && _.slideCount > _.options.slidesToShow) {
+	            _.$prevArrow && _.$prevArrow.off('click.slick', _.changeSlide);
+	            _.$nextArrow && _.$nextArrow.off('click.slick', _.changeSlide);
+	        }
+	
+	        _.$list.off('touchstart.slick mousedown.slick', _.swipeHandler);
+	        _.$list.off('touchmove.slick mousemove.slick', _.swipeHandler);
+	        _.$list.off('touchend.slick mouseup.slick', _.swipeHandler);
+	        _.$list.off('touchcancel.slick mouseleave.slick', _.swipeHandler);
+	
+	        _.$list.off('click.slick', _.clickHandler);
+	
+	        $(document).off(_.visibilityChange, _.visibility);
+	
+	        _.cleanUpSlideEvents();
+	
+	        if (_.options.accessibility === true) {
+	            _.$list.off('keydown.slick', _.keyHandler);
+	        }
+	
+	        if (_.options.focusOnSelect === true) {
+	            $(_.$slideTrack).children().off('click.slick', _.selectHandler);
+	        }
+	
+	        $(window).off('orientationchange.slick.slick-' + _.instanceUid, _.orientationChange);
+	
+	        $(window).off('resize.slick.slick-' + _.instanceUid, _.resize);
+	
+	        $('[draggable!=true]', _.$slideTrack).off('dragstart', _.preventDefault);
+	
+	        $(window).off('load.slick.slick-' + _.instanceUid, _.setPosition);
+	        $(document).off('ready.slick.slick-' + _.instanceUid, _.setPosition);
+	
+	    };
+	
+	    Slick.prototype.cleanUpSlideEvents = function() {
+	
+	        var _ = this;
+	
+	        _.$list.off('mouseenter.slick', $.proxy(_.interrupt, _, true));
+	        _.$list.off('mouseleave.slick', $.proxy(_.interrupt, _, false));
+	
+	    };
+	
+	    Slick.prototype.cleanUpRows = function() {
+	
+	        var _ = this, originalSlides;
+	
+	        if(_.options.rows > 1) {
+	            originalSlides = _.$slides.children().children();
+	            originalSlides.removeAttr('style');
+	            _.$slider.empty().append(originalSlides);
+	        }
+	
+	    };
+	
+	    Slick.prototype.clickHandler = function(event) {
+	
+	        var _ = this;
+	
+	        if (_.shouldClick === false) {
+	            event.stopImmediatePropagation();
+	            event.stopPropagation();
+	            event.preventDefault();
+	        }
+	
+	    };
+	
+	    Slick.prototype.destroy = function(refresh) {
+	
+	        var _ = this;
+	
+	        _.autoPlayClear();
+	
+	        _.touchObject = {};
+	
+	        _.cleanUpEvents();
+	
+	        $('.slick-cloned', _.$slider).detach();
+	
+	        if (_.$dots) {
+	            _.$dots.remove();
+	        }
+	
+	
+	        if ( _.$prevArrow && _.$prevArrow.length ) {
+	
+	            _.$prevArrow
+	                .removeClass('slick-disabled slick-arrow slick-hidden')
+	                .removeAttr('aria-hidden aria-disabled tabindex')
+	                .css('display','');
+	
+	            if ( _.htmlExpr.test( _.options.prevArrow )) {
+	                _.$prevArrow.remove();
+	            }
+	        }
+	
+	        if ( _.$nextArrow && _.$nextArrow.length ) {
+	
+	            _.$nextArrow
+	                .removeClass('slick-disabled slick-arrow slick-hidden')
+	                .removeAttr('aria-hidden aria-disabled tabindex')
+	                .css('display','');
+	
+	            if ( _.htmlExpr.test( _.options.nextArrow )) {
+	                _.$nextArrow.remove();
+	            }
+	
+	        }
+	
+	
+	        if (_.$slides) {
+	
+	            _.$slides
+	                .removeClass('slick-slide slick-active slick-center slick-visible slick-current')
+	                .removeAttr('aria-hidden')
+	                .removeAttr('data-slick-index')
+	                .each(function(){
+	                    $(this).attr('style', $(this).data('originalStyling'));
+	                });
+	
+	            _.$slideTrack.children(this.options.slide).detach();
+	
+	            _.$slideTrack.detach();
+	
+	            _.$list.detach();
+	
+	            _.$slider.append(_.$slides);
+	        }
+	
+	        _.cleanUpRows();
+	
+	        _.$slider.removeClass('slick-slider');
+	        _.$slider.removeClass('slick-initialized');
+	        _.$slider.removeClass('slick-dotted');
+	
+	        _.unslicked = true;
+	
+	        if(!refresh) {
+	            _.$slider.trigger('destroy', [_]);
+	        }
+	
+	    };
+	
+	    Slick.prototype.disableTransition = function(slide) {
+	
+	        var _ = this,
+	            transition = {};
+	
+	        transition[_.transitionType] = '';
+	
+	        if (_.options.fade === false) {
+	            _.$slideTrack.css(transition);
+	        } else {
+	            _.$slides.eq(slide).css(transition);
+	        }
+	
+	    };
+	
+	    Slick.prototype.fadeSlide = function(slideIndex, callback) {
+	
+	        var _ = this;
+	
+	        if (_.cssTransitions === false) {
+	
+	            _.$slides.eq(slideIndex).css({
+	                zIndex: _.options.zIndex
+	            });
+	
+	            _.$slides.eq(slideIndex).animate({
+	                opacity: 1
+	            }, _.options.speed, _.options.easing, callback);
+	
+	        } else {
+	
+	            _.applyTransition(slideIndex);
+	
+	            _.$slides.eq(slideIndex).css({
+	                opacity: 1,
+	                zIndex: _.options.zIndex
+	            });
+	
+	            if (callback) {
+	                setTimeout(function() {
+	
+	                    _.disableTransition(slideIndex);
+	
+	                    callback.call();
+	                }, _.options.speed);
+	            }
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.fadeSlideOut = function(slideIndex) {
+	
+	        var _ = this;
+	
+	        if (_.cssTransitions === false) {
+	
+	            _.$slides.eq(slideIndex).animate({
+	                opacity: 0,
+	                zIndex: _.options.zIndex - 2
+	            }, _.options.speed, _.options.easing);
+	
+	        } else {
+	
+	            _.applyTransition(slideIndex);
+	
+	            _.$slides.eq(slideIndex).css({
+	                opacity: 0,
+	                zIndex: _.options.zIndex - 2
+	            });
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.filterSlides = Slick.prototype.slickFilter = function(filter) {
+	
+	        var _ = this;
+	
+	        if (filter !== null) {
+	
+	            _.$slidesCache = _.$slides;
+	
+	            _.unload();
+	
+	            _.$slideTrack.children(this.options.slide).detach();
+	
+	            _.$slidesCache.filter(filter).appendTo(_.$slideTrack);
+	
+	            _.reinit();
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.focusHandler = function() {
+	
+	        var _ = this;
+	
+	        _.$slider
+	            .off('focus.slick blur.slick')
+	            .on('focus.slick blur.slick',
+	                '*:not(.slick-arrow)', function(event) {
+	
+	            event.stopImmediatePropagation();
+	            var $sf = $(this);
+	
+	            setTimeout(function() {
+	
+	                if( _.options.pauseOnFocus ) {
+	                    _.focussed = $sf.is(':focus');
+	                    _.autoPlay();
+	                }
+	
+	            }, 0);
+	
+	        });
+	    };
+	
+	    Slick.prototype.getCurrent = Slick.prototype.slickCurrentSlide = function() {
+	
+	        var _ = this;
+	        return _.currentSlide;
+	
+	    };
+	
+	    Slick.prototype.getDotCount = function() {
+	
+	        var _ = this;
+	
+	        var breakPoint = 0;
+	        var counter = 0;
+	        var pagerQty = 0;
+	
+	        if (_.options.infinite === true) {
+	            while (breakPoint < _.slideCount) {
+	                ++pagerQty;
+	                breakPoint = counter + _.options.slidesToScroll;
+	                counter += _.options.slidesToScroll <= _.options.slidesToShow ? _.options.slidesToScroll : _.options.slidesToShow;
+	            }
+	        } else if (_.options.centerMode === true) {
+	            pagerQty = _.slideCount;
+	        } else if(!_.options.asNavFor) {
+	            pagerQty = 1 + Math.ceil((_.slideCount - _.options.slidesToShow) / _.options.slidesToScroll);
+	        }else {
+	            while (breakPoint < _.slideCount) {
+	                ++pagerQty;
+	                breakPoint = counter + _.options.slidesToScroll;
+	                counter += _.options.slidesToScroll <= _.options.slidesToShow ? _.options.slidesToScroll : _.options.slidesToShow;
+	            }
+	        }
+	
+	        return pagerQty - 1;
+	
+	    };
+	
+	    Slick.prototype.getLeft = function(slideIndex) {
+	
+	        var _ = this,
+	            targetLeft,
+	            verticalHeight,
+	            verticalOffset = 0,
+	            targetSlide;
+	
+	        _.slideOffset = 0;
+	        verticalHeight = _.$slides.first().outerHeight(true);
+	
+	        if (_.options.infinite === true) {
+	            if (_.slideCount > _.options.slidesToShow) {
+	                _.slideOffset = (_.slideWidth * _.options.slidesToShow) * -1;
+	                verticalOffset = (verticalHeight * _.options.slidesToShow) * -1;
+	            }
+	            if (_.slideCount % _.options.slidesToScroll !== 0) {
+	                if (slideIndex + _.options.slidesToScroll > _.slideCount && _.slideCount > _.options.slidesToShow) {
+	                    if (slideIndex > _.slideCount) {
+	                        _.slideOffset = ((_.options.slidesToShow - (slideIndex - _.slideCount)) * _.slideWidth) * -1;
+	                        verticalOffset = ((_.options.slidesToShow - (slideIndex - _.slideCount)) * verticalHeight) * -1;
+	                    } else {
+	                        _.slideOffset = ((_.slideCount % _.options.slidesToScroll) * _.slideWidth) * -1;
+	                        verticalOffset = ((_.slideCount % _.options.slidesToScroll) * verticalHeight) * -1;
+	                    }
+	                }
+	            }
+	        } else {
+	            if (slideIndex + _.options.slidesToShow > _.slideCount) {
+	                _.slideOffset = ((slideIndex + _.options.slidesToShow) - _.slideCount) * _.slideWidth;
+	                verticalOffset = ((slideIndex + _.options.slidesToShow) - _.slideCount) * verticalHeight;
+	            }
+	        }
+	
+	        if (_.slideCount <= _.options.slidesToShow) {
+	            _.slideOffset = 0;
+	            verticalOffset = 0;
+	        }
+	
+	        if (_.options.centerMode === true && _.options.infinite === true) {
+	            _.slideOffset += _.slideWidth * Math.floor(_.options.slidesToShow / 2) - _.slideWidth;
+	        } else if (_.options.centerMode === true) {
+	            _.slideOffset = 0;
+	            _.slideOffset += _.slideWidth * Math.floor(_.options.slidesToShow / 2);
+	        }
+	
+	        if (_.options.vertical === false) {
+	            targetLeft = ((slideIndex * _.slideWidth) * -1) + _.slideOffset;
+	        } else {
+	            targetLeft = ((slideIndex * verticalHeight) * -1) + verticalOffset;
+	        }
+	
+	        if (_.options.variableWidth === true) {
+	
+	            if (_.slideCount <= _.options.slidesToShow || _.options.infinite === false) {
+	                targetSlide = _.$slideTrack.children('.slick-slide').eq(slideIndex);
+	            } else {
+	                targetSlide = _.$slideTrack.children('.slick-slide').eq(slideIndex + _.options.slidesToShow);
+	            }
+	
+	            if (_.options.rtl === true) {
+	                if (targetSlide[0]) {
+	                    targetLeft = (_.$slideTrack.width() - targetSlide[0].offsetLeft - targetSlide.width()) * -1;
+	                } else {
+	                    targetLeft =  0;
+	                }
+	            } else {
+	                targetLeft = targetSlide[0] ? targetSlide[0].offsetLeft * -1 : 0;
+	            }
+	
+	            if (_.options.centerMode === true) {
+	                if (_.slideCount <= _.options.slidesToShow || _.options.infinite === false) {
+	                    targetSlide = _.$slideTrack.children('.slick-slide').eq(slideIndex);
+	                } else {
+	                    targetSlide = _.$slideTrack.children('.slick-slide').eq(slideIndex + _.options.slidesToShow + 1);
+	                }
+	
+	                if (_.options.rtl === true) {
+	                    if (targetSlide[0]) {
+	                        targetLeft = (_.$slideTrack.width() - targetSlide[0].offsetLeft - targetSlide.width()) * -1;
+	                    } else {
+	                        targetLeft =  0;
+	                    }
+	                } else {
+	                    targetLeft = targetSlide[0] ? targetSlide[0].offsetLeft * -1 : 0;
+	                }
+	
+	                targetLeft += (_.$list.width() - targetSlide.outerWidth()) / 2;
+	            }
+	        }
+	
+	        return targetLeft;
+	
+	    };
+	
+	    Slick.prototype.getOption = Slick.prototype.slickGetOption = function(option) {
+	
+	        var _ = this;
+	
+	        return _.options[option];
+	
+	    };
+	
+	    Slick.prototype.getNavigableIndexes = function() {
+	
+	        var _ = this,
+	            breakPoint = 0,
+	            counter = 0,
+	            indexes = [],
+	            max;
+	
+	        if (_.options.infinite === false) {
+	            max = _.slideCount;
+	        } else {
+	            breakPoint = _.options.slidesToScroll * -1;
+	            counter = _.options.slidesToScroll * -1;
+	            max = _.slideCount * 2;
+	        }
+	
+	        while (breakPoint < max) {
+	            indexes.push(breakPoint);
+	            breakPoint = counter + _.options.slidesToScroll;
+	            counter += _.options.slidesToScroll <= _.options.slidesToShow ? _.options.slidesToScroll : _.options.slidesToShow;
+	        }
+	
+	        return indexes;
+	
+	    };
+	
+	    Slick.prototype.getSlick = function() {
+	
+	        return this;
+	
+	    };
+	
+	    Slick.prototype.getSlideCount = function() {
+	
+	        var _ = this,
+	            slidesTraversed, swipedSlide, centerOffset;
+	
+	        centerOffset = _.options.centerMode === true ? _.slideWidth * Math.floor(_.options.slidesToShow / 2) : 0;
+	
+	        if (_.options.swipeToSlide === true) {
+	            _.$slideTrack.find('.slick-slide').each(function(index, slide) {
+	                if (slide.offsetLeft - centerOffset + ($(slide).outerWidth() / 2) > (_.swipeLeft * -1)) {
+	                    swipedSlide = slide;
+	                    return false;
+	                }
+	            });
+	
+	            slidesTraversed = Math.abs($(swipedSlide).attr('data-slick-index') - _.currentSlide) || 1;
+	
+	            return slidesTraversed;
+	
+	        } else {
+	            return _.options.slidesToScroll;
+	        }
+	
+	    };
+	
+	    Slick.prototype.goTo = Slick.prototype.slickGoTo = function(slide, dontAnimate) {
+	
+	        var _ = this;
+	
+	        _.changeSlide({
+	            data: {
+	                message: 'index',
+	                index: parseInt(slide)
+	            }
+	        }, dontAnimate);
+	
+	    };
+	
+	    Slick.prototype.init = function(creation) {
+	
+	        var _ = this;
+	
+	        if (!$(_.$slider).hasClass('slick-initialized')) {
+	
+	            $(_.$slider).addClass('slick-initialized');
+	
+	            _.buildRows();
+	            _.buildOut();
+	            _.setProps();
+	            _.startLoad();
+	            _.loadSlider();
+	            _.initializeEvents();
+	            _.updateArrows();
+	            _.updateDots();
+	            _.checkResponsive(true);
+	            _.focusHandler();
+	
+	        }
+	
+	        if (creation) {
+	            _.$slider.trigger('init', [_]);
+	        }
+	
+	        if (_.options.accessibility === true) {
+	            _.initADA();
+	        }
+	
+	        if ( _.options.autoplay ) {
+	
+	            _.paused = false;
+	            _.autoPlay();
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.initADA = function() {
+	        var _ = this;
+	        _.$slides.add(_.$slideTrack.find('.slick-cloned')).attr({
+	            'aria-hidden': 'true',
+	            'tabindex': '-1'
+	        }).find('a, input, button, select').attr({
+	            'tabindex': '-1'
+	        });
+	
+	        _.$slideTrack.attr('role', 'listbox');
+	
+	        _.$slides.not(_.$slideTrack.find('.slick-cloned')).each(function(i) {
+	            $(this).attr({
+	                'role': 'option',
+	                'aria-describedby': 'slick-slide' + _.instanceUid + i + ''
+	            });
+	        });
+	
+	        if (_.$dots !== null) {
+	            _.$dots.attr('role', 'tablist').find('li').each(function(i) {
+	                $(this).attr({
+	                    'role': 'presentation',
+	                    'aria-selected': 'false',
+	                    'aria-controls': 'navigation' + _.instanceUid + i + '',
+	                    'id': 'slick-slide' + _.instanceUid + i + ''
+	                });
+	            })
+	                .first().attr('aria-selected', 'true').end()
+	                .find('button').attr('role', 'button').end()
+	                .closest('div').attr('role', 'toolbar');
+	        }
+	        _.activateADA();
+	
+	    };
+	
+	    Slick.prototype.initArrowEvents = function() {
+	
+	        var _ = this;
+	
+	        if (_.options.arrows === true && _.slideCount > _.options.slidesToShow) {
+	            _.$prevArrow
+	               .off('click.slick')
+	               .on('click.slick', {
+	                    message: 'previous'
+	               }, _.changeSlide);
+	            _.$nextArrow
+	               .off('click.slick')
+	               .on('click.slick', {
+	                    message: 'next'
+	               }, _.changeSlide);
+	        }
+	
+	    };
+	
+	    Slick.prototype.initDotEvents = function() {
+	
+	        var _ = this;
+	
+	        if (_.options.dots === true && _.slideCount > _.options.slidesToShow) {
+	            $('li', _.$dots).on('click.slick', {
+	                message: 'index'
+	            }, _.changeSlide);
+	        }
+	
+	        if ( _.options.dots === true && _.options.pauseOnDotsHover === true ) {
+	
+	            $('li', _.$dots)
+	                .on('mouseenter.slick', $.proxy(_.interrupt, _, true))
+	                .on('mouseleave.slick', $.proxy(_.interrupt, _, false));
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.initSlideEvents = function() {
+	
+	        var _ = this;
+	
+	        if ( _.options.pauseOnHover ) {
+	
+	            _.$list.on('mouseenter.slick', $.proxy(_.interrupt, _, true));
+	            _.$list.on('mouseleave.slick', $.proxy(_.interrupt, _, false));
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.initializeEvents = function() {
+	
+	        var _ = this;
+	
+	        _.initArrowEvents();
+	
+	        _.initDotEvents();
+	        _.initSlideEvents();
+	
+	        _.$list.on('touchstart.slick mousedown.slick', {
+	            action: 'start'
+	        }, _.swipeHandler);
+	        _.$list.on('touchmove.slick mousemove.slick', {
+	            action: 'move'
+	        }, _.swipeHandler);
+	        _.$list.on('touchend.slick mouseup.slick', {
+	            action: 'end'
+	        }, _.swipeHandler);
+	        _.$list.on('touchcancel.slick mouseleave.slick', {
+	            action: 'end'
+	        }, _.swipeHandler);
+	
+	        _.$list.on('click.slick', _.clickHandler);
+	
+	        $(document).on(_.visibilityChange, $.proxy(_.visibility, _));
+	
+	        if (_.options.accessibility === true) {
+	            _.$list.on('keydown.slick', _.keyHandler);
+	        }
+	
+	        if (_.options.focusOnSelect === true) {
+	            $(_.$slideTrack).children().on('click.slick', _.selectHandler);
+	        }
+	
+	        $(window).on('orientationchange.slick.slick-' + _.instanceUid, $.proxy(_.orientationChange, _));
+	
+	        $(window).on('resize.slick.slick-' + _.instanceUid, $.proxy(_.resize, _));
+	
+	        $('[draggable!=true]', _.$slideTrack).on('dragstart', _.preventDefault);
+	
+	        $(window).on('load.slick.slick-' + _.instanceUid, _.setPosition);
+	        $(document).on('ready.slick.slick-' + _.instanceUid, _.setPosition);
+	
+	    };
+	
+	    Slick.prototype.initUI = function() {
+	
+	        var _ = this;
+	
+	        if (_.options.arrows === true && _.slideCount > _.options.slidesToShow) {
+	
+	            _.$prevArrow.show();
+	            _.$nextArrow.show();
+	
+	        }
+	
+	        if (_.options.dots === true && _.slideCount > _.options.slidesToShow) {
+	
+	            _.$dots.show();
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.keyHandler = function(event) {
+	
+	        var _ = this;
+	         //Dont slide if the cursor is inside the form fields and arrow keys are pressed
+	        if(!event.target.tagName.match('TEXTAREA|INPUT|SELECT')) {
+	            if (event.keyCode === 37 && _.options.accessibility === true) {
+	                _.changeSlide({
+	                    data: {
+	                        message: _.options.rtl === true ? 'next' :  'previous'
+	                    }
+	                });
+	            } else if (event.keyCode === 39 && _.options.accessibility === true) {
+	                _.changeSlide({
+	                    data: {
+	                        message: _.options.rtl === true ? 'previous' : 'next'
+	                    }
+	                });
+	            }
+	        }
+	
+	    };
+	
+	    Slick.prototype.lazyLoad = function() {
+	
+	        var _ = this,
+	            loadRange, cloneRange, rangeStart, rangeEnd;
+	
+	        function loadImages(imagesScope) {
+	
+	            $('img[data-lazy]', imagesScope).each(function() {
+	
+	                var image = $(this),
+	                    imageSource = $(this).attr('data-lazy'),
+	                    imageToLoad = document.createElement('img');
+	
+	                imageToLoad.onload = function() {
+	
+	                    image
+	                        .animate({ opacity: 0 }, 100, function() {
+	                            image
+	                                .attr('src', imageSource)
+	                                .animate({ opacity: 1 }, 200, function() {
+	                                    image
+	                                        .removeAttr('data-lazy')
+	                                        .removeClass('slick-loading');
+	                                });
+	                            _.$slider.trigger('lazyLoaded', [_, image, imageSource]);
+	                        });
+	
+	                };
+	
+	                imageToLoad.onerror = function() {
+	
+	                    image
+	                        .removeAttr( 'data-lazy' )
+	                        .removeClass( 'slick-loading' )
+	                        .addClass( 'slick-lazyload-error' );
+	
+	                    _.$slider.trigger('lazyLoadError', [ _, image, imageSource ]);
+	
+	                };
+	
+	                imageToLoad.src = imageSource;
+	
+	            });
+	
+	        }
+	
+	        if (_.options.centerMode === true) {
+	            if (_.options.infinite === true) {
+	                rangeStart = _.currentSlide + (_.options.slidesToShow / 2 + 1);
+	                rangeEnd = rangeStart + _.options.slidesToShow + 2;
+	            } else {
+	                rangeStart = Math.max(0, _.currentSlide - (_.options.slidesToShow / 2 + 1));
+	                rangeEnd = 2 + (_.options.slidesToShow / 2 + 1) + _.currentSlide;
+	            }
+	        } else {
+	            rangeStart = _.options.infinite ? _.options.slidesToShow + _.currentSlide : _.currentSlide;
+	            rangeEnd = Math.ceil(rangeStart + _.options.slidesToShow);
+	            if (_.options.fade === true) {
+	                if (rangeStart > 0) rangeStart--;
+	                if (rangeEnd <= _.slideCount) rangeEnd++;
+	            }
+	        }
+	
+	        loadRange = _.$slider.find('.slick-slide').slice(rangeStart, rangeEnd);
+	        loadImages(loadRange);
+	
+	        if (_.slideCount <= _.options.slidesToShow) {
+	            cloneRange = _.$slider.find('.slick-slide');
+	            loadImages(cloneRange);
+	        } else
+	        if (_.currentSlide >= _.slideCount - _.options.slidesToShow) {
+	            cloneRange = _.$slider.find('.slick-cloned').slice(0, _.options.slidesToShow);
+	            loadImages(cloneRange);
+	        } else if (_.currentSlide === 0) {
+	            cloneRange = _.$slider.find('.slick-cloned').slice(_.options.slidesToShow * -1);
+	            loadImages(cloneRange);
+	        }
+	
+	    };
+	
+	    Slick.prototype.loadSlider = function() {
+	
+	        var _ = this;
+	
+	        _.setPosition();
+	
+	        _.$slideTrack.css({
+	            opacity: 1
+	        });
+	
+	        _.$slider.removeClass('slick-loading');
+	
+	        _.initUI();
+	
+	        if (_.options.lazyLoad === 'progressive') {
+	            _.progressiveLazyLoad();
+	        }
+	
+	    };
+	
+	    Slick.prototype.next = Slick.prototype.slickNext = function() {
+	
+	        var _ = this;
+	
+	        _.changeSlide({
+	            data: {
+	                message: 'next'
+	            }
+	        });
+	
+	    };
+	
+	    Slick.prototype.orientationChange = function() {
+	
+	        var _ = this;
+	
+	        _.checkResponsive();
+	        _.setPosition();
+	
+	    };
+	
+	    Slick.prototype.pause = Slick.prototype.slickPause = function() {
+	
+	        var _ = this;
+	
+	        _.autoPlayClear();
+	        _.paused = true;
+	
+	    };
+	
+	    Slick.prototype.play = Slick.prototype.slickPlay = function() {
+	
+	        var _ = this;
+	
+	        _.autoPlay();
+	        _.options.autoplay = true;
+	        _.paused = false;
+	        _.focussed = false;
+	        _.interrupted = false;
+	
+	    };
+	
+	    Slick.prototype.postSlide = function(index) {
+	
+	        var _ = this;
+	
+	        if( !_.unslicked ) {
+	
+	            _.$slider.trigger('afterChange', [_, index]);
+	
+	            _.animating = false;
+	
+	            _.setPosition();
+	
+	            _.swipeLeft = null;
+	
+	            if ( _.options.autoplay ) {
+	                _.autoPlay();
+	            }
+	
+	            if (_.options.accessibility === true) {
+	                _.initADA();
+	            }
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.prev = Slick.prototype.slickPrev = function() {
+	
+	        var _ = this;
+	
+	        _.changeSlide({
+	            data: {
+	                message: 'previous'
+	            }
+	        });
+	
+	    };
+	
+	    Slick.prototype.preventDefault = function(event) {
+	
+	        event.preventDefault();
+	
+	    };
+	
+	    Slick.prototype.progressiveLazyLoad = function( tryCount ) {
+	
+	        tryCount = tryCount || 1;
+	
+	        var _ = this,
+	            $imgsToLoad = $( 'img[data-lazy]', _.$slider ),
+	            image,
+	            imageSource,
+	            imageToLoad;
+	
+	        if ( $imgsToLoad.length ) {
+	
+	            image = $imgsToLoad.first();
+	            imageSource = image.attr('data-lazy');
+	            imageToLoad = document.createElement('img');
+	
+	            imageToLoad.onload = function() {
+	
+	                image
+	                    .attr( 'src', imageSource )
+	                    .removeAttr('data-lazy')
+	                    .removeClass('slick-loading');
+	
+	                if ( _.options.adaptiveHeight === true ) {
+	                    _.setPosition();
+	                }
+	
+	                _.$slider.trigger('lazyLoaded', [ _, image, imageSource ]);
+	                _.progressiveLazyLoad();
+	
+	            };
+	
+	            imageToLoad.onerror = function() {
+	
+	                if ( tryCount < 3 ) {
+	
+	                    /**
+	                     * try to load the image 3 times,
+	                     * leave a slight delay so we don't get
+	                     * servers blocking the request.
+	                     */
+	                    setTimeout( function() {
+	                        _.progressiveLazyLoad( tryCount + 1 );
+	                    }, 500 );
+	
+	                } else {
+	
+	                    image
+	                        .removeAttr( 'data-lazy' )
+	                        .removeClass( 'slick-loading' )
+	                        .addClass( 'slick-lazyload-error' );
+	
+	                    _.$slider.trigger('lazyLoadError', [ _, image, imageSource ]);
+	
+	                    _.progressiveLazyLoad();
+	
+	                }
+	
+	            };
+	
+	            imageToLoad.src = imageSource;
+	
+	        } else {
+	
+	            _.$slider.trigger('allImagesLoaded', [ _ ]);
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.refresh = function( initializing ) {
+	
+	        var _ = this, currentSlide, lastVisibleIndex;
+	
+	        lastVisibleIndex = _.slideCount - _.options.slidesToShow;
+	
+	        // in non-infinite sliders, we don't want to go past the
+	        // last visible index.
+	        if( !_.options.infinite && ( _.currentSlide > lastVisibleIndex )) {
+	            _.currentSlide = lastVisibleIndex;
+	        }
+	
+	        // if less slides than to show, go to start.
+	        if ( _.slideCount <= _.options.slidesToShow ) {
+	            _.currentSlide = 0;
+	
+	        }
+	
+	        currentSlide = _.currentSlide;
+	
+	        _.destroy(true);
+	
+	        $.extend(_, _.initials, { currentSlide: currentSlide });
+	
+	        _.init();
+	
+	        if( !initializing ) {
+	
+	            _.changeSlide({
+	                data: {
+	                    message: 'index',
+	                    index: currentSlide
+	                }
+	            }, false);
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.registerBreakpoints = function() {
+	
+	        var _ = this, breakpoint, currentBreakpoint, l,
+	            responsiveSettings = _.options.responsive || null;
+	
+	        if ( $.type(responsiveSettings) === 'array' && responsiveSettings.length ) {
+	
+	            _.respondTo = _.options.respondTo || 'window';
+	
+	            for ( breakpoint in responsiveSettings ) {
+	
+	                l = _.breakpoints.length-1;
+	                currentBreakpoint = responsiveSettings[breakpoint].breakpoint;
+	
+	                if (responsiveSettings.hasOwnProperty(breakpoint)) {
+	
+	                    // loop through the breakpoints and cut out any existing
+	                    // ones with the same breakpoint number, we don't want dupes.
+	                    while( l >= 0 ) {
+	                        if( _.breakpoints[l] && _.breakpoints[l] === currentBreakpoint ) {
+	                            _.breakpoints.splice(l,1);
+	                        }
+	                        l--;
+	                    }
+	
+	                    _.breakpoints.push(currentBreakpoint);
+	                    _.breakpointSettings[currentBreakpoint] = responsiveSettings[breakpoint].settings;
+	
+	                }
+	
+	            }
+	
+	            _.breakpoints.sort(function(a, b) {
+	                return ( _.options.mobileFirst ) ? a-b : b-a;
+	            });
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.reinit = function() {
+	
+	        var _ = this;
+	
+	        _.$slides =
+	            _.$slideTrack
+	                .children(_.options.slide)
+	                .addClass('slick-slide');
+	
+	        _.slideCount = _.$slides.length;
+	
+	        if (_.currentSlide >= _.slideCount && _.currentSlide !== 0) {
+	            _.currentSlide = _.currentSlide - _.options.slidesToScroll;
+	        }
+	
+	        if (_.slideCount <= _.options.slidesToShow) {
+	            _.currentSlide = 0;
+	        }
+	
+	        _.registerBreakpoints();
+	
+	        _.setProps();
+	        _.setupInfinite();
+	        _.buildArrows();
+	        _.updateArrows();
+	        _.initArrowEvents();
+	        _.buildDots();
+	        _.updateDots();
+	        _.initDotEvents();
+	        _.cleanUpSlideEvents();
+	        _.initSlideEvents();
+	
+	        _.checkResponsive(false, true);
+	
+	        if (_.options.focusOnSelect === true) {
+	            $(_.$slideTrack).children().on('click.slick', _.selectHandler);
+	        }
+	
+	        _.setSlideClasses(typeof _.currentSlide === 'number' ? _.currentSlide : 0);
+	
+	        _.setPosition();
+	        _.focusHandler();
+	
+	        _.paused = !_.options.autoplay;
+	        _.autoPlay();
+	
+	        _.$slider.trigger('reInit', [_]);
+	
+	    };
+	
+	    Slick.prototype.resize = function() {
+	
+	        var _ = this;
+	
+	        if ($(window).width() !== _.windowWidth) {
+	            clearTimeout(_.windowDelay);
+	            _.windowDelay = window.setTimeout(function() {
+	                _.windowWidth = $(window).width();
+	                _.checkResponsive();
+	                if( !_.unslicked ) { _.setPosition(); }
+	            }, 50);
+	        }
+	    };
+	
+	    Slick.prototype.removeSlide = Slick.prototype.slickRemove = function(index, removeBefore, removeAll) {
+	
+	        var _ = this;
+	
+	        if (typeof(index) === 'boolean') {
+	            removeBefore = index;
+	            index = removeBefore === true ? 0 : _.slideCount - 1;
+	        } else {
+	            index = removeBefore === true ? --index : index;
+	        }
+	
+	        if (_.slideCount < 1 || index < 0 || index > _.slideCount - 1) {
+	            return false;
+	        }
+	
+	        _.unload();
+	
+	        if (removeAll === true) {
+	            _.$slideTrack.children().remove();
+	        } else {
+	            _.$slideTrack.children(this.options.slide).eq(index).remove();
+	        }
+	
+	        _.$slides = _.$slideTrack.children(this.options.slide);
+	
+	        _.$slideTrack.children(this.options.slide).detach();
+	
+	        _.$slideTrack.append(_.$slides);
+	
+	        _.$slidesCache = _.$slides;
+	
+	        _.reinit();
+	
+	    };
+	
+	    Slick.prototype.setCSS = function(position) {
+	
+	        var _ = this,
+	            positionProps = {},
+	            x, y;
+	
+	        if (_.options.rtl === true) {
+	            position = -position;
+	        }
+	        x = _.positionProp == 'left' ? Math.ceil(position) + 'px' : '0px';
+	        y = _.positionProp == 'top' ? Math.ceil(position) + 'px' : '0px';
+	
+	        positionProps[_.positionProp] = position;
+	
+	        if (_.transformsEnabled === false) {
+	            _.$slideTrack.css(positionProps);
+	        } else {
+	            positionProps = {};
+	            if (_.cssTransitions === false) {
+	                positionProps[_.animType] = 'translate(' + x + ', ' + y + ')';
+	                _.$slideTrack.css(positionProps);
+	            } else {
+	                positionProps[_.animType] = 'translate3d(' + x + ', ' + y + ', 0px)';
+	                _.$slideTrack.css(positionProps);
+	            }
+	        }
+	
+	    };
+	
+	    Slick.prototype.setDimensions = function() {
+	
+	        var _ = this;
+	
+	        if (_.options.vertical === false) {
+	            if (_.options.centerMode === true) {
+	                _.$list.css({
+	                    padding: ('0px ' + _.options.centerPadding)
+	                });
+	            }
+	        } else {
+	            _.$list.height(_.$slides.first().outerHeight(true) * _.options.slidesToShow);
+	            if (_.options.centerMode === true) {
+	                _.$list.css({
+	                    padding: (_.options.centerPadding + ' 0px')
+	                });
+	            }
+	        }
+	
+	        _.listWidth = _.$list.width();
+	        _.listHeight = _.$list.height();
+	
+	
+	        if (_.options.vertical === false && _.options.variableWidth === false) {
+	            _.slideWidth = Math.ceil(_.listWidth / _.options.slidesToShow);
+	            _.$slideTrack.width(Math.ceil((_.slideWidth * _.$slideTrack.children('.slick-slide').length)));
+	
+	        } else if (_.options.variableWidth === true) {
+	            _.$slideTrack.width(5000 * _.slideCount);
+	        } else {
+	            _.slideWidth = Math.ceil(_.listWidth);
+	            _.$slideTrack.height(Math.ceil((_.$slides.first().outerHeight(true) * _.$slideTrack.children('.slick-slide').length)));
+	        }
+	
+	        var offset = _.$slides.first().outerWidth(true) - _.$slides.first().width();
+	        if (_.options.variableWidth === false) _.$slideTrack.children('.slick-slide').width(_.slideWidth - offset);
+	
+	    };
+	
+	    Slick.prototype.setFade = function() {
+	
+	        var _ = this,
+	            targetLeft;
+	
+	        _.$slides.each(function(index, element) {
+	            targetLeft = (_.slideWidth * index) * -1;
+	            if (_.options.rtl === true) {
+	                $(element).css({
+	                    position: 'relative',
+	                    right: targetLeft,
+	                    top: 0,
+	                    zIndex: _.options.zIndex - 2,
+	                    opacity: 0
+	                });
+	            } else {
+	                $(element).css({
+	                    position: 'relative',
+	                    left: targetLeft,
+	                    top: 0,
+	                    zIndex: _.options.zIndex - 2,
+	                    opacity: 0
+	                });
+	            }
+	        });
+	
+	        _.$slides.eq(_.currentSlide).css({
+	            zIndex: _.options.zIndex - 1,
+	            opacity: 1
+	        });
+	
+	    };
+	
+	    Slick.prototype.setHeight = function() {
+	
+	        var _ = this;
+	
+	        if (_.options.slidesToShow === 1 && _.options.adaptiveHeight === true && _.options.vertical === false) {
+	            var targetHeight = _.$slides.eq(_.currentSlide).outerHeight(true);
+	            _.$list.css('height', targetHeight);
+	        }
+	
+	    };
+	
+	    Slick.prototype.setOption =
+	    Slick.prototype.slickSetOption = function() {
+	
+	        /**
+	         * accepts arguments in format of:
+	         *
+	         *  - for changing a single option's value:
+	         *     .slick("setOption", option, value, refresh )
+	         *
+	         *  - for changing a set of responsive options:
+	         *     .slick("setOption", 'responsive', [{}, ...], refresh )
+	         *
+	         *  - for updating multiple values at once (not responsive)
+	         *     .slick("setOption", { 'option': value, ... }, refresh )
+	         */
+	
+	        var _ = this, l, item, option, value, refresh = false, type;
+	
+	        if( $.type( arguments[0] ) === 'object' ) {
+	
+	            option =  arguments[0];
+	            refresh = arguments[1];
+	            type = 'multiple';
+	
+	        } else if ( $.type( arguments[0] ) === 'string' ) {
+	
+	            option =  arguments[0];
+	            value = arguments[1];
+	            refresh = arguments[2];
+	
+	            if ( arguments[0] === 'responsive' && $.type( arguments[1] ) === 'array' ) {
+	
+	                type = 'responsive';
+	
+	            } else if ( typeof arguments[1] !== 'undefined' ) {
+	
+	                type = 'single';
+	
+	            }
+	
+	        }
+	
+	        if ( type === 'single' ) {
+	
+	            _.options[option] = value;
+	
+	
+	        } else if ( type === 'multiple' ) {
+	
+	            $.each( option , function( opt, val ) {
+	
+	                _.options[opt] = val;
+	
+	            });
+	
+	
+	        } else if ( type === 'responsive' ) {
+	
+	            for ( item in value ) {
+	
+	                if( $.type( _.options.responsive ) !== 'array' ) {
+	
+	                    _.options.responsive = [ value[item] ];
+	
+	                } else {
+	
+	                    l = _.options.responsive.length-1;
+	
+	                    // loop through the responsive object and splice out duplicates.
+	                    while( l >= 0 ) {
+	
+	                        if( _.options.responsive[l].breakpoint === value[item].breakpoint ) {
+	
+	                            _.options.responsive.splice(l,1);
+	
+	                        }
+	
+	                        l--;
+	
+	                    }
+	
+	                    _.options.responsive.push( value[item] );
+	
+	                }
+	
+	            }
+	
+	        }
+	
+	        if ( refresh ) {
+	
+	            _.unload();
+	            _.reinit();
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.setPosition = function() {
+	
+	        var _ = this;
+	
+	        _.setDimensions();
+	
+	        _.setHeight();
+	
+	        if (_.options.fade === false) {
+	            _.setCSS(_.getLeft(_.currentSlide));
+	        } else {
+	            _.setFade();
+	        }
+	
+	        _.$slider.trigger('setPosition', [_]);
+	
+	    };
+	
+	    Slick.prototype.setProps = function() {
+	
+	        var _ = this,
+	            bodyStyle = document.body.style;
+	
+	        _.positionProp = _.options.vertical === true ? 'top' : 'left';
+	
+	        if (_.positionProp === 'top') {
+	            _.$slider.addClass('slick-vertical');
+	        } else {
+	            _.$slider.removeClass('slick-vertical');
+	        }
+	
+	        if (bodyStyle.WebkitTransition !== undefined ||
+	            bodyStyle.MozTransition !== undefined ||
+	            bodyStyle.msTransition !== undefined) {
+	            if (_.options.useCSS === true) {
+	                _.cssTransitions = true;
+	            }
+	        }
+	
+	        if ( _.options.fade ) {
+	            if ( typeof _.options.zIndex === 'number' ) {
+	                if( _.options.zIndex < 3 ) {
+	                    _.options.zIndex = 3;
+	                }
+	            } else {
+	                _.options.zIndex = _.defaults.zIndex;
+	            }
+	        }
+	
+	        if (bodyStyle.OTransform !== undefined) {
+	            _.animType = 'OTransform';
+	            _.transformType = '-o-transform';
+	            _.transitionType = 'OTransition';
+	            if (bodyStyle.perspectiveProperty === undefined && bodyStyle.webkitPerspective === undefined) _.animType = false;
+	        }
+	        if (bodyStyle.MozTransform !== undefined) {
+	            _.animType = 'MozTransform';
+	            _.transformType = '-moz-transform';
+	            _.transitionType = 'MozTransition';
+	            if (bodyStyle.perspectiveProperty === undefined && bodyStyle.MozPerspective === undefined) _.animType = false;
+	        }
+	        if (bodyStyle.webkitTransform !== undefined) {
+	            _.animType = 'webkitTransform';
+	            _.transformType = '-webkit-transform';
+	            _.transitionType = 'webkitTransition';
+	            if (bodyStyle.perspectiveProperty === undefined && bodyStyle.webkitPerspective === undefined) _.animType = false;
+	        }
+	        if (bodyStyle.msTransform !== undefined) {
+	            _.animType = 'msTransform';
+	            _.transformType = '-ms-transform';
+	            _.transitionType = 'msTransition';
+	            if (bodyStyle.msTransform === undefined) _.animType = false;
+	        }
+	        if (bodyStyle.transform !== undefined && _.animType !== false) {
+	            _.animType = 'transform';
+	            _.transformType = 'transform';
+	            _.transitionType = 'transition';
+	        }
+	        _.transformsEnabled = _.options.useTransform && (_.animType !== null && _.animType !== false);
+	    };
+	
+	
+	    Slick.prototype.setSlideClasses = function(index) {
+	
+	        var _ = this,
+	            centerOffset, allSlides, indexOffset, remainder;
+	
+	        allSlides = _.$slider
+	            .find('.slick-slide')
+	            .removeClass('slick-active slick-center slick-current')
+	            .attr('aria-hidden', 'true');
+	
+	        _.$slides
+	            .eq(index)
+	            .addClass('slick-current');
+	
+	        if (_.options.centerMode === true) {
+	
+	            centerOffset = Math.floor(_.options.slidesToShow / 2);
+	
+	            if (_.options.infinite === true) {
+	
+	                if (index >= centerOffset && index <= (_.slideCount - 1) - centerOffset) {
+	
+	                    _.$slides
+	                        .slice(index - centerOffset, index + centerOffset + 1)
+	                        .addClass('slick-active')
+	                        .attr('aria-hidden', 'false');
+	
+	                } else {
+	
+	                    indexOffset = _.options.slidesToShow + index;
+	                    allSlides
+	                        .slice(indexOffset - centerOffset + 1, indexOffset + centerOffset + 2)
+	                        .addClass('slick-active')
+	                        .attr('aria-hidden', 'false');
+	
+	                }
+	
+	                if (index === 0) {
+	
+	                    allSlides
+	                        .eq(allSlides.length - 1 - _.options.slidesToShow)
+	                        .addClass('slick-center');
+	
+	                } else if (index === _.slideCount - 1) {
+	
+	                    allSlides
+	                        .eq(_.options.slidesToShow)
+	                        .addClass('slick-center');
+	
+	                }
+	
+	            }
+	
+	            _.$slides
+	                .eq(index)
+	                .addClass('slick-center');
+	
+	        } else {
+	
+	            if (index >= 0 && index <= (_.slideCount - _.options.slidesToShow)) {
+	
+	                _.$slides
+	                    .slice(index, index + _.options.slidesToShow)
+	                    .addClass('slick-active')
+	                    .attr('aria-hidden', 'false');
+	
+	            } else if (allSlides.length <= _.options.slidesToShow) {
+	
+	                allSlides
+	                    .addClass('slick-active')
+	                    .attr('aria-hidden', 'false');
+	
+	            } else {
+	
+	                remainder = _.slideCount % _.options.slidesToShow;
+	                indexOffset = _.options.infinite === true ? _.options.slidesToShow + index : index;
+	
+	                if (_.options.slidesToShow == _.options.slidesToScroll && (_.slideCount - index) < _.options.slidesToShow) {
+	
+	                    allSlides
+	                        .slice(indexOffset - (_.options.slidesToShow - remainder), indexOffset + remainder)
+	                        .addClass('slick-active')
+	                        .attr('aria-hidden', 'false');
+	
+	                } else {
+	
+	                    allSlides
+	                        .slice(indexOffset, indexOffset + _.options.slidesToShow)
+	                        .addClass('slick-active')
+	                        .attr('aria-hidden', 'false');
+	
+	                }
+	
+	            }
+	
+	        }
+	
+	        if (_.options.lazyLoad === 'ondemand') {
+	            _.lazyLoad();
+	        }
+	
+	    };
+	
+	    Slick.prototype.setupInfinite = function() {
+	
+	        var _ = this,
+	            i, slideIndex, infiniteCount;
+	
+	        if (_.options.fade === true) {
+	            _.options.centerMode = false;
+	        }
+	
+	        if (_.options.infinite === true && _.options.fade === false) {
+	
+	            slideIndex = null;
+	
+	            if (_.slideCount > _.options.slidesToShow) {
+	
+	                if (_.options.centerMode === true) {
+	                    infiniteCount = _.options.slidesToShow + 1;
+	                } else {
+	                    infiniteCount = _.options.slidesToShow;
+	                }
+	
+	                for (i = _.slideCount; i > (_.slideCount -
+	                        infiniteCount); i -= 1) {
+	                    slideIndex = i - 1;
+	                    $(_.$slides[slideIndex]).clone(true).attr('id', '')
+	                        .attr('data-slick-index', slideIndex - _.slideCount)
+	                        .prependTo(_.$slideTrack).addClass('slick-cloned');
+	                }
+	                for (i = 0; i < infiniteCount; i += 1) {
+	                    slideIndex = i;
+	                    $(_.$slides[slideIndex]).clone(true).attr('id', '')
+	                        .attr('data-slick-index', slideIndex + _.slideCount)
+	                        .appendTo(_.$slideTrack).addClass('slick-cloned');
+	                }
+	                _.$slideTrack.find('.slick-cloned').find('[id]').each(function() {
+	                    $(this).attr('id', '');
+	                });
+	
+	            }
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.interrupt = function( toggle ) {
+	
+	        var _ = this;
+	
+	        if( !toggle ) {
+	            _.autoPlay();
+	        }
+	        _.interrupted = toggle;
+	
+	    };
+	
+	    Slick.prototype.selectHandler = function(event) {
+	
+	        var _ = this;
+	
+	        var targetElement =
+	            $(event.target).is('.slick-slide') ?
+	                $(event.target) :
+	                $(event.target).parents('.slick-slide');
+	
+	        var index = parseInt(targetElement.attr('data-slick-index'));
+	
+	        if (!index) index = 0;
+	
+	        if (_.slideCount <= _.options.slidesToShow) {
+	
+	            _.setSlideClasses(index);
+	            _.asNavFor(index);
+	            return;
+	
+	        }
+	
+	        _.slideHandler(index);
+	
+	    };
+	
+	    Slick.prototype.slideHandler = function(index, sync, dontAnimate) {
+	
+	        var targetSlide, animSlide, oldSlide, slideLeft, targetLeft = null,
+	            _ = this, navTarget;
+	
+	        sync = sync || false;
+	
+	        if (_.animating === true && _.options.waitForAnimate === true) {
+	            return;
+	        }
+	
+	        if (_.options.fade === true && _.currentSlide === index) {
+	            return;
+	        }
+	
+	        if (_.slideCount <= _.options.slidesToShow) {
+	            return;
+	        }
+	
+	        if (sync === false) {
+	            _.asNavFor(index);
+	        }
+	
+	        targetSlide = index;
+	        targetLeft = _.getLeft(targetSlide);
+	        slideLeft = _.getLeft(_.currentSlide);
+	
+	        _.currentLeft = _.swipeLeft === null ? slideLeft : _.swipeLeft;
+	
+	        if (_.options.infinite === false && _.options.centerMode === false && (index < 0 || index > _.getDotCount() * _.options.slidesToScroll)) {
+	            if (_.options.fade === false) {
+	                targetSlide = _.currentSlide;
+	                if (dontAnimate !== true) {
+	                    _.animateSlide(slideLeft, function() {
+	                        _.postSlide(targetSlide);
+	                    });
+	                } else {
+	                    _.postSlide(targetSlide);
+	                }
+	            }
+	            return;
+	        } else if (_.options.infinite === false && _.options.centerMode === true && (index < 0 || index > (_.slideCount - _.options.slidesToScroll))) {
+	            if (_.options.fade === false) {
+	                targetSlide = _.currentSlide;
+	                if (dontAnimate !== true) {
+	                    _.animateSlide(slideLeft, function() {
+	                        _.postSlide(targetSlide);
+	                    });
+	                } else {
+	                    _.postSlide(targetSlide);
+	                }
+	            }
+	            return;
+	        }
+	
+	        if ( _.options.autoplay ) {
+	            clearInterval(_.autoPlayTimer);
+	        }
+	
+	        if (targetSlide < 0) {
+	            if (_.slideCount % _.options.slidesToScroll !== 0) {
+	                animSlide = _.slideCount - (_.slideCount % _.options.slidesToScroll);
+	            } else {
+	                animSlide = _.slideCount + targetSlide;
+	            }
+	        } else if (targetSlide >= _.slideCount) {
+	            if (_.slideCount % _.options.slidesToScroll !== 0) {
+	                animSlide = 0;
+	            } else {
+	                animSlide = targetSlide - _.slideCount;
+	            }
+	        } else {
+	            animSlide = targetSlide;
+	        }
+	
+	        _.animating = true;
+	
+	        _.$slider.trigger('beforeChange', [_, _.currentSlide, animSlide]);
+	
+	        oldSlide = _.currentSlide;
+	        _.currentSlide = animSlide;
+	
+	        _.setSlideClasses(_.currentSlide);
+	
+	        if ( _.options.asNavFor ) {
+	
+	            navTarget = _.getNavTarget();
+	            navTarget = navTarget.slick('getSlick');
+	
+	            if ( navTarget.slideCount <= navTarget.options.slidesToShow ) {
+	                navTarget.setSlideClasses(_.currentSlide);
+	            }
+	
+	        }
+	
+	        _.updateDots();
+	        _.updateArrows();
+	
+	        if (_.options.fade === true) {
+	            if (dontAnimate !== true) {
+	
+	                _.fadeSlideOut(oldSlide);
+	
+	                _.fadeSlide(animSlide, function() {
+	                    _.postSlide(animSlide);
+	                });
+	
+	            } else {
+	                _.postSlide(animSlide);
+	            }
+	            _.animateHeight();
+	            return;
+	        }
+	
+	        if (dontAnimate !== true) {
+	            _.animateSlide(targetLeft, function() {
+	                _.postSlide(animSlide);
+	            });
+	        } else {
+	            _.postSlide(animSlide);
+	        }
+	
+	    };
+	
+	    Slick.prototype.startLoad = function() {
+	
+	        var _ = this;
+	
+	        if (_.options.arrows === true && _.slideCount > _.options.slidesToShow) {
+	
+	            _.$prevArrow.hide();
+	            _.$nextArrow.hide();
+	
+	        }
+	
+	        if (_.options.dots === true && _.slideCount > _.options.slidesToShow) {
+	
+	            _.$dots.hide();
+	
+	        }
+	
+	        _.$slider.addClass('slick-loading');
+	
+	    };
+	
+	    Slick.prototype.swipeDirection = function() {
+	
+	        var xDist, yDist, r, swipeAngle, _ = this;
+	
+	        xDist = _.touchObject.startX - _.touchObject.curX;
+	        yDist = _.touchObject.startY - _.touchObject.curY;
+	        r = Math.atan2(yDist, xDist);
+	
+	        swipeAngle = Math.round(r * 180 / Math.PI);
+	        if (swipeAngle < 0) {
+	            swipeAngle = 360 - Math.abs(swipeAngle);
+	        }
+	
+	        if ((swipeAngle <= 45) && (swipeAngle >= 0)) {
+	            return (_.options.rtl === false ? 'left' : 'right');
+	        }
+	        if ((swipeAngle <= 360) && (swipeAngle >= 315)) {
+	            return (_.options.rtl === false ? 'left' : 'right');
+	        }
+	        if ((swipeAngle >= 135) && (swipeAngle <= 225)) {
+	            return (_.options.rtl === false ? 'right' : 'left');
+	        }
+	        if (_.options.verticalSwiping === true) {
+	            if ((swipeAngle >= 35) && (swipeAngle <= 135)) {
+	                return 'down';
+	            } else {
+	                return 'up';
+	            }
+	        }
+	
+	        return 'vertical';
+	
+	    };
+	
+	    Slick.prototype.swipeEnd = function(event) {
+	
+	        var _ = this,
+	            slideCount,
+	            direction;
+	
+	        _.dragging = false;
+	        _.interrupted = false;
+	        _.shouldClick = ( _.touchObject.swipeLength > 10 ) ? false : true;
+	
+	        if ( _.touchObject.curX === undefined ) {
+	            return false;
+	        }
+	
+	        if ( _.touchObject.edgeHit === true ) {
+	            _.$slider.trigger('edge', [_, _.swipeDirection() ]);
+	        }
+	
+	        if ( _.touchObject.swipeLength >= _.touchObject.minSwipe ) {
+	
+	            direction = _.swipeDirection();
+	
+	            switch ( direction ) {
+	
+	                case 'left':
+	                case 'down':
+	
+	                    slideCount =
+	                        _.options.swipeToSlide ?
+	                            _.checkNavigable( _.currentSlide + _.getSlideCount() ) :
+	                            _.currentSlide + _.getSlideCount();
+	
+	                    _.currentDirection = 0;
+	
+	                    break;
+	
+	                case 'right':
+	                case 'up':
+	
+	                    slideCount =
+	                        _.options.swipeToSlide ?
+	                            _.checkNavigable( _.currentSlide - _.getSlideCount() ) :
+	                            _.currentSlide - _.getSlideCount();
+	
+	                    _.currentDirection = 1;
+	
+	                    break;
+	
+	                default:
+	
+	
+	            }
+	
+	            if( direction != 'vertical' ) {
+	
+	                _.slideHandler( slideCount );
+	                _.touchObject = {};
+	                _.$slider.trigger('swipe', [_, direction ]);
+	
+	            }
+	
+	        } else {
+	
+	            if ( _.touchObject.startX !== _.touchObject.curX ) {
+	
+	                _.slideHandler( _.currentSlide );
+	                _.touchObject = {};
+	
+	            }
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.swipeHandler = function(event) {
+	
+	        var _ = this;
+	
+	        if ((_.options.swipe === false) || ('ontouchend' in document && _.options.swipe === false)) {
+	            return;
+	        } else if (_.options.draggable === false && event.type.indexOf('mouse') !== -1) {
+	            return;
+	        }
+	
+	        _.touchObject.fingerCount = event.originalEvent && event.originalEvent.touches !== undefined ?
+	            event.originalEvent.touches.length : 1;
+	
+	        _.touchObject.minSwipe = _.listWidth / _.options
+	            .touchThreshold;
+	
+	        if (_.options.verticalSwiping === true) {
+	            _.touchObject.minSwipe = _.listHeight / _.options
+	                .touchThreshold;
+	        }
+	
+	        switch (event.data.action) {
+	
+	            case 'start':
+	                _.swipeStart(event);
+	                break;
+	
+	            case 'move':
+	                _.swipeMove(event);
+	                break;
+	
+	            case 'end':
+	                _.swipeEnd(event);
+	                break;
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.swipeMove = function(event) {
+	
+	        var _ = this,
+	            edgeWasHit = false,
+	            curLeft, swipeDirection, swipeLength, positionOffset, touches;
+	
+	        touches = event.originalEvent !== undefined ? event.originalEvent.touches : null;
+	
+	        if (!_.dragging || touches && touches.length !== 1) {
+	            return false;
+	        }
+	
+	        curLeft = _.getLeft(_.currentSlide);
+	
+	        _.touchObject.curX = touches !== undefined ? touches[0].pageX : event.clientX;
+	        _.touchObject.curY = touches !== undefined ? touches[0].pageY : event.clientY;
+	
+	        _.touchObject.swipeLength = Math.round(Math.sqrt(
+	            Math.pow(_.touchObject.curX - _.touchObject.startX, 2)));
+	
+	        if (_.options.verticalSwiping === true) {
+	            _.touchObject.swipeLength = Math.round(Math.sqrt(
+	                Math.pow(_.touchObject.curY - _.touchObject.startY, 2)));
+	        }
+	
+	        swipeDirection = _.swipeDirection();
+	
+	        if (swipeDirection === 'vertical') {
+	            return;
+	        }
+	
+	        if (event.originalEvent !== undefined && _.touchObject.swipeLength > 4) {
+	            event.preventDefault();
+	        }
+	
+	        positionOffset = (_.options.rtl === false ? 1 : -1) * (_.touchObject.curX > _.touchObject.startX ? 1 : -1);
+	        if (_.options.verticalSwiping === true) {
+	            positionOffset = _.touchObject.curY > _.touchObject.startY ? 1 : -1;
+	        }
+	
+	
+	        swipeLength = _.touchObject.swipeLength;
+	
+	        _.touchObject.edgeHit = false;
+	
+	        if (_.options.infinite === false) {
+	            if ((_.currentSlide === 0 && swipeDirection === 'right') || (_.currentSlide >= _.getDotCount() && swipeDirection === 'left')) {
+	                swipeLength = _.touchObject.swipeLength * _.options.edgeFriction;
+	                _.touchObject.edgeHit = true;
+	            }
+	        }
+	
+	        if (_.options.vertical === false) {
+	            _.swipeLeft = curLeft + swipeLength * positionOffset;
+	        } else {
+	            _.swipeLeft = curLeft + (swipeLength * (_.$list.height() / _.listWidth)) * positionOffset;
+	        }
+	        if (_.options.verticalSwiping === true) {
+	            _.swipeLeft = curLeft + swipeLength * positionOffset;
+	        }
+	
+	        if (_.options.fade === true || _.options.touchMove === false) {
+	            return false;
+	        }
+	
+	        if (_.animating === true) {
+	            _.swipeLeft = null;
+	            return false;
+	        }
+	
+	        _.setCSS(_.swipeLeft);
+	
+	    };
+	
+	    Slick.prototype.swipeStart = function(event) {
+	
+	        var _ = this,
+	            touches;
+	
+	        _.interrupted = true;
+	
+	        if (_.touchObject.fingerCount !== 1 || _.slideCount <= _.options.slidesToShow) {
+	            _.touchObject = {};
+	            return false;
+	        }
+	
+	        if (event.originalEvent !== undefined && event.originalEvent.touches !== undefined) {
+	            touches = event.originalEvent.touches[0];
+	        }
+	
+	        _.touchObject.startX = _.touchObject.curX = touches !== undefined ? touches.pageX : event.clientX;
+	        _.touchObject.startY = _.touchObject.curY = touches !== undefined ? touches.pageY : event.clientY;
+	
+	        _.dragging = true;
+	
+	    };
+	
+	    Slick.prototype.unfilterSlides = Slick.prototype.slickUnfilter = function() {
+	
+	        var _ = this;
+	
+	        if (_.$slidesCache !== null) {
+	
+	            _.unload();
+	
+	            _.$slideTrack.children(this.options.slide).detach();
+	
+	            _.$slidesCache.appendTo(_.$slideTrack);
+	
+	            _.reinit();
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.unload = function() {
+	
+	        var _ = this;
+	
+	        $('.slick-cloned', _.$slider).remove();
+	
+	        if (_.$dots) {
+	            _.$dots.remove();
+	        }
+	
+	        if (_.$prevArrow && _.htmlExpr.test(_.options.prevArrow)) {
+	            _.$prevArrow.remove();
+	        }
+	
+	        if (_.$nextArrow && _.htmlExpr.test(_.options.nextArrow)) {
+	            _.$nextArrow.remove();
+	        }
+	
+	        _.$slides
+	            .removeClass('slick-slide slick-active slick-visible slick-current')
+	            .attr('aria-hidden', 'true')
+	            .css('width', '');
+	
+	    };
+	
+	    Slick.prototype.unslick = function(fromBreakpoint) {
+	
+	        var _ = this;
+	        _.$slider.trigger('unslick', [_, fromBreakpoint]);
+	        _.destroy();
+	
+	    };
+	
+	    Slick.prototype.updateArrows = function() {
+	
+	        var _ = this,
+	            centerOffset;
+	
+	        centerOffset = Math.floor(_.options.slidesToShow / 2);
+	
+	        if ( _.options.arrows === true &&
+	            _.slideCount > _.options.slidesToShow &&
+	            !_.options.infinite ) {
+	
+	            _.$prevArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
+	            _.$nextArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
+	
+	            if (_.currentSlide === 0) {
+	
+	                _.$prevArrow.addClass('slick-disabled').attr('aria-disabled', 'true');
+	                _.$nextArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
+	
+	            } else if (_.currentSlide >= _.slideCount - _.options.slidesToShow && _.options.centerMode === false) {
+	
+	                _.$nextArrow.addClass('slick-disabled').attr('aria-disabled', 'true');
+	                _.$prevArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
+	
+	            } else if (_.currentSlide >= _.slideCount - 1 && _.options.centerMode === true) {
+	
+	                _.$nextArrow.addClass('slick-disabled').attr('aria-disabled', 'true');
+	                _.$prevArrow.removeClass('slick-disabled').attr('aria-disabled', 'false');
+	
+	            }
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.updateDots = function() {
+	
+	        var _ = this;
+	
+	        if (_.$dots !== null) {
+	
+	            _.$dots
+	                .find('li')
+	                .removeClass('slick-active')
+	                .attr('aria-hidden', 'true');
+	
+	            _.$dots
+	                .find('li')
+	                .eq(Math.floor(_.currentSlide / _.options.slidesToScroll))
+	                .addClass('slick-active')
+	                .attr('aria-hidden', 'false');
+	
+	        }
+	
+	    };
+	
+	    Slick.prototype.visibility = function() {
+	
+	        var _ = this;
+	
+	        if ( _.options.autoplay ) {
+	
+	            if ( document[_.hidden] ) {
+	
+	                _.interrupted = true;
+	
+	            } else {
+	
+	                _.interrupted = false;
+	
+	            }
+	
+	        }
+	
+	    };
+	
+	    $.fn.slick = function() {
+	        var _ = this,
+	            opt = arguments[0],
+	            args = Array.prototype.slice.call(arguments, 1),
+	            l = _.length,
+	            i,
+	            ret;
+	        for (i = 0; i < l; i++) {
+	            if (typeof opt == 'object' || typeof opt == 'undefined')
+	                _[i].slick = new Slick(_[i], opt);
+	            else
+	                ret = _[i].slick[opt].apply(_[i].slick, args);
+	            if (typeof ret != 'undefined') return ret;
+	        }
+	        return _;
+	    };
+	
+	}));
 
 
 /***/ }
