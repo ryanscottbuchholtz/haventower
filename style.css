@@ -849,8 +849,8 @@ ul {
   width: 100%; }
 
 .testimonial-image {
-  width: 150px;
-  height: 150px;
+  width: 175px;
+  height: 175px;
   background-color: orange;
   border-radius: 50%;
   align-self: flex-end; }
