@@ -1,54 +1,143 @@
+// .testimonial-wrap {
+//   width: 100%;
+//   margin-top: 0;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   // background-color: #f2f2f2;
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+// }
+
+// .testimonials {
+//   width: 90%;
+//   padding: 50px 0px;
+// }
+
+// .testimonial-photo-text {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-around;
+// }
+
+// .testimonial-image {
+//   width: 150px;
+//   height: 150px;
+//   background-color: orange;
+//   border-radius: 50%;
+// }
+
+.image1 {
+  background: url('../assets/Papazian Head Shot.jpg') center no-repeat;
+  background-size: cover;
+}
+
+// .testimonial-text {
+//   width: 70%;
+//   padding: 50px 25px;
+//   border-radius: 15px;
+//   box-shadow: 15px 15px 35px -10px rgba(0,0,0,0.75);
+//   display: flex;
+//   flex-direction: column;
+//   background-color: #f2f2f2;
+// }
+
+// .text-testimonial {
+//   text-align: justify;
+//   color: grey;
+//   width: 100%;
+//   font-style: italic;
+// }
+
+// .author-testimonial {
+//   align-self: flex-end;
+//   text-transform: uppercase;
+//   margin-top: 15px;
+//   text-align: right;
+// }
+
 .testimonial-wrap {
-  width: 100%;
+  width: 50%;
   margin-top: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background-color: #f2f2f2;
+  justify-content: flex-end;
+  // background-color: #f2f2f2;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+}
 
+.testimonial-opacity-box {
+  width: 50%;
+  height: 448px;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  background-color: #f2f2f2;
+  opacity: .7;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px 13px rgba(242,242,242,1);
 }
 
 .testimonials {
   width: 100%;
-  padding: 50px 0px;
-}
-*
-
-.testimonial-photo-text {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
 }
 
 .testimonial-image {
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   background-color: orange;
   border-radius: 50%;
+  align-self: flex-end;
+}
+
+.image1 {
+  background: url('../assets/Papazian Head Shot.jpg') center no-repeat;
+  background-size: cover;
 }
 
 .testimonial-text {
-  width: 70%;
+  width: 100%;
   padding: 50px 25px;
-  border-radius: 15px;
-  box-shadow: 10px 10px 35px -10px rgba(0,0,0,0.75);
   display: flex;
   flex-direction: column;
+  // background-color: #f2f2f2;
 }
 
 .text-testimonial {
   text-align: justify;
-  color: grey;
+  color: black;
   width: 100%;
+  font-style: italic;
+  line-height: 1.5em;
 }
 
 .author-testimonial {
-  align-self: flex-end;
-  text-transform: uppercase;
+  align-self: center;
   margin-top: 15px;
   text-align: right;
+  margin-right: 50px;
 }
 
+.author-and-picture {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.quotes {
+  font-size: 1.5em;
+  color: $haventower-red;
+}
+
+.author-name {
+  border-bottom: 1px solid $haventower-red;
+  padding-bottom: 12px;
+  font-size: 1.2em;
+}
 
 
 

@@ -4,12 +4,6 @@ require("../css/style.css");
 require("font-awesome-webpack");
 require("slick-carousel");
 
-// import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
-
-
-
-
 $(document).ready(function() {
   $('#main-image-logo-opacity-wrapper').delay(2000).fadeOut(4000);
   $('#main-image-logo-wrapper').delay(2000).fadeOut(4000);
