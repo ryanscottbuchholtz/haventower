@@ -2,7 +2,7 @@
   height: $take-flight-height;
   width: 100%;
   background: url('../assets/AdobeStock_105033891.jpeg') no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   display: none;
   position: relative;
@@ -10,8 +10,10 @@
 
 .second-image-headline-wrap {
   display: flex;
-  justify-content: flex-start;
+  // justify-content: flex-start;
+  flex-direction: column;
   h1 {
+    align-self: flex-start;
   color: #f9f9f9;
   font-size: 4em;
   line-height: 1.1em;
@@ -19,6 +21,7 @@
   font-family: $header-font;
   border: 3px solid $haventower-red;
   text-align: center;
+  width: 20%;
   margin-left: 45px;
   margin-top: 45px;
   padding: 25px;
