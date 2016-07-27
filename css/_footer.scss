@@ -1,5 +1,86 @@
 footer {
   width: 100%;
-  height: 200px;
-  border: 1px solid orange;
+  height: 300px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
 }
+
+.footer-top-wrap,
+.footer-bottom-wrap {
+  width: 100%;
+  // border: 1px solid white;
+}
+
+.footer-top-wrap {
+  height: 90%;
+  display: flex;
+}
+
+.footer-bottom-wrap {
+  height: 10%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 100;
+}
+
+#general,
+#seattle,
+#la {
+  height: 100%;
+  // border: 1px solid white;
+  color: #f2f2f2;
+}
+
+#general {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+}
+
+#seattle,
+#la {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact,
+#social-contact {
+  width: 60%;
+}
+
+#contact {
+  height: 55%;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+#social-contact {
+  height: 45%;
+  padding-top: 15px;
+}
+
+#contact,
+#social-contact {
+  border: 1px solid white;
+  padding-left: 25px;
+  padding-top: 5px;
+  i {
+    padding: 5px 15px 0px 0px;
+  }
+  h2 {
+    width: 60%;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+    border-bottom: 1px solid $haventower-red;
+  }
+}
+
+
