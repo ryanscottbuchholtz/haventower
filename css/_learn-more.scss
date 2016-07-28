@@ -1,25 +1,11 @@
 /*Learn More*/
-
-.learn-more {
-  width: 100%;
-  height: 100%;
-  padding: 50px 0;
-  display: none;
-  background-color: #fff;
-  z-index: 98;
-}
-
 .learn-more-blocks {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 90%;
   margin: auto;
-  height: 100%;
-  p {
-    color: grey;
-  }
-  
+  height: 100%;  
 }
 
 .learn-block {
@@ -27,16 +13,7 @@
   justify-content: center;
 }
 
-#learn-more-header {
-  margin: 25px 0 12.5px 0;
-  text-transform: uppercase;
-}
 
-#learn-more-paragraph {
-  width: 90%;
-  margin: 12.5px 0 25px 0;
-  text-align: center;
-}
 
 .lm-block {
   width: 33%;

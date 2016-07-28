@@ -2,9 +2,9 @@
   height: $take-flight-height;
   width: 100%;
   background: url('../assets/AdobeStock_105033891.jpeg') no-repeat;
-  background-position: bottom;
+  background-position: center;
   background-size: cover;
-  display: none;
+  // display: none;
   position: relative;
   box-shadow: $header-shadow;
 }
