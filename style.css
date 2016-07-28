@@ -545,14 +545,6 @@ ul {
     box-shadow: -20px 20px 28px -9px rgba(0, 0, 0, 0.8); }
 
 /*Learn More*/
-.learn-more {
-  width: 100%;
-  height: 100%;
-  padding: 50px 0;
-  display: none;
-  background-color: #fff;
-  z-index: 98; }
-
 .learn-more-blocks {
   display: flex;
   flex-direction: column;
@@ -560,21 +552,10 @@ ul {
   width: 90%;
   margin: auto;
   height: 100%; }
-  .learn-more-blocks p {
-    color: grey; }
 
 .learn-block {
   display: flex;
   justify-content: center; }
-
-#learn-more-header {
-  margin: 25px 0 12.5px 0;
-  text-transform: uppercase; }
-
-#learn-more-paragraph {
-  width: 90%;
-  margin: 12.5px 0 25px 0;
-  text-align: center; }
 
 .lm-block {
   width: 33%;
@@ -599,12 +580,11 @@ ul {
   border-bottom: 1px solid #E51B23; }
 
 .second-image {
-  height: 900px;
+  height: 600px;
   width: 100%;
   background: url(52b24c1cbb3800914d8cd1800847e73c.jpeg) no-repeat;
-  background-position: bottom;
+  background-position: center;
   background-size: cover;
-  display: none;
   position: relative;
   box-shadow: 0 15px 20px -12px rgba(0, 0, 0, 0.8); }
 
@@ -892,16 +872,35 @@ ul {
   padding-bottom: 12px;
   font-size: 1.2em; }
 
-.compass-picture {
-  background: url(debf1733d398b82cfd26cfc0eb14f7f9.jpeg) center no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 900px; }
-
 .approach-and-services {
-  width: 100%;
-  height: 300px;
-  background-color: white; }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.approach {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  padding: 25px 0;
+  box-shadow: 0 15px 20px -12px rgba(0, 0, 0, 0.8);
+  margin-bottom: 25px; }
+
+.approach-list-item {
+  display: flex;
+  width: 25%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center; }
+  .approach-list-item p {
+    width: 75%;
+    text-align: center;
+    padding-top: 10px;
+    color: grey; }
+
+.format-line-2 {
+  width: 50%;
+  border-bottom: 1px solid #E51B23;
+  padding-top: 10px; }
 
 .portfolio {
   width: 100%;
@@ -997,7 +996,31 @@ a {
 .body-wrap {
   position: absolute;
   top: 900px;
-  width: 100%; }
+  width: 100%;
+  display: none; }
+
+.white-div {
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+  background-color: #fff;
+  z-index: 98; }
+
+.headline {
+  margin: 25px 0 12.5px 0;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto; }
+
+.white-div-paragraph {
+  width: 90%;
+  margin: 12.5px auto 25px auto;
+  text-align: center;
+  color: grey; }
+
+.bigger-paragraph {
+  font-size: 1.1em; }
 
 /*# sourceMappingURL=style.css.map */
 
