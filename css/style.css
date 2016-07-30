@@ -18,6 +18,7 @@ html {
 body,
 h1,
 h2,
+h3,
 p {
   margin: 0; }
 
@@ -386,7 +387,7 @@ ul {
   margin-top: 0;
   font-family: "Oswald", sans-serif;
   position: absolute;
-  top: 800px;
+  top: 625px;
   left: 0;
   border-bottom: 1px solid #f2f2f2;
   z-index: 99;
@@ -493,17 +494,18 @@ ul {
   background: url("../assets/AdobeStock_107961355.jpeg") center no-repeat;
   background-size: cover;
   width: 100%;
-  height: 800px;
+  height: 625px;
   position: fixed;
   top: 0;
-  left: 0; }
+  left: 0;
+  z-index: -100; }
 
 #main-image-logo-opacity-wrapper {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 800px;
+  height: 625px;
   background-color: white;
   opacity: 1.0; }
 
@@ -513,7 +515,7 @@ ul {
   justify-content: center;
   position: fixed;
   width: 100%;
-  height: 800px;
+  height: 625px;
   margin-top: 100px;
   top: 0;
   left: 0; }
@@ -527,7 +529,7 @@ ul {
 .main-image-headline {
   display: none;
   justify-content: flex-end;
-  height: 800px;
+  height: 625px;
   z-index: 2; }
   .main-image-headline h1 {
     color: #f9f9f9;
@@ -536,7 +538,7 @@ ul {
     letter-spacing: 4px;
     font-family: "Oswald", sans-serif;
     border: 3px solid #E51B23;
-    height: 25%;
+    height: 30%;
     text-align: center;
     margin-right: 75px;
     margin-top: 45px;
@@ -579,14 +581,26 @@ ul {
   width: 30%;
   border-bottom: 1px solid #E51B23; }
 
-.second-image {
+.flow-image {
   height: 600px;
   width: 100%;
-  background: url("../assets/AdobeStock_105033891.jpeg") no-repeat;
-  background-position: center;
-  background-size: cover;
   position: relative;
   box-shadow: 0 15px 20px -12px rgba(0, 0, 0, 0.8); }
+
+.second-image {
+  background: url("../assets/AdobeStock_105033891.jpeg") no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.third-image {
+  background: url("../assets/AdobeStock_102474785.jpeg") no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.fourth-image {
+  background: url("../assets/AdobeStock_87193989.jpeg") no-repeat;
+  background-position: top;
+  background-size: cover; }
 
 .second-image-headline-wrap {
   display: flex;
@@ -606,6 +620,13 @@ ul {
     padding: 25px;
     text-transform: uppercase;
     box-shadow: 20px 20px 28px -9px rgba(0, 0, 0, 0.8); }
+
+.sticky-image {
+  position: fixed;
+  left: 0;
+  top: 100px;
+  box-shadow: none;
+  z-index: -99; }
 
 /* Slider */
 .slick-slider {
@@ -872,10 +893,16 @@ ul {
   padding-bottom: 12px;
   font-size: 1.2em; }
 
+.approach-and-services-wrap-sticky {
+  margin-top: 600px;
+  background-color: white;
+  z-index: 999; }
+
 .approach-and-services {
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  min-height: 100%; }
 
 .approach {
   display: flex;
@@ -894,13 +921,42 @@ ul {
   .approach-list-item p {
     width: 75%;
     text-align: center;
-    padding-top: 10px;
-    color: grey; }
+    padding-top: 15px;
+    color: darkgrey; }
 
 .format-line-2 {
   width: 50%;
   border-bottom: 1px solid #E51B23;
   padding-top: 10px; }
+
+.business-wrap {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 90%; }
+  .business-wrap h2 {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #E51B23;
+    width: 75%;
+    margin: 0 auto; }
+
+.businesses {
+  display: flex;
+  width: 100%;
+  justify-content: space-around; }
+  .businesses ul {
+    font-size: 1.0em;
+    color: darkgrey; }
+
+#specific-services-headline {
+  margin-top: 25px; }
+
+.specific-services h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em; }
 
 .portfolio {
   width: 100%;
@@ -995,7 +1051,7 @@ a {
 
 .body-wrap {
   position: absolute;
-  top: 900px;
+  top: 725px;
   width: 100%;
   display: none; }
 
@@ -1018,8 +1074,5 @@ a {
   margin: 12.5px auto 25px auto;
   text-align: center;
   color: grey; }
-
-.bigger-paragraph {
-  font-size: 1.1em; }
 
 /*# sourceMappingURL=style.css.map */

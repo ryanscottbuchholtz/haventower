@@ -1,12 +1,26 @@
-.second-image {
-  height: $take-flight-height;
+.flow-image {
+  height: $flow-image-height;
   width: 100%;
+  position: relative;
+  box-shadow: $header-shadow;
+}
+
+.second-image {
   background: url('../assets/AdobeStock_105033891.jpeg') no-repeat;
   background-position: center;
   background-size: cover;
-  // display: none;
-  position: relative;
-  box-shadow: $header-shadow;
+}
+
+.third-image {
+  background: url('../assets/AdobeStock_102474785.jpeg') no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.fourth-image {
+  background: url('../assets/AdobeStock_87193989.jpeg') no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 
 .second-image-headline-wrap {
@@ -28,4 +42,12 @@
   text-transform: uppercase;
   box-shadow: $take-flight-shadow;
   }
+}
+
+.sticky-image {
+  position: fixed;
+  left: 0;
+  top: $header-height;
+  box-shadow: none;
+  z-index: -99;
 }

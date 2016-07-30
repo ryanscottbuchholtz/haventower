@@ -8,7 +8,6 @@
 @import 'slick/slick.scss';
 @import 'slick/slick-theme.scss';
 @import '_testamonials.scss';
-@import '_compass-picture.scss';
 @import '_approach-and-services.scss';
 @import '_portfolio.scss';
 @import '_footer.scss';
@@ -46,7 +45,6 @@ a {
   width: 100%;
   height: 100%;
   padding: 50px 0;
-  // display: none;
   background-color: #fff;
   z-index: 98;
 }
@@ -64,8 +62,4 @@ a {
   margin: 12.5px auto 25px auto;
   text-align: center;
   color: grey;
-}
-
-.bigger-paragraph {
-  font-size: 1.1em;
 }
