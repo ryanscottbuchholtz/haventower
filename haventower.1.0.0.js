@@ -70,16 +70,20 @@
 	__webpack_require__(24);
 	__webpack_require__(35);
 	
-	$(document).ready(function() {
+	function initialFadeIn() {
 	  $('#main-image-logo-opacity-wrapper').delay(2000).fadeOut(4000);
 	  $('#main-image-logo-wrapper').delay(2000).fadeOut(4000);
 	  $('.main-header').fadeIn(6000).css('display', 'flex');
-	  // $('.learn-more').fadeIn(6000).css('display', 'flex');
 	  $('.main-image-headline').delay(2000).fadeIn(6000).delay(2000).css('display', 'flex');
-	  // $('.second-image').fadeIn(4000);
 	  $('.body-wrap').fadeIn(6000);
+	}
 	
-	  // $('.main-header, .learn-more, .main-image-headline').delay(2000).fadeIn(6000).css('display', 'flex');
+	function stickyHeader() {
+	
+	}
+	
+	$(document).ready(function() {
+	  initialFadeIn();
 	
 	  $('.testimonials').slick({
 	    dots: true,
@@ -88,14 +92,32 @@
 	    autoplaySpeed: 6000
 	  });
 	
+	  $('.specific-services').slick({
+	    // dots: true,
+	    infinite: true,
+	    autoplay: true,
+	    autoplaySpeed: 5000
+	  });
+	
+	
+	
+	
+	
+	
 	
 	  $(window).scroll( function() {
 	  
 	    var windowTop = $(window).scrollTop();
 	    var headerTop = $('.main-header').offset().top;
+	    var secondImageTop = $('.second-image').offset().top;
+	    var headerHeight = $('.main-header').height();
 	
-	    // console.log(windowTop + ' = windowTop');
-	    // console.log(headerTop + ' = headerTop');
+	    // console.log(secondImageTop + "= second image top");
+	    // console.log(windowTop + "= window top");
+	
+	    console.log(windowTop + ' = windowTop');
+	    console.log(headerTop + ' = headerTop');
+	    console.log(secondImageTop + ' = secondImageTop');
 	
 	
 	  //   if(windowTop < 800) {
@@ -113,12 +135,23 @@
 	      $('.main-header').addClass('sticky-header');
 	    } 
 	
-	    if (headerTop < 800) {
+	    if (headerTop < 625) {
 	      $('.main-header').removeClass('sticky-header');
 	    }
 	
+	    if (secondImageTop <= windowTop + headerHeight) {
+	      $('.second-image').addClass('sticky-image');
+	      $('.approach-and-services-wrap').addClass('approach-and-services-wrap-sticky');
+	    // } else {
+	    //   $('.second-image').removeClass('sticky-image');
+	    //   $('.approach-and-services-wrap').removeClass('approach-and-services-wrap-sticky');
+	      }
 	
-	
+	    if (secondImageTop < 1356.50) {
+	      $('.second-image').removeClass('sticky-image');
+	      $('.approach-and-services-wrap').removeClass('approach-and-services-wrap-sticky');
+	      console.log('unstuck');
+	    }
 	  });
 	
 	
