@@ -379,6 +379,11 @@ ul {
   padding: 0; }
 
 /*Navigation*/
+.main-header-sticky-anchor {
+  position: absolute;
+  top: 625px;
+  left: 0; }
+
 .main-header {
   width: 100%;
   align-items: center;
