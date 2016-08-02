@@ -41,21 +41,30 @@ $(document).ready(function() {
     // })
   
     var windowTop = $(window).scrollTop();
-    var headerTop = $('.main-header').offset().top;
+    var headerTop = $('.main-header-sticky-anchor').offset().top;
     var headerHeight = $('.main-header').height();
     var secondImageTop = $('.second-image-sticky-anchor').offset().top;
     var thirdImageTop = $('.third-image-sticky-anchor').offset().top;
     var fourthImageTop = $('.fourth-image-sticky-anchor').offset().top;
 
     console.log(windowTop + ' = windowTop');
-    console.log(fourthImageTop + ' = fourthImageTop');
+    console.log(headerTop + ' = headerTop');
 
-    if (headerTop <= windowTop) {
+    // if (headerTop <= windowTop) {
+    //   $('.main-header').addClass('sticky-header');
+    // } 
+
+    // if (headerTop < 625) {
+    //   $('.main-header').removeClass('sticky-header');
+    // }
+
+    if (windowTop >= headerTop) {
       $('.main-header').addClass('sticky-header');
-    } 
-
-    if (headerTop < 625) {
+      $('.main-header-sticky-anchor').height($('.main-header').outerHeight());
+      console.log("Stuck");
+    } else {
       $('.main-header').removeClass('sticky-header');
+      $('.main-header-sticky-anchor').height(625);
     }
 
     if (windowTop >= (secondImageTop - headerHeight)) {
