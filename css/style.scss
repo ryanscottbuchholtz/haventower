@@ -4,11 +4,12 @@
 @import '_navigation.scss';
 @import '_main-image.scss';
 @import '_learn-more.scss';
-@import '_second-image.scss';
+@import '_images.scss';
 @import 'slick/slick.scss';
 @import 'slick/slick-theme.scss';
 @import '_testamonials.scss';
 @import '_approach-and-services.scss';
+@import '_expect.scss';
 @import '_portfolio.scss';
 @import '_footer.scss';
 
@@ -49,12 +50,27 @@ a {
   z-index: 98;
 }
 
+.sticky-wrap {
+  margin-top: $flow-image-height;
+  background-color: white;
+  z-index: 999;
+}
+
+.sticky-image {
+  position: fixed;
+  left: 0;
+  top: $header-height;
+  box-shadow: none;
+  z-index: -99;
+}
+
 .headline {
   margin: 25px 0 12.5px 0;
   text-transform: uppercase;
   text-align: center;
   width: 100%;
   margin: 0 auto;
+  color: #333333;
 }
 
 .white-div-paragraph {

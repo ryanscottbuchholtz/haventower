@@ -43,11 +43,3 @@
   box-shadow: $take-flight-shadow;
   }
 }
-
-.sticky-image {
-  position: fixed;
-  left: 0;
-  top: $header-height;
-  box-shadow: none;
-  z-index: -99;
-}
