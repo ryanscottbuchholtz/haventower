@@ -25,12 +25,11 @@
 
 .num {
   width: 25%;
-  margin: 15px 0;
+  // margin: 15px 0;
   color: $haventower-red;
   display: flex;
   justify-content: center;
   align-items: center; 
-  
 }
 
 .num-circle {
@@ -58,7 +57,5 @@
 .order-expect-wrap,
 .num,
 .expectation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include center_center_flex;
 }

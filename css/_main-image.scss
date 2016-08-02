@@ -34,9 +34,9 @@
 
 #main-image-logo {
   width: 80%;
-  height: 80%;
+  height: $main-image-height;
   background: url('../assets/htlogo/logo_transparent_background.png') no-repeat;
-  background-size: 100%;
+  background-size: contain;
 }
 
 .main-image-headline {
@@ -45,18 +45,8 @@
   height: $main-image-height;
   z-index: 2;
   h1 {
-  color: #f9f9f9;
-  font-size: 4em;
-  line-height: 1.1em;
-  letter-spacing: 4px;
-  font-family: $header-font;
-  border: 3px solid $haventower-red;
-  height: 30%;
-  text-align: center;
-  margin-right: 75px;
-  margin-top: 45px;
-  padding: 25px;
-  text-transform: uppercase;
-  box-shadow: $stand-out-shadow;
+    margin-right: 75px;
+    box-shadow: $stand-out-shadow;
+    @include image_headline;
   }
 }

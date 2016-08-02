@@ -34,6 +34,11 @@ $(document).ready(function() {
   });
 
   $(window).scroll( function() {
+
+    // $(window).resize( function() {
+
+
+    // })
   
     var windowTop = $(window).scrollTop();
     var headerTop = $('.main-header').offset().top;
@@ -41,6 +46,9 @@ $(document).ready(function() {
     var secondImageTop = $('.second-image-sticky-anchor').offset().top;
     var thirdImageTop = $('.third-image-sticky-anchor').offset().top;
     var fourthImageTop = $('.fourth-image-sticky-anchor').offset().top;
+
+    console.log(windowTop + ' = windowTop');
+    console.log(fourthImageTop + ' = fourthImageTop');
 
     if (headerTop <= windowTop) {
       $('.main-header').addClass('sticky-header');
@@ -68,7 +76,7 @@ $(document).ready(function() {
 
     if (windowTop >= (fourthImageTop - headerHeight)) {
       $('.fourth-image').addClass('sticky-image');
-      $('.fourth-image-sticky-anchor').height($('.fourth-image').outerHeight());
+      $('.fourth-image-sticky-anchor').height($('.fourth-image').outerHeight());  
     } else {
       $('.fourth-image').removeClass('sticky-image');
       $('.fourth-image-sticky-anchor').height(0);

@@ -10,3 +10,18 @@
   left: 0;
   right: 0;
 }
+
+@mixin image_headline {
+  color: #f9f9f9;
+  font-size: 4em;
+  line-height: 1.1em;
+  letter-spacing: 4px;
+  font-family: $header-font;
+  border: 3px solid $haventower-red;
+  height: 30%;
+  text-align: center;
+  margin-top: 45px;
+  padding: 25px;
+  text-transform: uppercase;
+  @include center_center_flex;
+}

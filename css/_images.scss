@@ -3,6 +3,7 @@
   width: 100%;
   position: relative;
   box-shadow: $header-shadow;
+  overflow: auto;
 }
 
 .second-image {
@@ -23,23 +24,24 @@
   background-size: cover;
 }
 
-.second-image-headline-wrap {
+.second-image-headline {
   display: flex;
-  flex-direction: column;
-  h1 {
-    align-self: flex-start;
-  color: #f9f9f9;
-  font-size: 4em;
-  line-height: 1.1em;
-  letter-spacing: 4px;
-  font-family: $header-font;
-  border: 3px solid $haventower-red;
-  text-align: center;
-  width: 20%;
-  margin-left: 45px;
-  margin-top: 45px;
-  padding: 25px;
-  text-transform: uppercase;
-  box-shadow: $take-flight-shadow;
-  }
+  justify-content: flex-begin;
+  height: $flow-image-height;
+    h1 {
+      margin-left: 45px;
+      box-shadow: $take-flight-shadow;
+      @include image_headline;
+    }
+}
+
+.third-image-headline {
+  display: flex;
+  justify-content: flex-end;
+  height: $flow-image-height;
+    h1 {
+      margin-right: 45px;
+      box-shadow: $stand-out-shadow;
+      @include image_headline;
+    }
 }
