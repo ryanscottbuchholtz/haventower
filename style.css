@@ -1148,6 +1148,7 @@ a {
 
 .sticky-image {
   position: fixed;
+  -webkit-transform: translateZ(0);
   left: 0;
   top: 100px;
   box-shadow: none;
