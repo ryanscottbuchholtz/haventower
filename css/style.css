@@ -400,6 +400,7 @@ ul {
 
 .sticky-header {
   position: fixed;
+  -webkit-transform: translateZ(0);
   top: 0;
   left: 0;
   box-shadow: 0 15px 20px -12px rgba(0, 0, 0, 0.8);
@@ -1148,7 +1149,7 @@ a {
 
 .sticky-image {
   position: fixed;
-  -webkit-transform: translateZ(0);
+  -webkit-transform: translateZ(100px);
   left: 0;
   top: 100px;
   box-shadow: none;

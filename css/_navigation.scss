@@ -24,6 +24,7 @@
 
 .sticky-header {
   position: fixed;
+  -webkit-transform: translateZ(0);
   top: 0;
   left: 0;
   box-shadow: $header-shadow;

@@ -58,7 +58,7 @@ a {
 
 .sticky-image {
   position: fixed;
-  -webkit-transform: translateZ(0);
+  -webkit-transform: translateZ($header-height);
   left: 0;
   top: $header-height;
   box-shadow: none;
