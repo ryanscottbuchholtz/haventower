@@ -400,7 +400,6 @@ ul {
 
 .sticky-header {
   position: fixed;
-  -webkit-transform: translateZ(0);
   top: 0;
   left: 0;
   box-shadow: 0 15px 20px -12px rgba(0, 0, 0, 0.8);
@@ -850,7 +849,7 @@ ul {
       opacity: 1; }
 
 .image1 {
-  background: url(8a5e8f1c3293594a9c3fe490a541c030.jpg) center no-repeat;
+  background: url(642b873628ae55e33f6ab92b620e2818.jpg) center no-repeat;
   background-size: cover; }
 
 .testimonial-wrap,
@@ -883,7 +882,7 @@ ul {
   align-self: flex-end; }
 
 .image1 {
-  background: url(8a5e8f1c3293594a9c3fe490a541c030.jpg) center no-repeat;
+  background: url(642b873628ae55e33f6ab92b620e2818.jpg) center no-repeat;
   background-size: cover; }
 
 .testimonial-text {
@@ -1038,6 +1037,62 @@ ul {
   align-items: center;
   justify-content: center; }
 
+.team-members {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.team-member {
+  width: 30%;
+  height: 100%;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.team-member-bio {
+  text-align: justify;
+  padding-top: 25px; }
+  .team-member-bio a {
+    color: #E51B23; }
+
+.team-member-name {
+  text-align: center;
+  padding-top: 20px; }
+
+.team-member-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 0 15px 20px -12px rgba(0, 0, 0, 0.8); }
+
+.quo {
+  background: url(b7e649a094e4a4ac122f0a5179e928f0.jpg) no-repeat top;
+  background-size: cover; }
+
+.clemens {
+  background: url(b8452aba990251e6a9dfe8acb973be61.jpg) no-repeat top;
+  background-size: cover; }
+
+.caris {
+  background: url(a26153cfc8b8c8444b6f4a2e158e4a76.jpg) no-repeat top;
+  background-size: cover; }
+
+.griffes {
+  background: url(86fa250ca53f7553dc62ee5e98c12f51.jpg) no-repeat top;
+  background-size: cover; }
+
+.kronfeld {
+  background: url(502ea9d6789ccfcf242b51059d3d955f.jpg) no-repeat top;
+  background-size: cover; }
+
+.dugan {
+  background: url(8ce60dcc67e5f917bfc2aee779c993ef.jpg) no-repeat top;
+  background-size: cover; }
+
 .portfolio {
   width: 100%;
   height: 400px;
@@ -1121,7 +1176,9 @@ footer {
 /*Body*/
 body {
   font-family: "roboto", sans-serif;
-  position: relative; }
+  position: relative;
+  height: 100%;
+  overflow: auto; }
 
 a {
   text-decoration: none;
@@ -1149,7 +1206,6 @@ a {
 
 .sticky-image {
   position: fixed;
-  -webkit-transform: translateZ(100px);
   left: 0;
   top: 100px;
   box-shadow: none;

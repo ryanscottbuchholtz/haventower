@@ -133,29 +133,29 @@
 	      $('.main-header-sticky-anchor').height(625);
 	    }
 	
-	    if (windowTop >= (secondImageTop - headerHeight)) {
-	      $('.second-image').addClass('sticky-image');
-	      $('.second-image-sticky-anchor').height($('.second-image').outerHeight());
-	    } else {
-	      $('.second-image').removeClass('sticky-image');
-	      $('.second-image-sticky-anchor').height(0);
-	    }
+	    // if (windowTop >= (secondImageTop - headerHeight)) {
+	    //   $('.second-image').addClass('sticky-image');
+	    //   $('.second-image-sticky-anchor').height($('.second-image').outerHeight());
+	    // } else {
+	    //   $('.second-image').removeClass('sticky-image');
+	    //   $('.second-image-sticky-anchor').height(0);
+	    // }
 	
-	    if (windowTop >= (thirdImageTop - headerHeight)) {
-	      $('.third-image').addClass('sticky-image');
-	      $('.third-image-sticky-anchor').height($('.third-image').outerHeight());
-	    } else {
-	      $('.third-image').removeClass('sticky-image');
-	      $('.third-image-sticky-anchor').height(0);
-	    }
+	    // if (windowTop >= (thirdImageTop - headerHeight)) {
+	    //   $('.third-image').addClass('sticky-image');
+	    //   $('.third-image-sticky-anchor').height($('.third-image').outerHeight());
+	    // } else {
+	    //   $('.third-image').removeClass('sticky-image');
+	    //   $('.third-image-sticky-anchor').height(0);
+	    // }
 	
-	    if (windowTop >= (fourthImageTop - headerHeight)) {
-	      $('.fourth-image').addClass('sticky-image');
-	      $('.fourth-image-sticky-anchor').height($('.fourth-image').outerHeight());  
-	    } else {
-	      $('.fourth-image').removeClass('sticky-image');
-	      $('.fourth-image-sticky-anchor').height(0);
-	    }
+	    // if (windowTop >= (fourthImageTop - headerHeight)) {
+	    //   $('.fourth-image').addClass('sticky-image');
+	    //   $('.fourth-image-sticky-anchor').height($('.fourth-image').outerHeight());  
+	    // } else {
+	    //   $('.fourth-image').removeClass('sticky-image');
+	    //   $('.fourth-image-sticky-anchor').height(0);
+	    // }
 	
 	  });
 	
