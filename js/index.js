@@ -1,8 +1,11 @@
 var $ = require('jquery');
+window.jQuery = $;  //for featherlight issue re: requires a window jquery
+window.$ = $;
 
 require("../css/style.css");
 require("font-awesome-webpack");
 require("slick-carousel");
+require("featherlight-webpack");
 
 function initialFadeIn() {
   $('#main-image-logo-opacity-wrapper').delay(2000).fadeOut(4000);

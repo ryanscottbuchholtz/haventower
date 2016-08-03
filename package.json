@@ -41,6 +41,7 @@
     "webpack": "^1.13.1"
   },
   "dependencies": {
+    "featherlight-webpack": "^1.4.0",
     "font-awesome-webpack": "0.0.4",
     "jquery": "^3.0.0",
     "slick-carousel": "^1.6.0"
