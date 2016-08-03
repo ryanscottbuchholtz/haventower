@@ -10,6 +10,7 @@
 @import '_testamonials.scss';
 @import '_approach-and-services.scss';
 @import '_expect.scss';
+@import '_team.scss';
 @import '_portfolio.scss';
 @import '_footer.scss';
 
@@ -21,9 +22,16 @@
 
 /*Body*/
 
+// html {
+//   height: 100%;
+//   overflow: auto;
+// }
+
 body {
   font-family: $body-font;
   position: relative;
+  height: 100%;
+  overflow: auto;
 }
 
 a {
@@ -58,7 +66,6 @@ a {
 
 .sticky-image {
   position: fixed;
-  -webkit-transform: translateZ($header-height);
   left: 0;
   top: $header-height;
   box-shadow: none;

@@ -400,7 +400,6 @@ ul {
 
 .sticky-header {
   position: fixed;
-  -webkit-transform: translateZ(0);
   top: 0;
   left: 0;
   box-shadow: 0 15px 20px -12px rgba(0, 0, 0, 0.8);
@@ -1038,6 +1037,62 @@ ul {
   align-items: center;
   justify-content: center; }
 
+.team-members {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.team-member {
+  width: 30%;
+  height: 100%;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.team-member-bio {
+  text-align: justify;
+  padding-top: 25px; }
+  .team-member-bio a {
+    color: #E51B23; }
+
+.team-member-name {
+  text-align: center;
+  padding-top: 20px; }
+
+.team-member-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  box-shadow: 0 15px 20px -12px rgba(0, 0, 0, 0.8); }
+
+.quo {
+  background: url("../assets/joe.jpg") no-repeat top;
+  background-size: cover; }
+
+.clemens {
+  background: url("../assets/clemens.jpg.jpg") no-repeat top;
+  background-size: cover; }
+
+.caris {
+  background: url("../assets/caris.jpg.jpg") no-repeat top;
+  background-size: cover; }
+
+.griffes {
+  background: url("../assets/griffes.jpg.jpg") no-repeat top;
+  background-size: cover; }
+
+.kronfeld {
+  background: url("../assets/kronfeld.jpg.jpg") no-repeat top;
+  background-size: cover; }
+
+.dugan {
+  background: url("../assets/dugan.jpg.jpg") no-repeat top;
+  background-size: cover; }
+
 .portfolio {
   width: 100%;
   height: 400px;
@@ -1121,7 +1176,9 @@ footer {
 /*Body*/
 body {
   font-family: "roboto", sans-serif;
-  position: relative; }
+  position: relative;
+  height: 100%;
+  overflow: auto; }
 
 a {
   text-decoration: none;
@@ -1149,7 +1206,6 @@ a {
 
 .sticky-image {
   position: fixed;
-  -webkit-transform: translateZ(100px);
   left: 0;
   top: 100px;
   box-shadow: none;

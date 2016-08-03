@@ -8,7 +8,6 @@
 
 .main-header {
   width: 100%;
-  // display: flex;
   align-items: center;
   height: $header-height;
   background-color: $header-background-color;
@@ -24,12 +23,10 @@
 
 .sticky-header {
   position: fixed;
-  -webkit-transform: translateZ(0);
   top: 0;
   left: 0;
   box-shadow: $header-shadow;
   border-bottom: none;
-  // background-color: #f2f2f2;
 }
 
 .primary-nav-wrap {
