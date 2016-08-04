@@ -5,7 +5,10 @@ window.$ = $;
 require("../css/style.css");
 require("font-awesome-webpack");
 require("slick-carousel");
-require("featherlight-webpack");
+require("slick-carousel/slick/slick.css");
+require("slick-carousel/slick/slick-theme.css");
+require("fancybox")($);
+require("fancybox/dist/css/jquery.fancybox.css");
 
 function initialFadeIn() {
   $('#main-image-logo-opacity-wrapper').delay(2000).fadeOut(4000);
@@ -15,10 +18,11 @@ function initialFadeIn() {
   $('.body-wrap').fadeIn(6000);
 }
 
-
-
-
 $(document).ready(function() {
+
+  $('.fancybox').fancybox({
+      closeClick: true
+  });
 
   initialFadeIn();
 
