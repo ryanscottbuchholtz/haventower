@@ -24,24 +24,42 @@
   background-size: cover;
 }
 
-.second-image-headline {
+
+.main-image-headline {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  // justify-content: flex-end;
+  height: $main-image-height;
+  z-index: 2;
+  h1 {
+    margin-right: 0px;
+    box-shadow: $left-drop-shadow;
+    @include image_headline;
+  }
+}
+
+.second-image-headline,
+.fourth-image-headline {
   display: flex;
-  justify-content: flex-begin;
+  justify-content: center;
+  align-items: center;
   height: $flow-image-height;
     h1 {
-      margin-left: 45px;
-      box-shadow: $take-flight-shadow;
+      margin-left: 0;
+      box-shadow: $right-drop-shadow;
       @include image_headline;
     }
 }
 
 .third-image-headline {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
   height: $flow-image-height;
     h1 {
-      margin-right: 45px;
-      box-shadow: $stand-out-shadow;
+      margin-right: 0px;
+      box-shadow: $left-drop-shadow;
       @include image_headline;
     }
 }

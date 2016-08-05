@@ -10,17 +10,18 @@
 
 .learn-block {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 
 
 
 .lm-block {
-  width: 33%;
+  width: 95%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 25px;
   .fa {
     color: $haventower-red;
   }

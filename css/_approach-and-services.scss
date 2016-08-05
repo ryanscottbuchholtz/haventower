@@ -11,12 +11,12 @@
 
 .approach {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   width: 90%;
   // border: 1px solid grey;
-  padding: 25px 0;
+  padding: 5px 0;
   // box-shadow: $header-shadow;
-  box-shadow: $take-flight-shadow;
+  box-shadow: $right-drop-shadow;
   // box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.75);
   margin-bottom: 25px;
   background-color: #f9f9f9;
@@ -25,10 +25,11 @@
 
 .approach-list-item {
   display: flex;
-  width: 25%;
+  width: 100%;
   height: 100%;
   flex-direction: column;
   align-items: center;
+  margin: 12px 0;
   p {
     width: 75%;
     text-align: center;
@@ -38,7 +39,7 @@
 }
 
 .format-line-2 {
-  width: 50%;
+  width: 20%;
   border-bottom: 1px solid $haventower-red;
   padding-top: 10px;
 }
@@ -53,20 +54,20 @@
     font-size: 1.2em;
     margin-bottom: 15px;
     color: $haventower-red;
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
   }
 }
 
 .businesses {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  justify-content: space-around;
-  ul {
-    // border: 1px solid $haventower-red;
-    // width: 30%;
+  height: 100%;
+    ul {
     font-size: 1.0em;
     color: darkgrey;
+    width: 100%;
   }
 }
 

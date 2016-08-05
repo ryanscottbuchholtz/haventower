@@ -38,15 +38,3 @@
   background: url('../assets/htlogo/logo_transparent_background.png') no-repeat;
   background-size: contain;
 }
-
-.main-image-headline {
-  display: none;
-  justify-content: flex-end;
-  height: $main-image-height;
-  z-index: 2;
-  h1 {
-    margin-right: 75px;
-    box-shadow: $stand-out-shadow;
-    @include image_headline;
-  }
-}
