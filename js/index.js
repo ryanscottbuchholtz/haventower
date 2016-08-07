@@ -50,9 +50,9 @@ $(document).ready(function() {
     arrows: false
   });
 
-  $('.case-study').hover(function() {
-    $(this).toggleClass('hovered-case-study-background');
-  });
+  // $('.case-study').hover(function() {
+  //   $(this).toggleClass('hovered-case-study-background');
+  // });
 
 
   $(window).scroll( function() {

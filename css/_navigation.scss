@@ -89,8 +89,16 @@
   width: 130px;
   padding: 10px 0px;
   font-size: 0.8em;
+  background-color: $header-background-color;
+  color: $nav-hover-color;
+  transition-property: background-color, color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
 
   &:hover {
+    transition-property: background-color, color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
     background-color: $nav-hover-color;
     color: $header-background-color;
   }

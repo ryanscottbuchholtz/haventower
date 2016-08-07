@@ -10,34 +10,44 @@
   justify-content: space-around;
   flex: 1;
   height: 100%;
-  width: 60%;
+  width: 70%;
   margin: 25px 0px;
 }
 
 .case-study {
-  width: 250px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #fff;
-  transition: background-color 0.5s ease;
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  &:hover {
+    background-color: #e5e5e5;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+  }
 }
 
 .study-line {
-  width: 65%;
-  border-bottom: 3px solid $haventower-red;
+  width: 100%;
+  border-bottom: 2px solid $haventower-red;
   margin-top: 30px;
 }
 
-.hovered-case-study-background {
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#e5e5e5));
-  // background: #f2f2f2;
-}
+// .hovered-case-study-background {
+//   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#e5e5e5));
+//   transition: background 0.5s ease;
+//   // background: #f2f2f2;
+// }
 
 .case-study-picture-wrap {
-  width: 100%;
+  width: 225px;
   height: 225px;
   position: relative;
+  margin-top: 12px;
 }
 
 .case-study-picture,
@@ -45,8 +55,8 @@
 .case-study-picture-text {
   position: absolute;
   top: 0;
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 
@@ -58,7 +68,7 @@
 
 .case-study-picture-text-wrap {
   background: $haventower-red;
-  opacity: .4; 
+  opacity: .5; 
 }
 
 .case-study-picture-text {
@@ -89,6 +99,24 @@
   font-size: 1.0em;
   line-height: 1.5em;
   color: grey;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  h2 {
+    margin: 10px 0px;
+    text-align: center;
+    color: #4c4c4c;
+  }
+}
+
+.case-study-link {
+  color: $haventower-red;
+  text-align: right;
+  margin-top: auto;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  width: 90%;
 }
 
 
