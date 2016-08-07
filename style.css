@@ -1201,13 +1201,14 @@ ul {
     justify-content: center; }
 
 .testamonials-wrap {
-  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f2f2f2;
-  padding: 25px; }
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#d9d9d9));
+  padding: 25px;
+  position: relative;
+  box-shadow: 0px -15px 20px -12px rgba(0, 0, 0, 0.8), 0 15px 20px -12px rgba(0, 0, 0, 0.8); }
 
 .image1 {
   background: url(642b873628ae55e33f6ab92b620e2818.jpg) no-repeat top;
@@ -1224,7 +1225,7 @@ ul {
   align-self: flex-end; }
 
 .testimonial-text {
-  width: 65%;
+  width: 75%;
   margin: 0 auto;
   display: flex;
   flex-direction: column; }
@@ -1285,12 +1286,12 @@ blockquote p {
 .slick-prev {
   left: 25px; }
 
+.slick-next {
+  right: 25px; }
+
 .slick-prev:before,
 .slick-next:before {
   color: #E51B23; }
-
-.slick-next {
-  right: 25px; }
 
 .slick-dots li.slick-active button::before {
   color: #E51B23; }
@@ -1304,11 +1305,11 @@ blockquote p {
 .approach {
   display: flex;
   flex-direction: column;
-  width: 90%;
   padding: 5px 0;
-  box-shadow: 20px 20px 28px -9px rgba(0, 0, 0, 0.8);
+  width: 90%;
+  box-shadow: 0 15px 20px -12px rgba(0, 0, 0, 0.8), 0px -15px 20px -12px rgba(0, 0, 0, 0.8);
   margin-bottom: 25px;
-  background-color: #f9f9f9;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#efefef));
   border-radius: 10px; }
 
 .approach-list-item {
@@ -1501,12 +1502,169 @@ blockquote p {
   text-align: justify; }
 
 .portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.case-studies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex: 1;
+  height: 100%;
+  width: 60%;
+  margin: 25px 0px; }
+
+.case-study {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  transition: background-color 0.5s ease; }
+
+.study-line {
+  width: 65%;
+  border-bottom: 3px solid #E51B23;
+  margin-top: 30px; }
+
+.hovered-case-study-background {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#e5e5e5)); }
+
+.case-study-picture-wrap {
   width: 100%;
-  height: 400px;
-  background-color: #f2f2f2;
+  height: 225px;
+  position: relative; }
+
+.case-study-picture,
+.case-study-picture-text-wrap,
+.case-study-picture-text {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; }
+
+.case-study-picture {
+  margin-bottom: 20px;
+  -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  -o-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(100%);
+  filter: gray;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  opacity: .7; }
+
+.case-study-picture-text-wrap {
+  background: #E51B23;
+  opacity: .4; }
+
+.case-study-picture-text {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-align: center;
+  color: white; }
+
+.asset-management {
+  background: url(3eb5015ab20615e0dd06b0437d3a9aed.jpg) center no-repeat;
+  background-size: cover; }
+
+.bd {
+  background: url(f431ba0a741333ae6b2fad379eba94a7.jpeg) center no-repeat;
+  background-size: cover; }
+
+.crisis {
+  background: url(c18afae4d33d955cd5e7e721d0fb080a.jpg) center no-repeat;
+  background-size: cover; }
+
+.case-study-text {
+  width: 90%;
+  font-size: 1.0em;
+  line-height: 1.5em;
+  color: grey; }
+
+.portfolio-logos {
+  width: 90%; }
+
+.logo {
+  width: 100px;
+  height: 75px;
+  margin: 25px; }
+
+.ccrwealth {
+  background: url(06123c64f61a0a3b5b58484f2d6454c8.png) center no-repeat;
+  background-size: contain; }
+
+.cetera {
+  background: url(b0c2a27212e93b496d539b96a8e21635.png) center no-repeat;
+  background-size: contain; }
+
+.cornerstone {
+  background: url(9b2b1148f427d047a729bb1e444f7f1c.png) center no-repeat;
+  background-size: contain; }
+
+.fsi {
+  background: url(4c26ff095cb70f80d5e7dbe07eb478da.png) center no-repeat;
+  background-size: contain; }
+
+.folio {
+  background: url(d59f74dd43fe4b0b133ac78d51bb04e3.png) center no-repeat;
+  background-size: contain; }
+
+.gerber {
+  background: url(bf9890b4c130e6b4228d0bf48a309a8c.png) center no-repeat;
+  background-size: contain; }
+
+.griffin {
+  background: url(6594cfee3cfa9b7a98ad5f6c933d9276.jpg) center no-repeat;
+  background-size: contain; }
+
+.hdvest {
+  background: url(bcac7078c2f342233c90e7bd97961475.png) center no-repeat;
+  background-size: contain; }
+
+.iht {
+  background: url(b0c79745cac4d808616ad7a05732cfca.png) center no-repeat;
+  background-size: contain; }
+
+.invest-in-others {
+  background: url(81e3ae3ea4d16a5c6169ea08c04921f6.png) center no-repeat;
+  background-size: contain; }
+
+.jackson {
+  background: url(dab81c6a1e36e0a32ebaeb04cb7502a8.png) center no-repeat;
+  background-size: contain; }
+
+.lpl {
+  background: url(02084abc10a803af18d61d7f5074820f.png) center no-repeat;
+  background-size: contain; }
+
+.nash {
+  background: url(d0f4b36dcf8dc16f0571e58991f65c50.jpg) center no-repeat;
+  background-size: contain; }
+
+.parallel {
+  background: url(3fc0b57308b8c37177723b59c65e55e6.png) center no-repeat;
+  background-size: contain; }
+
+.lazzaro {
+  background: url(626239a3233fa3b8697db8f101bb318f.jpg) center no-repeat;
+  background-size: contain; }
+
+.sfa {
+  background: url(1777876213c8a3414ec98c460f06c081.png) center no-repeat;
+  background-size: contain;
+  background-color: black; }
+
+.triad {
+  background: url(0e86f624ea9c0fd99c6c4d7d50e8b5f1.png) center no-repeat;
+  background-size: contain; }
+
+.weg {
+  background: url(508f2cd5801ad9277078e5149be6d58a.png) center no-repeat;
+  background-size: contain; }
 
 footer {
   width: 100%;
@@ -1585,7 +1743,8 @@ body {
   font-family: "roboto", sans-serif;
   position: relative;
   height: 100%;
-  overflow: auto; }
+  overflow: auto;
+  background-color: #f2f2f2; }
 
 a {
   text-decoration: none;
