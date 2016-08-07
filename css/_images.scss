@@ -2,7 +2,7 @@
   height: $flow-image-height;
   width: 100%;
   position: relative;
-  box-shadow: $header-shadow;
+  box-shadow: $float-shadow-bottom;
   overflow: auto;
 }
 
@@ -29,7 +29,6 @@
   display: none;
   justify-content: center;
   align-items: center;
-  // justify-content: flex-end;
   height: $main-image-height;
   z-index: 2;
   h1 {

@@ -1,9 +1,11 @@
 .testamonials-wrap {
-  width: 100%;
   height: 100%;
   @include center_center_flex;
-  background-color: #f2f2f2;
+  // background-color: #d9d9d9;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#d9d9d9));
   padding: 25px;
+  position: relative;
+  box-shadow: $float-shadow-top, $float-shadow-bottom;
 }
 
 .image1 {
@@ -24,7 +26,7 @@
 }
 
 .testimonial-text {
-  width: 65%;
+  width: 75%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -97,13 +99,18 @@ blockquote p {
   left: 25px;
 }
 
+.slick-next {
+  right: 25px;
+}
+
+// .slick-prev:before {
+//   content: "\f0d9";
+// }
+
 .slick-prev:before,
 .slick-next:before {
   color: $haventower-red;
-}
-
-.slick-next {
-  right: 25px;
+  // font-family: FontAwesome;
 }
 
 .slick-dots li.slick-active button::before {

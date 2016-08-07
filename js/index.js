@@ -2,6 +2,7 @@ var $ = require('jquery');
 window.jQuery = $;  //for featherlight issue re: requires a window jquery
 window.$ = $;
 
+
 require("font-awesome-webpack");
 require("slick-carousel");
 require("slick-carousel/slick/slick.css");
@@ -34,11 +35,25 @@ $(document).ready(function() {
   });
 
   $('.specific-services').slick({
-    // dots: true,
+    dots: true,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 5000
   });
+
+  $('.portfolio-logos').slick({
+    dots: true,
+    infinite: true,
+    slidesToShow: 3,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: false
+  });
+
+  $('.case-study').hover(function() {
+    $(this).toggleClass('hovered-case-study-background');
+  });
+
 
   $(window).scroll( function() {
 
@@ -54,9 +69,6 @@ $(document).ready(function() {
     var thirdImageTop = $('.third-image-sticky-anchor').offset().top;
     var fourthImageTop = $('.fourth-image-sticky-anchor').offset().top;
 
-    console.log(windowTop + ' = windowTop');
-    console.log(headerTop + ' = headerTop');
-
     // if (headerTop <= windowTop) {
     //   $('.main-header').addClass('sticky-header');
     // } 
@@ -68,7 +80,6 @@ $(document).ready(function() {
     if (windowTop >= headerTop) {
       $('.main-header').addClass('sticky-header');
       $('.main-header-sticky-anchor').height($('.main-header').outerHeight());
-      console.log("Stuck");
     } else {
       $('.main-header').removeClass('sticky-header');
       $('.main-header-sticky-anchor').height(625);

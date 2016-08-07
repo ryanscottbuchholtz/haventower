@@ -658,13 +658,14 @@ ul {
     justify-content: center; }
 
 .testamonials-wrap {
-  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f2f2f2;
-  padding: 25px; }
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#d9d9d9));
+  padding: 25px;
+  position: relative;
+  box-shadow: 0px -15px 20px -12px rgba(0, 0, 0, 0.8), 0 15px 20px -12px rgba(0, 0, 0, 0.8); }
 
 .image1 {
   background: url("../assets/Papazian Head Shot.jpg") no-repeat top;
@@ -681,7 +682,7 @@ ul {
   align-self: flex-end; }
 
 .testimonial-text {
-  width: 65%;
+  width: 75%;
   margin: 0 auto;
   display: flex;
   flex-direction: column; }
@@ -742,12 +743,12 @@ blockquote p {
 .slick-prev {
   left: 25px; }
 
+.slick-next {
+  right: 25px; }
+
 .slick-prev:before,
 .slick-next:before {
   color: #E51B23; }
-
-.slick-next {
-  right: 25px; }
 
 .slick-dots li.slick-active button::before {
   color: #E51B23; }
@@ -761,11 +762,11 @@ blockquote p {
 .approach {
   display: flex;
   flex-direction: column;
-  width: 90%;
   padding: 5px 0;
-  box-shadow: 20px 20px 28px -9px rgba(0, 0, 0, 0.8);
+  width: 90%;
+  box-shadow: 0 15px 20px -12px rgba(0, 0, 0, 0.8), 0px -15px 20px -12px rgba(0, 0, 0, 0.8);
   margin-bottom: 25px;
-  background-color: #f9f9f9;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#efefef));
   border-radius: 10px; }
 
 .approach-list-item {
@@ -958,12 +959,169 @@ blockquote p {
   text-align: justify; }
 
 .portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.case-studies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex: 1;
+  height: 100%;
+  width: 60%;
+  margin: 25px 0px; }
+
+.case-study {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  transition: background-color 0.5s ease; }
+
+.study-line {
+  width: 65%;
+  border-bottom: 3px solid #E51B23;
+  margin-top: 30px; }
+
+.hovered-case-study-background {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#e5e5e5)); }
+
+.case-study-picture-wrap {
   width: 100%;
-  height: 400px;
-  background-color: #f2f2f2;
+  height: 225px;
+  position: relative; }
+
+.case-study-picture,
+.case-study-picture-text-wrap,
+.case-study-picture-text {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; }
+
+.case-study-picture {
+  margin-bottom: 20px;
+  -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  -o-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  -webkit-filter: grayscale(100%);
+  filter: gray;
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  opacity: .7; }
+
+.case-study-picture-text-wrap {
+  background: #E51B23;
+  opacity: .4; }
+
+.case-study-picture-text {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-align: center;
+  color: white; }
+
+.asset-management {
+  background: url("../assets/pexels-photo.jpg") center no-repeat;
+  background-size: cover; }
+
+.bd {
+  background: url("../assets/architecture-blue-building-business-41170.jpeg") center no-repeat;
+  background-size: cover; }
+
+.crisis {
+  background: url("../assets//pexels-photo-102720.jpg") center no-repeat;
+  background-size: cover; }
+
+.case-study-text {
+  width: 90%;
+  font-size: 1.0em;
+  line-height: 1.5em;
+  color: grey; }
+
+.portfolio-logos {
+  width: 90%; }
+
+.logo {
+  width: 100px;
+  height: 75px;
+  margin: 25px; }
+
+.ccrwealth {
+  background: url("../assets/ccrwealth.png") center no-repeat;
+  background-size: contain; }
+
+.cetera {
+  background: url("../assets/cetera.png") center no-repeat;
+  background-size: contain; }
+
+.cornerstone {
+  background: url("../assets/cornerstone.png") center no-repeat;
+  background-size: contain; }
+
+.fsi {
+  background: url("../assets/fsi_logo.png") center no-repeat;
+  background-size: contain; }
+
+.folio {
+  background: url("../assets/fdx-logo-ext.png") center no-repeat;
+  background-size: contain; }
+
+.gerber {
+  background: url("../assets/gerber.png") center no-repeat;
+  background-size: contain; }
+
+.griffin {
+  background: url("../assets/GCS_Logo_New.jpg") center no-repeat;
+  background-size: contain; }
+
+.hdvest {
+  background: url("../assets/hdvest.png") center no-repeat;
+  background-size: contain; }
+
+.iht {
+  background: url("../assets/iht_logo.png") center no-repeat;
+  background-size: contain; }
+
+.invest-in-others {
+  background: url("../assets/invest_in_others_logo.png") center no-repeat;
+  background-size: contain; }
+
+.jackson {
+  background: url("../assets/jackson.png") center no-repeat;
+  background-size: contain; }
+
+.lpl {
+  background: url("../assets/lpl.png") center no-repeat;
+  background-size: contain; }
+
+.nash {
+  background: url("../assets/nash.jpg") center no-repeat;
+  background-size: contain; }
+
+.parallel {
+  background: url("../assets/parallel.png") center no-repeat;
+  background-size: contain; }
+
+.lazzaro {
+  background: url("../assets/lazzaro.jpg") center no-repeat;
+  background-size: contain; }
+
+.sfa {
+  background: url("../assets/sfa.png") center no-repeat;
+  background-size: contain;
+  background-color: black; }
+
+.triad {
+  background: url("../assets/triad.png") center no-repeat;
+  background-size: contain; }
+
+.weg {
+  background: url("../assets/weg.png") center no-repeat;
+  background-size: contain; }
 
 footer {
   width: 100%;
@@ -1042,7 +1200,8 @@ body {
   font-family: "roboto", sans-serif;
   position: relative;
   height: 100%;
-  overflow: auto; }
+  overflow: auto;
+  background-color: #f2f2f2; }
 
 a {
   text-decoration: none;

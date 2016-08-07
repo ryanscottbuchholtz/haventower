@@ -7,7 +7,10 @@ $header-nav-font-color: #252932;
 $nav-hover-color: $haventower-red;
 $nav-active-color: $haventower-red;
 
-$header-shadow: 0 15px 20px -12px rgba(0,0,0, 0.8);
+$float-shadow-bottom: 0 15px 20px -12px rgba(0,0,0, 0.8);
+$float-shadow-top: 0px -15px 20px -12px rgba(0,0,0, 0.8);
+$float-shadow-left: 15px 0px 20px -12px rgba(0,0,0, 0.8);
+$float-shadow-right: -15px 0px 20px -12px rgba(0,0,0, 0.8);
 $left-drop-shadow: -20px 20px 28px -9px rgba(0,0,0, 0.8);
 $right-drop-shadow: 20px 20px 28px -9px rgba(0,0,0, 0.8);
 $expect-shadow: 6px 6px 30px 2px rgba(0,0,0, 0.75);
@@ -16,3 +19,4 @@ $header-height: 100px;
 $main-image-height: 625px;
 $flow-image-height: 600px;
 $testamonials-height: 400px;
+

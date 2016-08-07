@@ -1,8 +1,195 @@
 .portfolio {
-  width: 100%;
-  height: 400px;
-  background-color: #f2f2f2;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+}
+
+.case-studies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex: 1;
+  height: 100%;
+  width: 60%;
+  margin: 25px 0px;
+}
+
+.case-study {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  transition: background-color 0.5s ease;
+}
+
+.study-line {
+  width: 65%;
+  border-bottom: 3px solid $haventower-red;
+  margin-top: 30px;
+}
+
+.hovered-case-study-background {
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#e5e5e5));
+  // background: #f2f2f2;
+}
+
+.case-study-picture-wrap {
+  width: 100%;
+  height: 225px;
+  position: relative;
+}
+
+.case-study-picture,
+.case-study-picture-text-wrap,
+.case-study-picture-text {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.case-study-picture {
+  margin-bottom: 20px;
+  @include grayscale;
+  opacity: .7;
+}
+
+.case-study-picture-text-wrap {
+  background: $haventower-red;
+  opacity: .4; 
+}
+
+.case-study-picture-text {
+  @include center_center_flex;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+.asset-management {
+  background: url('../assets/pexels-photo.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.bd {
+  background: url('../assets/architecture-blue-building-business-41170.jpeg') center no-repeat;
+  background-size: cover;
+}
+
+.crisis {
+  background: url('../assets//pexels-photo-102720.jpg') center no-repeat;
+  background-size: cover;
+}
+
+.case-study-text {
+  width: 90%;
+  font-size: 1.0em;
+  line-height: 1.5em;
+  color: grey;
+}
+
+
+.portfolio-logos {
+  width: 90%;
+}
+
+.logo {
+  width: 100px;
+  height: 75px;
+  margin: 25px;
+}
+
+.ccrwealth {
+  background: url('../assets/ccrwealth.png') center no-repeat;
+  background-size: contain;
+
+}
+
+.cetera {
+  background: url('../assets/cetera.png') center no-repeat;
+  background-size: contain;
+}
+
+.cornerstone {
+  background: url('../assets/cornerstone.png') center no-repeat;
+  background-size: contain;
+}
+
+.fsi {
+  background: url('../assets/fsi_logo.png') center no-repeat;
+  background-size: contain;
+}
+
+.folio {
+  background: url('../assets/fdx-logo-ext.png') center no-repeat;
+  background-size: contain;
+}
+
+.gerber {
+  background: url('../assets/gerber.png') center no-repeat;
+  background-size: contain;
+}
+
+.griffin {
+  background: url('../assets/GCS_Logo_New.jpg') center no-repeat;
+  background-size: contain;
+}
+
+.hdvest {
+  background: url('../assets/hdvest.png') center no-repeat;
+  background-size: contain;
+}
+
+.iht {
+  background: url('../assets/iht_logo.png') center no-repeat;
+  background-size: contain;
+}
+
+.invest-in-others {
+  background: url('../assets/invest_in_others_logo.png') center no-repeat;
+  background-size: contain;
+}
+
+.jackson {
+  background: url('../assets/jackson.png') center no-repeat;
+  background-size: contain;
+}
+
+.lpl {
+  background: url('../assets/lpl.png') center no-repeat;
+  background-size: contain;
+}
+
+.nash {
+  background: url('../assets/nash.jpg') center no-repeat;
+  background-size: contain;
+}
+
+.parallel {
+  background: url('../assets/parallel.png') center no-repeat;
+  background-size: contain;
+}
+
+.lazzaro {
+  background: url('../assets/lazzaro.jpg') center no-repeat;
+  background-size: contain;
+}
+
+.sfa {
+  background: url('../assets/sfa.png') center no-repeat;
+  background-size: contain;
+  background-color: black;
+}
+
+.triad {
+  background: url('../assets/triad.png') center no-repeat;
+  background-size: contain;
+}
+
+.weg {
+  background: url('../assets/weg.png') center no-repeat;
+  background-size: contain;
 }

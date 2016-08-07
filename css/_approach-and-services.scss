@@ -12,14 +12,12 @@
 .approach {
   display: flex;
   flex-direction: column;
-  width: 90%;
-  // border: 1px solid grey;
   padding: 5px 0;
-  // box-shadow: $header-shadow;
-  box-shadow: $right-drop-shadow;
-  // box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.75);
+  width: 90%;
+  // box-shadow: $right-drop-shadow
+  box-shadow: $float-shadow-bottom, $float-shadow-top;
   margin-bottom: 25px;
-  background-color: #f9f9f9;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#efefef));
   border-radius: 10px;
 }
 
