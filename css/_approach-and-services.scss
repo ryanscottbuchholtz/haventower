@@ -19,7 +19,6 @@
 .approach-list-item {
   display: flex;
   width: 100%;
-  height: 100%;
   flex-direction: column;
   align-items: center;
   margin: 12px 0;
@@ -56,7 +55,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
     ul {
     font-size: 1.0em;
     color: darkgrey;
@@ -80,7 +78,6 @@
 .twin-haven-wrap {
   margin-top: 25px;
   width: 90%;
-  // border: 1px solid $haventower-red;
   padding: 25px 0;
   box-shadow: $float-shadow-bottom, $float-shadow-top;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#efefef));
