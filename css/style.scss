@@ -25,6 +25,11 @@
 //   overflow: auto;
 // }
 
+// p {
+//   hyphens: auto;
+//   text-align: justify !important;
+// }
+
 body {
   font-family: $body-font;
   position: relative;
@@ -86,6 +91,7 @@ a {
   margin: 12.5px auto 25px auto;
   text-align: center;
   color: grey;
+  line-height: 1.4em;
 }
 
 
@@ -208,11 +214,31 @@ a {
     margin-top: 0;
     margin-bottom: 45px;
   }
+
+  .footer-bottom-wrap {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .img-copy {
+    margin: 0;
+  }
+
+  .testimonial-text {
+    width: 75%;
+  }
+
+
 }
 
 @media (min-width: 1024px) {
 
   .team-member {
     width: 30%;
+  }
+
+    .case-study {
+    margin-top: 0;
   }
 }

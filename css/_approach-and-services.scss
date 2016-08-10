@@ -1,12 +1,7 @@
-.approach-and-services-wrap {
-  // margin-top: 0;
-}
-
 .approach-and-services {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100%;
 }
 
 .approach {
@@ -70,57 +65,48 @@
 }
 
 #specific-services-headline {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .specific-services {
   h3 {
     width: 100%;
     text-align: center;
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
 }
 
+.twin-haven-wrap {
+  margin-top: 25px;
+  width: 90%;
+  // border: 1px solid $haventower-red;
+  padding: 25px 0;
+  box-shadow: $float-shadow-bottom, $float-shadow-top;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#efefef));
+}
 
-// .business-wrap {
-//   display: flex;
-//   justify-content: space-around;
-// }
+.th-red-paragraph {
+  color: $haventower-red;
+  font-size: 1.3em;
+}
 
-// .business-wrap-div {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: space-around;
-//   height: 100%;
-//   h3 {
-//     line-height: 1.3em;
-//   }
-//   width: 45%;
-//   padding: 10px;
-//   ul {
-//     padding-left: 45px;
-//     color: darkgrey;
-//   }
-// }
+.red-link {
+  color: $haventower-red;
+}
 
-// .businesses {
-//   width: 45%;
-// }
-
-// .specific-services {
-//   width: 40%;
-//   box-shadow: $take-flight-shadow;
-//   background-color: lightgrey;
-//   color: #f2f2f2;
-//   border-radius: 15px;
-//   ul {
-//     font-size: 1.0em;
-//     color: black;
-//   }
-//   h3 {
-//     font-size: 1.2em;
-//     color: $haventower-red;
-//   }
-
-// }
+.th-purpose {
+  display: flex;
+  justify-content: space-around;
+  p {
+    @include center_center_flex;
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid $haventower-red;
+    box-shadow: $right-drop-shadow;
+    color: $haventower-red;
+    background-color: #f2f2f2;
+    font-size: 1.1em;
+  }
+}

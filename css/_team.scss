@@ -9,11 +9,21 @@
 
 .team-member {
   width: 95%;
-  height: 100%;
   margin-top: 25px;
+  padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #fff;
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  &:hover {
+    background-color: #e5e5e5;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+  }
 }
 
 .team-member-bio {
@@ -38,7 +48,15 @@
   box-shadow: $float-shadow-bottom;
 }
 
-.quo {
+.learn-more {
+  text-align: right;
+  margin-top: auto;
+  padding-top: 10px;
+  width: 100%;
+  color: $haventower-red;
+}
+
+.kuo {
   background: url('../assets/joe.jpg') no-repeat top;
   background-size: cover;
 }
