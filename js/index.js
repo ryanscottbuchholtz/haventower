@@ -9,7 +9,6 @@ require("slick-carousel/slick/slick.css");
 require("slick-carousel/slick/slick-theme.css");
 require("fancybox")($);
 require("fancybox/dist/css/jquery.fancybox.css");
-// require("autoprefixer");
 require("../css/style.css");
 
 function initialFadeIn() {
