@@ -6,6 +6,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+var autoprefixer = require('autoprefixer');
 
 
 
@@ -40,7 +41,7 @@ module.exports = {
     module: {
       loaders: [
         { 
-          test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader", "file-loader")
+          test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader", "file-loader", "post-css-loader")
         },
         { test: /\.(jpe?g|png|gif|svg)$/, loader: "file-loader"
         },
@@ -49,6 +50,7 @@ module.exports = {
         {   test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader"
           },
       ]
-    }
+    },
+    postcss: [ autoprefixer({ browsers: ['last 2 versions'] }) ]
 
 };

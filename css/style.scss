@@ -11,6 +11,7 @@
 @import '_team.scss';
 @import '_portfolio.scss';
 @import '_footer.scss';
+@import '_contact.scss';
 
 
 // * {
@@ -94,7 +95,11 @@ a {
   line-height: 1.4em;
 }
 
-
+.fancybox-inner {
+  &:hover {
+    cursor: default !important;
+  }
+}
 
 @media (min-width: 768px) {
   .learn-block {
@@ -157,25 +162,8 @@ a {
     }
   }
 
-  .team-members {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-
   .team-member {
     width: 45%;
-  }
-
-  .hidden-bio-and-pic {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .hidden-bio {
-    width: 70%;
-    margin-top: 0;
   }
 
   .main-image-headline {
@@ -236,6 +224,24 @@ a {
 
   .team-member {
     width: 30%;
+  }
+
+
+  .team-members {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .hidden-bio-and-pic {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .hidden-bio {
+    width: 70%;
+    margin-top: 0;
   }
 
     .case-study {

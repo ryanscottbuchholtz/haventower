@@ -1,0 +1,48 @@
+.hidden-contact-wrap {
+  display: none;
+  height: 100%;
+  width: 100% !important;
+}
+
+.hidden-contact {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-us-text {
+  width: 60%;
+  h1 {
+    margin-bottom: 10px !important;
+    color: $haventower-red;
+  }
+  h2 {
+    margin-top: 15px;
+  }
+}
+
+.contact-us-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+  h3 {
+    color: $haventower-red;
+    font-weight: 300;
+  }
+}
+
+.contact-line {
+  border-bottom: 1px solid $haventower-red;
+  width: 50%;
+  margin-bottom: 15px;
+}
+
+.contact-div {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.contact-div-icon {
+  margin-right: 20px;
+}

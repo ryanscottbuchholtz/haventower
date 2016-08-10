@@ -147,4 +147,7 @@
   background-size: contain;
   height: 100px;
   width: 200px;
+  &:hover {
+    cursor: pointer;
+  }
 }

@@ -500,6 +500,8 @@ ul {
   background-size: contain;
   height: 100px;
   width: 200px; }
+  #logo:hover {
+    cursor: pointer; }
 
 /*Main Image*/
 .main-image {
@@ -1010,6 +1012,9 @@ blockquote p {
   width: 90%;
   text-align: justify; }
 
+.portfolio-wrap {
+  min-height: 83vh; }
+
 .portfolio {
   display: flex;
   flex-direction: column;
@@ -1246,6 +1251,45 @@ blockquote p {
   color: #f2f2f2;
   text-align: center; }
 
+.hidden-contact-wrap {
+  display: none;
+  height: 100%;
+  width: 100% !important; }
+
+.hidden-contact {
+  display: flex;
+  justify-content: space-around; }
+
+.contact-us-text {
+  width: 60%; }
+  .contact-us-text h1 {
+    margin-bottom: 10px !important;
+    color: #E51B23; }
+  .contact-us-text h2 {
+    margin-top: 15px; }
+
+.contact-us-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%; }
+  .contact-us-list h3 {
+    color: #E51B23;
+    font-weight: 300; }
+
+.contact-line {
+  border-bottom: 1px solid #E51B23;
+  width: 50%;
+  margin-bottom: 15px; }
+
+.contact-div {
+  display: flex;
+  align-items: center;
+  margin: 10px; }
+
+.contact-div-icon {
+  margin-right: 20px; }
+
 /*Body*/
 body {
   font-family: "roboto", sans-serif;
@@ -1300,6 +1344,9 @@ a {
   color: grey;
   line-height: 1.4em; }
 
+.fancybox-inner:hover {
+  cursor: default !important; }
+
 @media (min-width: 768px) {
   .learn-block {
     flex-direction: row;
@@ -1346,22 +1393,8 @@ a {
     .num-circle p {
       font-size: 2em; }
 
-  .team-members {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around; }
-
   .team-member {
     width: 45%; }
-
-  .hidden-bio-and-pic {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center; }
-
-  .hidden-bio {
-    width: 70%;
-    margin-top: 0; }
 
   .main-image-headline {
     display: none;
@@ -1407,6 +1440,20 @@ a {
 @media (min-width: 1024px) {
   .team-member {
     width: 30%; }
+
+  .team-members {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+
+  .hidden-bio-and-pic {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+
+  .hidden-bio {
+    width: 70%;
+    margin-top: 0; }
 
   .case-study {
     margin-top: 0; } }

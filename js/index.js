@@ -9,6 +9,7 @@ require("slick-carousel/slick/slick.css");
 require("slick-carousel/slick/slick-theme.css");
 require("fancybox")($);
 require("fancybox/dist/css/jquery.fancybox.css");
+// require("autoprefixer");
 require("../css/style.css");
 
 function initialFadeIn() {
@@ -19,7 +20,29 @@ function initialFadeIn() {
   $('.body-wrap').fadeIn(6000);
 }
 
+function scrollTop(linkID, topMargin, milliseconds) {
+  $(linkID).on('click', function(event) {
+    event.preventDefault();
+    console.log('clicked');
+
+    $("body, html").animate({
+      scrollTop: $($(this).attr('href')).offset().top - topMargin
+    }, milliseconds);
+  });
+}
+
 $(document).ready(function() {
+
+  var headerTop = $('.main-header-sticky-anchor').offset().top;
+  var headerHeight = $('.main-header').height();
+  var mainImageHeight = $('.main-image-headline').height();
+
+  scrollTop('#approach-and-services-link', headerHeight, 4000);
+  scrollTop('#expect-wrap-link', headerHeight, 4000);
+  scrollTop('#video-partners-link', (headerHeight + 15), 4000);
+  scrollTop('#the-team-link', headerHeight, 4000);
+  scrollTop('#our-portfolio-link', headerHeight, 4000);
+  scrollTop('#logo', (mainImageHeight + (headerHeight * 2)), 6000);
 
   $('.fancybox').fancybox({
       closeClick: true
@@ -66,8 +89,7 @@ $(document).ready(function() {
     );
 
 
-  var headerTop = $('.main-header-sticky-anchor').offset().top;
-  var headerHeight = $('.main-header').height();
+
   // var secondImageTop = $('.second-image-sticky-anchor').offset().top;
   // var thirdImageTop = $('.third-image-sticky-anchor').offset().top;
   // var fourthImageTop = $('.fourth-image-sticky-anchor').offset().top;
