@@ -166,6 +166,12 @@ a {
     width: 45%;
   }
 
+  .team-members {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
   .main-image-headline {
     display: none;
     justify-content: flex-end;
