@@ -1,7 +1,7 @@
 var path = require('path');
 var packageData = require('./package.json');
 var filename = [packageData.name, packageData.version, 'js'];
-
+var minify = process.argv.indexOf('--minify') != -1;
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
@@ -23,6 +23,11 @@ var plugins = [
     }),
     new ExtractTextPlugin('style.css')
   ];
+
+if (minify) {
+  filename.splice(filename.length - 1, 0, 'min');
+  plugins.push(new webpack.optimize.UglifyJsPlugin());
+}
 
 module.exports = {
     entry: {
