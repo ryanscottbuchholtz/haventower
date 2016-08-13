@@ -118,6 +118,23 @@ a {
     display: none;
   }
 
+  .main-header {
+    position: absolute;
+    top: $main-image-height;
+    left: 0;
+  }
+
+  .main-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  #main-image-logo-opacity-wrapper,
+  #main-image-logo-wrapper {
+    top: 0;
+  }
+
   .learn-block {
     flex-direction: row;
     justify-content: space-around;
