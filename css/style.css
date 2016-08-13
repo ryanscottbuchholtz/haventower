@@ -414,7 +414,7 @@ ul {
   display: none;
   position: relative;
   float: left;
-  font-size: 18px;
+  font-size: 16px;
   color: #252932;
   display: flex;
   align-items: center;
@@ -673,7 +673,11 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #d9d9d9;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#d9d9d9));
+  background: -o-gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#d9d9d9));
+  background: -moz-gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#d9d9d9));
+  background: gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#d9d9d9));
   padding: 25px;
   position: relative;
   box-shadow: 0px -15px 20px -12px rgba(0, 0, 0, 0.8), 0 15px 20px -12px rgba(0, 0, 0, 0.8); }
@@ -840,12 +844,15 @@ blockquote p {
 
 .th-purpose {
   display: flex;
-  justify-content: space-around; }
+  flex-direction: column;
+  align-items: center; }
   .th-purpose p {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 25%;
+    width: 90%;
+    margin: 15px 0;
+    min-height: 50px;
     padding: 10px;
     text-align: center;
     border: 1px solid #E51B23;
@@ -1430,7 +1437,16 @@ a {
     margin: 0; }
 
   .testimonial-text {
-    width: 75%; } }
+    width: 75%; }
+
+  .th-purpose {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch; }
+    .th-purpose p {
+      width: 25%;
+      margin: 0;
+      min-height: 0; } }
 @media (min-width: 1024px) {
   .team-member {
     width: 30%; }

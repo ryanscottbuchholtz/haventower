@@ -1,8 +1,11 @@
 .testamonials-wrap {
   height: 100%;
   @include center_center_flex;
-  // background-color: #d9d9d9;
+  background-color: #d9d9d9;
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#d9d9d9));
+  background: -o-gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#d9d9d9));
+  background: -moz-gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#d9d9d9));
+  background: gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#d9d9d9));
   padding: 25px;
   position: relative;
   box-shadow: $float-shadow-top, $float-shadow-bottom;

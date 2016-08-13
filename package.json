@@ -11,7 +11,7 @@
     "build:initialjs": "mkdir -p js && touch js/index.js",
     "build:initialwebpack": "touch webpack.config.js",
     "mkdir": "mkdir -p build",
-    "build": "npm run clean && npm run mkdir && webpack --minify",
+    "build": "npm run clean && npm run mkdir && webpack",
     "watch": "npm run build && webpack --watch",
     "clean": "rm -rf build",
     "deploy": "gh-pages -d build"

@@ -94,10 +94,13 @@
 
 .th-purpose {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
   p {
     @include center_center_flex;
-    width: 25%;
+    width: 90%;
+    margin: 15px 0;
+    min-height: 50px;
     padding: 10px;
     text-align: center;
     border: 1px solid $haventower-red;

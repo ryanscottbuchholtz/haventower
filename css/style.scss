@@ -223,6 +223,16 @@ a {
     width: 75%;
   }
 
+  .th-purpose {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    p {
+      width: 25%;
+      margin: 0;
+      min-height: 0;
+    }
+  }
 
 }
 
@@ -253,4 +263,14 @@ a {
     .case-study {
     margin-top: 0;
   }
+}
+
+@media only screen {
+
+  .main-header {
+    // position: static;
+  }
+
+
+
 }
