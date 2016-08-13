@@ -413,7 +413,11 @@ ul {
   align-items: center; }
 
 .fa-bars {
-  border: 1px solid orange; }
+  color: #E51B23;
+  margin-right: 45px; }
+
+#logo {
+  margin-left: 25px; }
 
 .navigation {
   display: none !important;
