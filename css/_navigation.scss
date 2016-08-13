@@ -34,10 +34,16 @@
   width: 100%;
   height: 80%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-bars {
+  border: 1px solid orange;
 }
 
 .navigation {
-  display: none;
+  display: none !important;
   position: relative;
   float: left;
   font-size: 16px;
@@ -52,6 +58,10 @@
   :hover > .nav-list-item-sublist {
     display: block;
   }
+}
+
+.mobile-hide-list-item {
+  display: none;
 }
 
 .navigation-list-item,

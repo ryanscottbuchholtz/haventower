@@ -101,6 +101,23 @@ a {
 }
 
 @media (min-width: 768px) {
+
+  .navigation {
+    display: flex !important;
+  }
+
+  .mobile-hide-list-item {
+    display: inline;
+  }
+
+  .fa-facebook {
+    border-left: 1px solid $haventower-red;
+  }
+
+  #mobile-navigation {
+    display: none;
+  }
+
   .learn-block {
     flex-direction: row;
     justify-content: space-around;
