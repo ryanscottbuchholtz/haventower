@@ -1051,8 +1051,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   width: 90%;
-  margin: auto;
-  height: 100%; }
+  margin: auto; }
 
 .learn-block {
   display: -webkit-box;
@@ -1065,7 +1064,6 @@ ul {
 
 .lm-block {
   width: 95%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
