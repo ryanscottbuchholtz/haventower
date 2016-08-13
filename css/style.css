@@ -547,8 +547,7 @@ ul {
   flex-direction: column;
   align-items: center;
   width: 90%;
-  margin: auto;
-  height: 100%; }
+  margin: auto; }
 
 .learn-block {
   display: flex;
@@ -556,7 +555,6 @@ ul {
 
 .lm-block {
   width: 95%;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
