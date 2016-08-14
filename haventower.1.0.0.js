@@ -96,6 +96,13 @@
 	  });
 	}
 	
+	function mobileNavToggle(wrapID, listID) {
+	  $(wrapID).on('click', function() {
+	    $(listID).slideToggle('slow');
+	    $(this).toggleClass('fa-plus fa-minus');
+	  });
+	}
+	
 	$(document).ready(function() {
 	
 	  var headerTop = $('.main-header-sticky-anchor').offset().top;
@@ -108,6 +115,15 @@
 	  scrollTop('#the-team-link', headerHeight, 4000);
 	  scrollTop('#our-portfolio-link', headerHeight, 4000);
 	  scrollTop('#logo', (mainImageHeight + (headerHeight * 2)), 6000);
+	
+	  $('.fa-bars').on('click', function() {
+	    $('.mobile-nav').slideToggle('slow');
+	  });
+	
+	  mobileNavToggle('#story-drop', '#story-drop-list');
+	  mobileNavToggle('#people-drop', '#people-drop-list');
+	  mobileNavToggle('#more-drop', '#more-drop-list');
+	
 	
 	  $('.fancybox').fancybox({
 	      closeClick: true

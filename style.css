@@ -926,6 +926,41 @@ ul {
 .mobile-hide-list-item {
   display: none; }
 
+.fa-bars:hover, .fa-plus:hover, .fa-minus:hover {
+  cursor: pointer; }
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 100px;
+  right: 0;
+  background-color: #fff;
+  width: 100%; }
+
+.mobile-social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 15px; }
+
+.mobile-main, .mobile-people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 25px;
+  text-transform: uppercase; }
+
+.mobile-drop-down {
+  display: none;
+  padding-left: 25px; }
+  .mobile-drop-down p {
+    padding-top: 5px; }
+
 .navigation-list-item, .pipe {
   list-style: none;
   padding: 0; }
