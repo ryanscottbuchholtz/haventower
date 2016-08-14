@@ -71,6 +71,45 @@
   display: none;
 }
 
+.fa-bars,
+.fa-plus,
+.fa-minus {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: $header-height;
+  right: 0;
+  background-color: #fff;
+  width: 100%;
+}
+
+.mobile-social-media {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+
+.mobile-main,
+.mobile-people {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  text-transform: uppercase;
+}
+
+.mobile-drop-down {
+  display: none;
+  padding-left: 25px;
+  p {
+    padding-top: 5px;
+  }
+}
+
 .navigation-list-item,
 .pipe {
   list-style: none;
