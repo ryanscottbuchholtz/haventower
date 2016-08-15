@@ -40,7 +40,7 @@ $(document).ready(function() {
 
   var headerTop = $('.main-header-sticky-anchor').offset().top;
   var headerHeight = $('.main-header').height();
-  var mainImageHeight = $('.main-image-headline').height();
+  var mainImageHeight = $('.main-image').height();
 
   scrollTop('.approach-and-services-link', headerHeight, 4000);
   scrollTop('.expect-wrap-link', headerHeight, 4000);
@@ -56,6 +56,10 @@ $(document).ready(function() {
   mobileNavToggle('.story-main', '#story-drop-list', '#story-drop');
   mobileNavToggle('.people-main', '#people-drop-list', '#people-drop');
   mobileNavToggle('.more-main', '#more-drop-list', '#more-drop');
+
+  $('.click-hide').on('click', function() {
+    $('.mobile-nav').slideToggle('slow');
+  });
 
 
   $('.fancybox').fancybox({
