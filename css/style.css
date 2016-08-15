@@ -454,12 +454,19 @@ ul {
   justify-content: space-around;
   padding: 15px; }
 
-.mobile-main,
-.mobile-people {
+.story-main,
+.people-main,
+.portfolio-main,
+.more-main {
   display: flex;
   justify-content: space-between;
   padding: 15px 25px;
   text-transform: uppercase; }
+  .story-main:hover,
+  .people-main:hover,
+  .portfolio-main:hover,
+  .more-main:hover {
+    cursor: pointer; }
 
 .mobile-drop-down {
   display: none;

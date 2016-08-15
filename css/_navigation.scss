@@ -94,12 +94,17 @@
   padding: 15px;
 }
 
-.mobile-main,
-.mobile-people {
+.story-main,
+.people-main,
+.portfolio-main,
+.more-main {
   display: flex;
   justify-content: space-between;
   padding: 15px 25px;
   text-transform: uppercase;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .mobile-drop-down {

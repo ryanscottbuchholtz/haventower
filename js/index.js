@@ -22,7 +22,6 @@ function initialFadeIn() {
 function scrollTop(linkID, topMargin, milliseconds) {
   $(linkID).on('click', function(event) {
     event.preventDefault();
-    console.log('clicked');
 
     $("body, html").animate({
       scrollTop: $($(this).attr('href')).offset().top - topMargin
@@ -30,10 +29,10 @@ function scrollTop(linkID, topMargin, milliseconds) {
   });
 }
 
-function mobileNavToggle(wrapID, listID) {
+function mobileNavToggle(wrapID, listID, dropID) {
   $(wrapID).on('click', function() {
     $(listID).slideToggle('slow');
-    $(this).toggleClass('fa-plus fa-minus');
+    $(dropID).toggleClass('fa-plus fa-minus');
   });
 }
 
@@ -43,20 +42,20 @@ $(document).ready(function() {
   var headerHeight = $('.main-header').height();
   var mainImageHeight = $('.main-image-headline').height();
 
-  scrollTop('#approach-and-services-link', headerHeight, 4000);
-  scrollTop('#expect-wrap-link', headerHeight, 4000);
-  scrollTop('#video-partners-link', (headerHeight + 15), 4000);
-  scrollTop('#the-team-link', headerHeight, 4000);
-  scrollTop('#our-portfolio-link', headerHeight, 4000);
+  scrollTop('.approach-and-services-link', headerHeight, 4000);
+  scrollTop('.expect-wrap-link', headerHeight, 4000);
+  scrollTop('.video-partners-link', (headerHeight + 15), 4000);
+  scrollTop('.the-team-link', headerHeight, 4000);
+  scrollTop('.our-portfolio-link', headerHeight, 4000);
   scrollTop('#logo', (mainImageHeight + (headerHeight * 2)), 6000);
 
   $('.fa-bars').on('click', function() {
     $('.mobile-nav').slideToggle('slow');
   });
 
-  mobileNavToggle('#story-drop', '#story-drop-list');
-  mobileNavToggle('#people-drop', '#people-drop-list');
-  mobileNavToggle('#more-drop', '#more-drop-list');
+  mobileNavToggle('.story-main', '#story-drop-list', '#story-drop');
+  mobileNavToggle('.people-main', '#people-drop-list', '#people-drop');
+  mobileNavToggle('.more-main', '#more-drop-list', '#more-drop');
 
 
   $('.fancybox').fancybox({
