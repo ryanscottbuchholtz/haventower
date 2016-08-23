@@ -729,7 +729,7 @@ ul {
   box-shadow: 0px -15px 20px -12px rgba(0, 0, 0, 0.8), 0 15px 20px -12px rgba(0, 0, 0, 0.8); }
 
 .image1 {
-  background: url("../assets/Papazian Head Shot.jpg") no-repeat top;
+  background: url("../assets/Papazian-Head-Shot.jpg") no-repeat top;
   background-size: cover; }
 
 .testimonials {
@@ -1277,7 +1277,7 @@ blockquote p {
     padding-top: 5px; }
 
 .ht-footer-logo {
-  background: url("../assets/htlogo/white_logo_transparent_background 2.png") center no-repeat;
+  background: url("../assets/htlogo/white_logo_transparent_background.png") center no-repeat;
   background-size: cover;
   height: 75px;
   width: 200px; }
