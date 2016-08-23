@@ -1055,7 +1055,7 @@ blockquote p {
 .hidden-bio {
   margin-top: 15px;
   width: 90%;
-  text-align: justify; }
+  text-align: left; }
 
 .portfolio-wrap {
   min-height: 83vh; }
