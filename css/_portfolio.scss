@@ -130,8 +130,28 @@
 }
 
 .case-study-popup {
-  width: 400px;
-  height: 400px;
+}
+
+.cs-header {
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0;
+  font-size: 1.1em;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.cs-list-items {
+  padding: 1em;
+  list-style-type: square;
+  list-style-position: outside;
+  line-height: 1.4em;
 }
 
 .case-study-popup-logo {
