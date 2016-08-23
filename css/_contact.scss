@@ -6,11 +6,12 @@
 
 .hidden-contact {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
 }
 
 .contact-us-text {
-  width: 60%;
+  width: 95%;
   h1 {
     margin-bottom: 10px !important;
     color: $haventower-red;
@@ -24,7 +25,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 30%;
+  width: 95%;
   h3 {
     color: $haventower-red;
     font-weight: 300;
@@ -33,7 +34,7 @@
 
 .contact-line {
   border-bottom: 1px solid $haventower-red;
-  width: 50%;
+  width: 60%;
   margin-bottom: 15px;
 }
 
@@ -45,4 +46,22 @@
 
 .contact-div-icon {
   margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .hidden-contact {
+    flex-direction: row;
+  }
+
+  .contact-us-text {
+    width: 60%;
+  }
+
+  .contact-us-list {
+    width: 30%;
+  }
+
+  .contact-line {
+    width: 50%;
+  }
 }

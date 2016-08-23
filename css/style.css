@@ -447,7 +447,8 @@ ul {
   top: 100px;
   right: 0;
   background-color: #fff;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 20px; }
 
 .mobile-social-media {
   display: flex;
@@ -1297,10 +1298,11 @@ blockquote p {
 
 .hidden-contact {
   display: flex;
+  flex-direction: column;
   justify-content: space-around; }
 
 .contact-us-text {
-  width: 60%; }
+  width: 95%; }
   .contact-us-text h1 {
     margin-bottom: 10px !important;
     color: #E51B23; }
@@ -1311,14 +1313,14 @@ blockquote p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 30%; }
+  width: 95%; }
   .contact-us-list h3 {
     color: #E51B23;
     font-weight: 300; }
 
 .contact-line {
   border-bottom: 1px solid #E51B23;
-  width: 50%;
+  width: 60%;
   margin-bottom: 15px; }
 
 .contact-div {
@@ -1329,6 +1331,18 @@ blockquote p {
 .contact-div-icon {
   margin-right: 20px; }
 
+@media (min-width: 768px) {
+  .hidden-contact {
+    flex-direction: row; }
+
+  .contact-us-text {
+    width: 60%; }
+
+  .contact-us-list {
+    width: 30%; }
+
+  .contact-line {
+    width: 50%; } }
 /*Body*/
 body {
   font-family: "roboto", sans-serif;
