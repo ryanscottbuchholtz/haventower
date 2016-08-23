@@ -63,7 +63,14 @@ $(document).ready(function() {
 
 
   $('.fancybox').fancybox({
-      closeClick: true
+      closeClick: true,
+      helpers: {
+        overlay: {
+          css: {
+            'background':'rgba(1,1,1,0.8)',
+          }
+        }
+      }
   });
 
   initialFadeIn();
