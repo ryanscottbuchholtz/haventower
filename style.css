@@ -1286,8 +1286,8 @@ ul {
   position: relative;
   box-shadow: 0px -15px 20px -12px rgba(0, 0, 0, 0.8), 0 15px 20px -12px rgba(0, 0, 0, 0.8); }
 
-.image1 {
-  background: url(assets/Papazian-Head-Shot.642b873628ae55e33f6ab92b620e2818.jpg) no-repeat top;
+.image2 {
+  background: url(assets/Chris-headshot.a6a24c7e3363a55c71b523c82e59dd7b.jpg) no-repeat top;
   background-size: cover; }
 
 .testimonials {
@@ -1689,6 +1689,18 @@ blockquote p {
 
 .buchanan {
   background: url(assets/Buchanan.9db66e49a07ccae0110fce10f64b173a.jpg) no-repeat top;
+  background-size: cover; }
+
+.papazian {
+  background: url(assets/Papazian-Head-Shot.642b873628ae55e33f6ab92b620e2818.jpg) no-repeat top;
+  background-size: cover; }
+
+.gersten {
+  background: url(assets/gersten.16e27a2d353480fbcfddbff0bdf22329.jpg) no-repeat top;
+  background-size: cover; }
+
+.madden {
+  background: url(assets/mickey-madden.898f2efabbd3982056271ffb6f17973b.jpg) no-repeat top;
   background-size: cover; }
 
 .grayscale {

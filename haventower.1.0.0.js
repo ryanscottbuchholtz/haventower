@@ -130,14 +130,18 @@
 	
 	  $('.fancybox').fancybox({
 	      closeClick: true,
-	      helpers: {
-	        overlay: {
-	          css: {
-	            'background':'rgba(1,1,1,0.7)',
-	          }
-	        }
-	      }
+	      // helpers: {
+	      //   overlay: {
+	      //     css: {
+	      //       'background':'rgba(1,1,1,0.7)',
+	      //     }
+	      //   }
+	      // }
 	  });
+	
+	  $('.learn-more').on('click', function() {
+	    $('.team-member-image').addClass('grayscale');
+	  })
 	
 	  initialFadeIn();
 	
