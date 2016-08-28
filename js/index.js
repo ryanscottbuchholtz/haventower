@@ -5,10 +5,10 @@ window.$ = $;
 
 require("font-awesome-webpack");
 require("slick-carousel");
-require("slick-carousel/slick/slick.css");
-require("slick-carousel/slick/slick-theme.css");
+// require("slick-carousel/slick/slick.css");
+// require("slick-carousel/slick/slick-theme.css");
 require("fancybox")($);
-require("fancybox/dist/css/jquery.fancybox.css");
+// require("fancybox/dist/css/jquery.fancybox.css");
 require("../css/style.css");
 
 function initialFadeIn() {
