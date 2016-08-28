@@ -71,11 +71,11 @@
 	
 	__webpack_require__(16);
 	__webpack_require__(27);
-	__webpack_require__(28);
-	__webpack_require__(32);
-	__webpack_require__(39)($);
-	__webpack_require__(40);
-	__webpack_require__(48);
+	// require("slick-carousel/slick/slick.css");
+	// require("slick-carousel/slick/slick-theme.css");
+	__webpack_require__(28)($);
+	// require("fancybox/dist/css/jquery.fancybox.css");
+	__webpack_require__(29);
 	
 	function initialFadeIn() {
 	  $('#main-image-logo-opacity-wrapper').delay(2000).fadeOut(4000);
@@ -13549,27 +13549,6 @@
 /* 28 */
 /***/ function(module, exports) {
 
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 29 */,
-/* 30 */,
-/* 31 */,
-/* 32 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 33 */,
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */
-/***/ function(module, exports) {
-
 	/*!
 	 * fancyBox - jQuery Plugin
 	 * version: 2.1.5 (Fri, 14 Jun 2013)
@@ -15600,20 +15579,7 @@
 
 
 /***/ },
-/* 40 */
-/***/ function(module, exports) {
-
-	// removed by extract-text-webpack-plugin
-
-/***/ },
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */
+/* 29 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
