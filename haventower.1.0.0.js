@@ -73,9 +73,9 @@
 	__webpack_require__(27);
 	// require("slick-carousel/slick/slick.css");
 	// require("slick-carousel/slick/slick-theme.css");
-	__webpack_require__(28)($);
+	__webpack_require__(39)($);
 	// require("fancybox/dist/css/jquery.fancybox.css");
-	__webpack_require__(29);
+	__webpack_require__(48);
 	
 	function initialFadeIn() {
 	  $('#main-image-logo-opacity-wrapper').delay(2000).fadeOut(4000);
@@ -129,7 +129,7 @@
 	
 	
 	  $('.fancybox').fancybox({
-	      closeClick: true,
+	      // closeClick: true,
 	      // helpers: {
 	      //   overlay: {
 	      //     css: {
@@ -139,7 +139,7 @@
 	      // }
 	  });
 	
-	  $('.learn-more').on('click', function() {
+	  $('.fancy-box-wrap').on('click', function() {
 	    $('.team-member-image').addClass('grayscale');
 	  })
 	
@@ -180,8 +180,12 @@
 	  });
 	
 	  $('.team-member').hover(
-	    function(){$('.team-member-image', this).toggleClass('grayscale');}
-	    );
+	    function(){$('.team-member-image', this).toggleClass('grayscale');
+	  });
+	
+	  // $('.team-member').hover( function() {
+	  //   $('.team-member-image').removeClass('grayscale');
+	  // });
 	
 	
 	
@@ -13546,7 +13550,18 @@
 
 
 /***/ },
-/* 28 */
+/* 28 */,
+/* 29 */,
+/* 30 */,
+/* 31 */,
+/* 32 */,
+/* 33 */,
+/* 34 */,
+/* 35 */,
+/* 36 */,
+/* 37 */,
+/* 38 */,
+/* 39 */
 /***/ function(module, exports) {
 
 	/*!
@@ -15579,7 +15594,15 @@
 
 
 /***/ },
-/* 29 */
+/* 40 */,
+/* 41 */,
+/* 42 */,
+/* 43 */,
+/* 44 */,
+/* 45 */,
+/* 46 */,
+/* 47 */,
+/* 48 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
