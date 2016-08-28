@@ -63,7 +63,7 @@ $(document).ready(function() {
 
 
   $('.fancybox').fancybox({
-      closeClick: true,
+      // closeClick: true,
       // helpers: {
       //   overlay: {
       //     css: {
@@ -73,7 +73,7 @@ $(document).ready(function() {
       // }
   });
 
-  $('.learn-more').on('click', function() {
+  $('.fancy-box-wrap').on('click', function() {
     $('.team-member-image').addClass('grayscale');
   })
 
@@ -114,8 +114,12 @@ $(document).ready(function() {
   });
 
   $('.team-member').hover(
-    function(){$('.team-member-image', this).toggleClass('grayscale');}
-    );
+    function(){$('.team-member-image', this).toggleClass('grayscale');
+  });
+
+  // $('.team-member').hover( function() {
+  //   $('.team-member-image').removeClass('grayscale');
+  // });
 
 
 
