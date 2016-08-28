@@ -728,8 +728,8 @@ ul {
   position: relative;
   box-shadow: 0px -15px 20px -12px rgba(0, 0, 0, 0.8), 0 15px 20px -12px rgba(0, 0, 0, 0.8); }
 
-.image1 {
-  background: url("../assets/Papazian-Head-Shot.jpg") no-repeat top;
+.image2 {
+  background: url("../assets/Chris-headshot.jpg") no-repeat top;
   background-size: cover; }
 
 .testimonials {
@@ -1033,6 +1033,18 @@ blockquote p {
 
 .buchanan {
   background: url("../assets/Buchanan.jpg") no-repeat top;
+  background-size: cover; }
+
+.papazian {
+  background: url("../assets/Papazian-Head-Shot.jpg") no-repeat top;
+  background-size: cover; }
+
+.gersten {
+  background: url("../assets/gersten.jpg") no-repeat top;
+  background-size: cover; }
+
+.madden {
+  background: url("../assets/mickey-madden.jpg") no-repeat top;
   background-size: cover; }
 
 .grayscale {

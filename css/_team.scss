@@ -91,6 +91,21 @@
   background-size: cover;
 }
 
+.papazian {
+  background: url('../assets/Papazian-Head-Shot.jpg') no-repeat top;
+  background-size: cover;
+}
+
+.gersten {
+  background: url('../assets/gersten.jpg') no-repeat top;
+  background-size: cover;
+}
+
+.madden {
+  background: url('../assets/mickey-madden.jpg') no-repeat top;
+  background-size: cover;
+}
+
 .grayscale {
  @include grayscale;
 }
