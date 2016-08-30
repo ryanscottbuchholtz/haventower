@@ -2222,6 +2222,9 @@ a {
   .team-member {
     width: 30%; }
 
+  .team-member-wide {
+    width: 45%; }
+
   .team-members {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

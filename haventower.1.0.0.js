@@ -73,9 +73,9 @@
 	__webpack_require__(27);
 	// require("slick-carousel/slick/slick.css");
 	// require("slick-carousel/slick/slick-theme.css");
-	__webpack_require__(39)($);
+	__webpack_require__(28)($);
 	// require("fancybox/dist/css/jquery.fancybox.css");
-	__webpack_require__(48);
+	__webpack_require__(29);
 	
 	function initialFadeIn() {
 	  $('#main-image-logo-opacity-wrapper').delay(2000).fadeOut(4000);
@@ -13550,18 +13550,7 @@
 
 
 /***/ },
-/* 28 */,
-/* 29 */,
-/* 30 */,
-/* 31 */,
-/* 32 */,
-/* 33 */,
-/* 34 */,
-/* 35 */,
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */
+/* 28 */
 /***/ function(module, exports) {
 
 	/*!
@@ -15594,15 +15583,7 @@
 
 
 /***/ },
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */,
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */
+/* 29 */
 /***/ function(module, exports) {
 
 	// removed by extract-text-webpack-plugin
