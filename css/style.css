@@ -1994,6 +1994,9 @@ a {
   .team-member {
     width: 30%; }
 
+  .team-member-wide {
+    width: 45%; }
+
   .team-members {
     flex-direction: row;
     flex-wrap: wrap;
