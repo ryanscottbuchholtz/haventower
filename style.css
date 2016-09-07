@@ -767,10 +767,6 @@ ul {
   position: relative;
   box-shadow: 0px -15px 20px -12px rgba(0, 0, 0, 0.8), 0 15px 20px -12px rgba(0, 0, 0, 0.8); }
 
-.image2 {
-  background: url(assets/Chris-headshot.a6a24c7e3363a55c71b523c82e59dd7b.jpg) no-repeat top;
-  background-size: cover; }
-
 .testimonials {
   width: 100%; }
 
@@ -801,7 +797,7 @@ ul {
       align-self: center;
   margin-top: 15px;
   text-align: right;
-  margin-right: 50px; }
+  margin-right: 15px; }
 
 .author-and-picture {
   display: -webkit-box;
@@ -809,8 +805,7 @@ ul {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end;
-  margin-right: 15px; }
+          justify-content: flex-end; }
 
 .fa-quote-left, .fa-quote-right {
   font-size: 1.25em;
@@ -821,6 +816,14 @@ ul {
   border-bottom: 1px solid #E51B23;
   padding-bottom: 12px;
   font-size: 1.2em; }
+
+.brown {
+  background: url(assets/Dale-Brown.7fd7e79b043f975ad1dcfb3c23a6ebe8.png) no-repeat top;
+  background-size: cover; }
+
+.kovack {
+  background: url(assets/kovack.c5fe9d67b21ef0a15b96511718fbb15b.png) no-repeat top;
+  background-size: cover; }
 
 blockquote {
   margin: 1.0em 10px;
@@ -2137,6 +2140,9 @@ a {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
+
+  .author-testimonial {
+    padding-right: 50px; }
 
   .main-image-headline {
     display: none;
