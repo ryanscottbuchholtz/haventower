@@ -1465,6 +1465,10 @@ blockquote p {
   background: url(assets/weg.508f2cd5801ad9277078e5149be6d58a.png) center no-repeat;
   background-size: contain; }
 
+.kovack-logo {
+  background: url(assets/kovack-securities.cb5ae68cae9ee904fefb434014a6acbb.gif) center no-repeat;
+  background-size: contain; }
+
 .footer-bottom-wrap {
   min-height: 150px;
   width: 100%;
