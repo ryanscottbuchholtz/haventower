@@ -1187,6 +1187,10 @@ blockquote p {
   background: url(assets/mickey-madden.898f2efabbd3982056271ffb6f17973b.jpg) no-repeat top;
   background-size: cover; }
 
+.sun {
+  background: url(assets/CamHeadshot2.ad09dedce082690c389e9b50547837d5.png) no-repeat top;
+  background-size: cover; }
+
 .grayscale {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
