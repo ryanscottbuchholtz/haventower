@@ -1051,6 +1051,10 @@ blockquote p {
   background: url("../assets/mickey-madden.jpg") no-repeat top;
   background-size: cover; }
 
+.sun {
+  background: url("../assets/CamHeadshot2.png") no-repeat top;
+  background-size: cover; }
+
 .grayscale {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
