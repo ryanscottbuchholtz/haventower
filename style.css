@@ -825,6 +825,14 @@ ul {
   background: url(assets/kovack.c5fe9d67b21ef0a15b96511718fbb15b.png) no-repeat top;
   background-size: cover; }
 
+.dudash {
+  background: url(assets/Steve-Headshot-1.628a45263d8c46b030e003601f8353e6.png) no-repeat top;
+  background-size: cover; }
+
+.roth {
+  background: url(assets/Larry_Roth.68ee7ef1aec520d88c2fe2bfb32b96ce.png) no-repeat top;
+  background-size: cover; }
+
 blockquote {
   margin: 1.0em 10px;
   padding: 0.5em 10px;
@@ -2032,13 +2040,16 @@ a {
   box-shadow: none;
   z-index: -99; }
 
-.headline {
+.headline, .subheadline {
   margin: 25px 0 12.5px 0;
   text-transform: uppercase;
   text-align: center;
   width: 100%;
   margin: 0 auto;
   color: #333333; }
+
+.subheadline {
+  padding-top: 30px; }
 
 .white-div-paragraph {
   width: 90%;
