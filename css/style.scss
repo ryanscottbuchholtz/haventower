@@ -81,13 +81,18 @@ a {
   z-index: -99;
 }
 
-.headline {
+.headline,
+.subheadline {
   margin: 25px 0 12.5px 0;
   text-transform: uppercase;
   text-align: center;
   width: 100%;
   margin: 0 auto;
   color: #333333;
+}
+
+.subheadline {
+  padding-top: 30px;
 }
 
 .white-div-paragraph {
