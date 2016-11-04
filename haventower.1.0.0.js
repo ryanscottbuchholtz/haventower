@@ -149,7 +149,7 @@
 	    dots: true,
 	    infinite: true,
 	    autoplay: true,
-	    autoplaySpeed: 6000,
+	    autoplaySpeed: 20000,
 	    prevArrow: null,
 	    nextArrow: null
 	  });
